@@ -1,0 +1,32 @@
+.offcanvas-menu {
+    position: fixed;
+    top: 41px;
+    right: -550px; 
+    width: 350px;
+    height: 100%;
+    background-color: #fff;
+    transition: right 0.3s ease;
+  }
+  
+  .offcanvas-menu.open {
+    right: 0; 
+    overflow:scroll;
+  
+  }
+  .your-cart{
+    font-size:14px
+  }
+   
+  .togglebar_btn{
+    left: -550px; 
+    width: 350px;
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+  .togglebar_btn.open{
+    left:0;
+    overflow:scroll;
+  }
+  
+  
+  

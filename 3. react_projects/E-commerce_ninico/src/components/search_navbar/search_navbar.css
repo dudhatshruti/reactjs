@@ -1,0 +1,57 @@
+.home-dropdown:hover .angelgown{
+    rotate: calc(180deg);
+    transition:0.5s;
+}
+
+.search-info input{
+    padding:8px 52px;
+    height:50px;
+}
+
+.home-dropdown { 
+    position: relative; 
+    display: inline-block; 
+} 
+.home-button { 
+    border: none; 
+} 
+.home-content { 
+    display: none; 
+    position: absolute; 
+    width: 180px;  
+    right:0%;
+    z-index: 9;  
+    top: 50px; 
+    box-shadow:0 30px 70px 6px rgba(11,6,70,.08);
+    transition: all .3s ease-in-out;
+} 
+ 
+ .home-content ul li a{ 
+    border-radius: 5px; 
+    color: black; 
+    line-height: 35px; 
+    display: block; 
+}  
+ 
+.home-dropdown:hover button { 
+    color: black 
+} 
+ 
+.home-dropdown:hover .home-content { 
+    display: block; 
+} 
+ 
+.list { 
+    padding: 10px 20px; 
+} 
+
+
+
+@media(max-width:1199px){
+    .country{
+       display:hidden;
+    }
+    
+}
+  
+

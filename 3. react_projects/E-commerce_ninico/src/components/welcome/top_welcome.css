@@ -1,0 +1,9 @@
+.header-welcome-text  a::after{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 1px;
+    width: 100%;
+    left: 0px;
+    background-color: #f55252;
+}
