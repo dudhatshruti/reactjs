@@ -7,9 +7,7 @@ const App = () => {
     <Use_state/>
     <Use_state2/>
     <Age_name_photo/>
-   
     </>
-    
   )
 }
 
