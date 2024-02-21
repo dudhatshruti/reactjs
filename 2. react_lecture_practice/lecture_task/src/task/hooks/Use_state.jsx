@@ -53,7 +53,7 @@ export const Age_name_photo = () => {
 
   const update_profile = ()=>{
   
-    const newage = 27;
+    const newage = 20;
     setAge(newage);
 
     if (newage>=0 && newage<= 25) {
@@ -78,5 +78,19 @@ export const Age_name_photo = () => {
   )
 }
 
-
-
+export function Inputvalue(){
+  const [val, setvalue] = useState();
+  const Click = ()=>{
+    alert(val);
+  }
+  const change =e=>{
+    setvalue(e.target.value)
+  }
+  return(
+    <>
+      <input value={val} onChange={change} placeholder='search here...' className='border border-slate-400 outline-none ms-4'/>
+      <span><button onClick={Click} className='border border-slate-400 ms-3 px-3 '>Submit</button></span>
+      <h1>text:{val}</h1>
+    </>
+  )
+}

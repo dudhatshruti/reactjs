@@ -1,7 +1,8 @@
-import React from 'react'
-import Top_welcome from '../components/welcome/Top_welcome'
-import Search_navbar from '../components/search_navbar/Search_navbar'
-import Navbar from '../components/category_btn_navbar/Navbar'
+import React from "react";
+import "../pages/home_page.css";
+import Top_welcome from "../components/welcome/Top_welcome";
+import Search_navbar from "../components/search_navbar/Search_navbar";
+import Navbar from "../components/category_btn_navbar/Navbar";
 import flower from "../../src/assets/images/flower.jpeg";
 import pencil from "../../src/assets/images/pencil.jpeg";
 import spoon from "../../src/assets/images/spoon.jpeg";
@@ -12,17 +13,17 @@ import Christmas_tree from "../assets/images/christmas_tree.svg";
 import Bluetooth from "../assets/images/bluetooth.svg";
 import recievers from "../assets/images/recievers.svg";
 import plate_set from "../assets/images/plate_set.svg";
-
-
+import Popular_product from "../components/popular_product/Popular_product";
+import dealproduct from "../assets/images/dealproduct.png";
 
 const Home_page = () => {
   return (
     <>
-    <Top_welcome/>
-    <Search_navbar/>
-    <Navbar/>
- {/* -------------------- IMAGE Slide--------------------------  */}
-    <div className="container mx-auto px-2 ">
+      <Top_welcome />
+      <Search_navbar />
+      <Navbar />
+      {/* -------------------- IMAGE Slide--------------------------  */}
+      <div className="container mx-auto px-2 ">
         <div className="row">
           <div className="grid grid-cols-12 space-x-3">
             <div className="lg:col-span-9 md:col-span-9 sm:col-span-12 col-span-12   flex justify-end  ">
@@ -102,9 +103,9 @@ const Home_page = () => {
         </div>
       </div>
 
- {/*----------------------  TOP Categories------------------------*/}
+      {/*----------------------  TOP Categories------------------------*/}
 
- <section className="category_area pt-16">
+      <section className="category_area pt-16">
         <div className="container mx-auto px-2">
           <div className="row flex items-center">
             <div className="grid grid-cols-12">
@@ -125,7 +126,7 @@ const Home_page = () => {
           </div>
           <div className="row flex flex-wrap justify-around pb-11 border-b border-gray-500 ">
             <div className="category relative text-center   ">
-              <div className="cat_icon mb-5  bg-slate-50 rounded-full  py-8 px-10">
+              <div className="group cat_icon mb-5  bg-slate-50 rounded-full  py-8 px-10">
                 <img src={chair} alt="" />
                 <span className="categories6 ">20</span>
               </div>
@@ -136,7 +137,7 @@ const Home_page = () => {
               </div>
             </div>
             <div className="category relative text-center ">
-              <div className="cat_icon  mb-5  bg-slate-50 rounded-full py-8 px-9">
+              <div className="group cat_icon  mb-5  bg-slate-50 rounded-full py-8 px-9">
                 <img src={lamp} alt="" />
                 <span className="categories6">12</span>
               </div>
@@ -147,7 +148,7 @@ const Home_page = () => {
               </div>
             </div>
             <div className="category relative text-center ">
-              <div className="cat_icon  mb-5  bg-slate-50 rounded-full py-8 px-9">
+              <div className="group cat_icon  mb-5  bg-slate-50 rounded-full py-8 px-9">
                 <img src={Christmas_tree} alt="" />
                 <span className="categories6">03</span>
               </div>
@@ -158,7 +159,7 @@ const Home_page = () => {
               </div>
             </div>
             <div className="category relative text-center  ">
-              <div className="cat_icon   mb-3 bg-slate-50 rounded-full  py-8 px-9">
+              <div className="group cat_icon   mb-3 bg-slate-50 rounded-full  py-8 px-9">
                 <img src={Bluetooth} alt="" />
                 <span className="categories6">09</span>
               </div>
@@ -169,7 +170,7 @@ const Home_page = () => {
               </div>
             </div>
             <div className="category relative text-center ">
-              <div className="cat_icon  mb-5  bg-slate-50 rounded-full  py-8 px-10">
+              <div className="group cat_icon  mb-5  bg-slate-50 rounded-full  py-8 px-10">
                 <img src={recievers} alt="" />
                 <span className="categories6">10</span>
               </div>
@@ -180,7 +181,7 @@ const Home_page = () => {
               </div>
             </div>
             <div className="category relative text-center  ">
-              <div className="cat_icon  mb-5  bg-slate-50 rounded-full  py-8 px-9">
+              <div className="group cat_icon  mb-5  bg-slate-50 rounded-full  py-8 px-9">
                 <img src={plate_set} alt="" />
                 <span className="categories6">05</span>
               </div>
@@ -194,15 +195,14 @@ const Home_page = () => {
         </div>
       </section>
 
+      {/* ---------------------Popular product------------------------ */}
 
- {/* ---------------------Popular product------------------------ */}
-
- <section className="product_area pt-24">
+      <section className="product_area pt-24 pb-16">
         <div className="container mx-auto px-2">
           <div className="row">
             <div className="grid grid-cols-12">
-              <div className="col-span-6 mb-10">
-                <div className="top_pro_section mb-10 ">
+              <div className="sm:col-span-6 col-span-12 ">
+                <div className="top_pro_section mb-9 ">
                   <div className="top_pro_title font-bold text-xl">
                     Popular
                     <span className=" font-light ms-2 tracking-tighter text-[#d51243] relative">
@@ -217,19 +217,86 @@ const Home_page = () => {
                 </div>
               </div>
 
-              <div className="col-span-6 flex flex-end">
-                <div className="pro_nav">
-                  <nav>1</nav>
+              <div className="sm:col-span-6 col-span-12 ">
+                <div className="product_nav flex sm:justify-end sm:pb-0 pb-3">
+                  <nav className="space-x-10 text-[17px] font-semibold">
+                    <button className="text-[#d51243] underline">All</button>
+                    <button>Popular</button>
+                    <button>On sale</button>
+                    <button>Best Rated</button>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-2 grid-cols-1  gap-2">
+              <Popular_product />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/*----------------------Deal product --------------------------  */}
+      <section className="pb-24">
+        <div className="container mx-auto px-2">
+          <div className="theme_bg pt-10 pb-10 bg-[#f8f8f8]">
+            <div className="row">
+              <div className="grid grid-cols-12">
+                <div className="col-span-6">
+                  <div className="dealproduct ml-28">
+                    <div className="deal_product_img relative text-center">
+                      <img src={dealproduct} alt="dealproduct" />
+                      <div className="dealproduct_offer text-center">
+                        <h5 className="product_offer-price absolute top-14 right-[155px] text-[26px] font-bold text-white bg-[#d51243] rounded-full py-3  px-4 animate-pulse">
+                          <span className="text-[12px] block ">From</span>
+                          $49
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-6">
+                  <div className="dealproduct_info pt-8 mr-10">
+                    <div className="product_price mb-3 text-[22px] font-bold">
+                      <span className="text-[#d51243]">$49.00</span>
+                      <del className="text-[#adadad] ">$59.00</del>
+                    </div>
+                    <div className="product_text mb-[30px]">
+                      <h4 className="title mb-3 text-[50px] text-black font-semibold tracking-tight">
+                        <a href="/">Pro Abstract Folded Pots</a>
+                      </h4>
+                      <p className="text-[#777] text-[18px] leading-6">
+                        Elegant pink origami design three-dimensional view and
+                        decoration co-exist. Great for adding a decorative touch
+                        to any room’s decor. Wonderful accent piece for coffee
+                        tables or side tables.
+                      </p>
+                    </div>
+                    <div className="product_progress mb-8 bg-white w-full">
+                      <div className="progress">
+                        <div class="w-[75%]  rounded-full h-1.5 mb-4 ">
+                          <div
+                            class="bg-[#d51243] h-1.5 rounded-full "
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="product_count flex items-center">
+                      <div className="count">
+                        
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
     </>
-    
-  )
-}
+  );
+};
 
-export default Home_page
+export default Home_page;

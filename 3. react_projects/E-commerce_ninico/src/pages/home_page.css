@@ -1,0 +1,14 @@
+/* .category ::after{
+    position:absolute;
+    content:"";
+    top:0;
+    right:-40px;
+    bottom:0;
+    background-color:#ecf0ef;
+    height:200px;
+    width:1px;
+} */
+
+.outer:hover .inner{
+    display:block;
+}
