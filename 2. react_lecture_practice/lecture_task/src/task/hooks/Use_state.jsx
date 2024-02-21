@@ -78,6 +78,7 @@ export const Age_name_photo = () => {
   )
 }
 
+//  input field usestate
 export function Inputvalue(){
   const [val, setvalue] = useState();
   const Click = ()=>{
@@ -88,9 +89,121 @@ export function Inputvalue(){
   }
   return(
     <>
+    <h1>task 1</h1>
       <input value={val} onChange={change} placeholder='search here...' className='border border-slate-400 outline-none ms-4'/>
       <span><button onClick={Click} className='border border-slate-400 ms-3 px-3 '>Submit</button></span>
       <h1>text:{val}</h1>
     </>
   )
+}
+
+/* Counter (number) */
+
+export const Counter = () => {
+
+  const [count , setcount] = useState(0)
+
+  function handleclick() {
+    setcount(count + 1)
+  }
+
+  return(
+    <>
+    <h1 className='mt-3'>task 2</h1>
+      <button onClick={handleclick} className='btn'>click me {count} times</button>
+    </>
+  )
+}
+
+/* checkbox */
+
+export const Checkbox = () =>{
+  const [like, setlike] = useState(true)
+
+  function handlechange(e) {
+    setlike(e.target.checked)
+  }
+
+  return(
+    <>
+      <h1 className='mt-3'>task 3</h1>
+      <label>
+        <input type="checkbox" checked= {like} onChange={handlechange}/> i like this
+      </label>
+      <p>you {like ?  'like' : 'not like'} this.</p>
+    </>
+  )
+}
+
+/* Form  */
+
+export const Form = ()=>{
+  const [name, setname] = useState('john')
+  const [age, setage] = useState(21)
+
+  function handlechange(e){
+    setname(e.target.value)
+  }
+  function newage(){
+    setage(age=>age+1)
+    setage(age=>age+1)
+
+  }
+
+  return(
+    <>
+      <input value={name} onChange={handlechange} className='outline-0 border border-red-400'/>
+      <button className='btn' onClick={newage}>increment age</button>
+      <p>hello {name} , you are {age} </p>
+    </>
+  )
+}
+
+/* form (object) */
+
+export const Formobject = ()=>{
+  const [form, setForm] = useState({
+    firstName: 'john',
+    lastName: 'doe',
+    email: 'john@test.in',
+  })
+
+  return(
+    <>
+    <h1 className='mt-4'></h1>
+    <label>First Name:
+      <input value={form.firstName}  onChange={e => {
+            setForm({
+              ...form,
+              firstName: e.target.value
+            });
+          }} />
+    </label>
+
+    <label>Last Name:
+      <input value={form.lastName}  onChange={e => {
+            setForm({
+              ...form,
+              lastName: e.target.value
+            });
+          }} />
+    </label>
+
+    <label>Email:
+      <input value={form.email}  onChange={e => {
+            setForm({
+              ...form,
+              Email: e.target.value
+            });
+          }} />
+    </label>
+
+    <p>
+        {form.firstName}{' '}
+        {form.lastName}{' '}
+        ({form.email})
+      </p>
+    </>
+  )
+
 }
