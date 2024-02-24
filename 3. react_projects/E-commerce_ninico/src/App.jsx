@@ -1,9 +1,15 @@
 import React from 'react'
 import Home_page from './pages/Home_page'
+import Shop_page from './pages/Shop_page'
+
 
 const App = () => {
   return (
-   <Home_page/>
+
+    <>
+    <Shop_page/>
+    {/* <Home_page/> */}
+    </>
   )
 }
 

@@ -3,6 +3,7 @@ import  {  Age_name_photo, Checkbox, Counter, Form, Formobject, Inputvalue, Use_
 import { Task1 } from './challenges/your_first_component/Task1'
 import Task2 from './challenges/your_first_component/Task2'
 import Task3 from './challenges/your_first_component/Task3'
+import Button, { ColorSwitch, LightSwitch, Passing, Toolebar } from './task/hooks/Event_andler'
 
 const App = () => {
   return (
@@ -11,12 +12,19 @@ const App = () => {
     {/* <Use_state/>
     <Use_state2/>
     <Age_name_photo/> */}
-    <Inputvalue/>
+    {/* <Inputvalue/>
     <Counter/>
     <Checkbox/>
     <Form/>
-    <Formobject/>
+    <Formobject/> */}
 
+    {/* Handle event */}
+
+    <Button/>
+    <Passing/>
+    <Toolebar/>
+    <LightSwitch/>
+    <ColorSwitch/>
     {/* ---------- challenges ------------- */}
 
     {/* <Task1/>

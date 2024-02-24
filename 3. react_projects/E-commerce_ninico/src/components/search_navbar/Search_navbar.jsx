@@ -87,9 +87,10 @@ const Search_navbar = () => {
                 </a>
               </div>
               <div>
-                <a href="#">
+                <a href="#" className="relative">
                   <i class="fa-regular fa-heart "></i>
                 </a>
+                <div className=" text-center w-3.5 h-3.5 rounded-full text-xs text-white absolute top-2 right-0 bg-[#d51243]">2</div> 
               </div>
             </div>
           </div>

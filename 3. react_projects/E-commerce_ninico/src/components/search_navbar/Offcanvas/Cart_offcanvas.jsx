@@ -14,9 +14,11 @@ const Cart_offcanvas = () => {
   return (
     <>
       <button className="cart-button " onClick={openMenu}>
-        <a href="#">
+        <a href="#" className="relative">
           <i class="fa-solid fa-cart-shopping  "></i>
         </a>
+        <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[77px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243]">1</div> 
+        
       </button>
       <div
         className={`offcanvas-menu   bg-white  ${isOpen ? "open" : "close"}`}

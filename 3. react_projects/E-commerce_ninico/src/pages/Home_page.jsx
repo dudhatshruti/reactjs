@@ -3,7 +3,7 @@ import "../pages/home_page.css";
 import Top_welcome from "../components/welcome/Top_welcome";
 import Search_navbar from "../components/search_navbar/Search_navbar";
 import Navbar from "../components/category_btn_navbar/Navbar";
-import flower from "../../src/assets/images/flower.jpeg";
+import flower from '../../src/assets/images/flower.jpeg'
 import pencil from "../../src/assets/images/pencil.jpeg";
 import spoon from "../../src/assets/images/spoon.jpeg";
 import top_category from "../assets/images/top_cat.jpeg";
@@ -15,6 +15,71 @@ import recievers from "../assets/images/recievers.svg";
 import plate_set from "../assets/images/plate_set.svg";
 import Popular_product from "../components/popular_product/Popular_product";
 import dealproduct from "../assets/images/dealproduct.png";
+import Footer from "../components/footer/Footer";
+import Swipper from "./slick";
+
+/*---------------- follow section slider ------------------- */
+import { Swiper, SwiperSlide } from 'swiper/react';
+import asset76 from '../assets/images/asset 76.jpeg'
+import asset77 from '../assets/images/asset 77.jpeg'
+import asset78 from '../assets/images/asset 78.jpeg'
+import asset79 from '../assets/images/asset 79.jpeg'
+import asset80 from '../assets/images/asset 80.jpeg'
+import asset81 from '../assets/images/asset 81.jpeg'
+
+import { Autoplay } from 'swiper/modules';
+
+export function Slides() {
+  return (
+    <>
+      <Swiper
+        slidesPerView={6}
+        spaceBetween={25}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+        breakpoints={{
+       
+          576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          1000: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+          1200: {
+            slidesPerView:5,
+            spaceBetween: 10,
+          },
+          1399: {
+            slidesPerView:6,
+            spaceBetween: 10,
+          },
+        }}
+        modules={ [Autoplay ]}
+      >
+        <SwiperSlide><img src={asset76} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset77} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset78} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset79} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset80} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset81} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset76} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={asset77} alt="" /></SwiperSlide>
+      </Swiper>
+    </>
+  );
+}
+/*--------------------------------------------------------------------------- */
 
 const Home_page = () => {
   return (
@@ -28,6 +93,7 @@ const Home_page = () => {
           <div className="grid grid-cols-12 space-x-3">
             <div className="lg:col-span-9 md:col-span-9 sm:col-span-12 col-span-12   flex justify-end  ">
               <img src={flower} alt="" />
+              {/* <Swipper/> */}
             </div>
 
             <div className="lg:col-span-3 md:col-span-3 lg:inline md:inline sm:hidden  hidden overflow-hidden  ">
@@ -239,17 +305,17 @@ const Home_page = () => {
       </section>
 
       {/*----------------------Deal product --------------------------  */}
-      <section className="pb-24">
+      <section className="pb-20">
         <div className="container mx-auto px-2">
           <div className="theme_bg pt-10 pb-10 bg-[#f8f8f8]">
             <div className="row">
-              <div className="grid grid-cols-12">
+              <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
                 <div className="col-span-6">
-                  <div className="dealproduct ml-28">
-                    <div className="deal_product_img relative text-center">
+                  <div className="dealproduct md:ml-[68px]   ">
+                    <div className="deal_product_img relative flex justify-center  ">
                       <img src={dealproduct} alt="dealproduct" />
                       <div className="dealproduct_offer text-center">
-                        <h5 className="product_offer-price absolute top-14 right-[155px] text-[26px] font-bold text-white bg-[#d51243] rounded-full py-3  px-4 animate-pulse">
+                        <h5 className="product_offer-price absolute  top-[75px] right-[155px] text-[26px] font-bold text-white bg-[#d51243] rounded-full py-3  px-4 animate-pulse">
                           <span className="text-[12px] block ">From</span>
                           $49
                         </h5>
@@ -258,16 +324,16 @@ const Home_page = () => {
                   </div>
                 </div>
                 <div className="col-span-6">
-                  <div className="dealproduct_info pt-8 mr-10">
-                    <div className="product_price mb-3 text-[22px] font-bold">
+                  <div className="dealproduct_info pt-8 mr-10 md:ml-0  ml-5  ">
+                    <div className="product_price mb-3 text-[22px] font-bold ">
                       <span className="text-[#d51243]">$49.00</span>
                       <del className="text-[#adadad] ">$59.00</del>
                     </div>
                     <div className="product_text mb-[30px]">
-                      <h4 className="title mb-3 text-[50px] text-black font-semibold tracking-tight">
-                        <a href="/">Pro Abstract Folded Pots</a>
+                      <h4 className="title mb-3 lg:text-[50px] md:text-2xl sm:text-[50px]  text-2xl text-black font-semibold tracking-tight">
+                        <a href="/">Pro2 Abstract Folded Pots</a>
                       </h4>
-                      <p className="text-[#777] text-[18px] leading-6">
+                      <p className="text-[#777] lg:text-[18px] text-[17px] lg:leading-6 md:leading-5">
                         Elegant pink origami design three-dimensional view and
                         decoration co-exist. Great for adding a decorative touch
                         to any room’s decor. Wonderful accent piece for coffee
@@ -277,15 +343,13 @@ const Home_page = () => {
                     <div className="product_progress mb-8 bg-white w-full">
                       <div className="progress">
                         <div class="w-[75%]  rounded-full h-1.5 mb-4 ">
-                          <div
-                            class="bg-[#d51243] h-1.5 rounded-full "
-                          ></div>
+                          <div class="bg-[#d51243] h-1.5 rounded-full "></div>
                         </div>
                       </div>
                     </div>
                     <div className="product_count flex items-center">
                       <div className="count">
-                        
+                      
                       </div>
                     </div>
                   </div>
@@ -295,8 +359,34 @@ const Home_page = () => {
           </div>
         </div>
       </section>
+
+      {/* -----------------Follow section----------------------------- */}
+      
+      <section className="shop-area pb-7">
+        <div className="container mx-auto px-2">
+          <div className="row">
+            <div className="grid grid-cols-1">
+              <div className="sectionarea text-center mb-9">
+                <h5 className="sub-title text-[20px] font-normal text-[#d51243]">Follow On</h5>
+                <h2 className="title text-[38px] font-bold text-[#040404]">
+                <i class="fa-brands fa-instagram translate-y-0.5"></i>
+                <span className="mx-2">ninico-shop</span>
+                </h2>
+              </div>
+            </div>
+          </div>
+         
+           <Slides/>
+        </div>
+      </section>
+
+    {/* ----------------- Footer area ----------------------------- */}
+
+    {/* <Footer/> */}
+    
     </>
   );
 };
+
 
 export default Home_page;
