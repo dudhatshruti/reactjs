@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import flower from '../assets/images/flower.jpeg'
+import flower from '../../assets/images/flower.jpeg'
 
 
 

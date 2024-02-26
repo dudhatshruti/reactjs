@@ -1,31 +1,31 @@
 import React from "react";
-import "../pages/home_page.css";
-import Top_welcome from "../components/welcome/Top_welcome";
-import Search_navbar from "../components/search_navbar/Search_navbar";
-import Navbar from "../components/category_btn_navbar/Navbar";
-import flower from '../../src/assets/images/flower.jpeg'
-import pencil from "../../src/assets/images/pencil.jpeg";
-import spoon from "../../src/assets/images/spoon.jpeg";
-import top_category from "../assets/images/top_cat.jpeg";
-import chair from "../assets/images/chair.svg";
-import lamp from "../assets/images/lamp.svg";
-import Christmas_tree from "../assets/images/christmas_tree.svg";
-import Bluetooth from "../assets/images/bluetooth.svg";
-import recievers from "../assets/images/recievers.svg";
-import plate_set from "../assets/images/plate_set.svg";
-import Popular_product from "../components/popular_product/Popular_product";
-import dealproduct from "../assets/images/dealproduct.png";
-import Footer from "../components/footer/Footer";
-import Swipper from "./slick";
+import "../Home/home.css";
+import Top_welcome from "../../components/welcome/Top_welcome";
+import Search_navbar from "../../components/search_navbar/Search_navbar";
+import Navbar from "../../components/category_btn_navbar/Navbar";
+import flower from '../../assets/images/flower.jpeg'
+import pencil from "../../assets/images/pencil.jpeg";
+import spoon from "../../assets/images/spoon.jpeg";
+import top_category from "../../assets/images/top_cat.jpeg";
+import chair from "../../assets/images/chair.svg";
+import lamp from "../../assets/images/lamp.svg";
+import Christmas_tree from "../../assets/images/christmas_tree.svg";
+import Bluetooth from "../../assets/images/bluetooth.svg";
+import recievers from "../../assets/images/recievers.svg";
+import plate_set from "../../assets/images/plate_set.svg";
+import Popular_product from "../../components/popular_product/Popular_product";
+import dealproduct from "../../assets/images/dealproduct.png";
+import Footer from "../../components/footer/Footer";
+import Swipper from "./Swipper";
 
 /*---------------- follow section slider ------------------- */
 import { Swiper, SwiperSlide } from 'swiper/react';
-import asset76 from '../assets/images/asset 76.jpeg'
-import asset77 from '../assets/images/asset 77.jpeg'
-import asset78 from '../assets/images/asset 78.jpeg'
-import asset79 from '../assets/images/asset 79.jpeg'
-import asset80 from '../assets/images/asset 80.jpeg'
-import asset81 from '../assets/images/asset 81.jpeg'
+import asset76 from '../../assets/images/asset 76.jpeg'
+import asset77 from '../../assets/images/asset 77.jpeg'
+import asset78 from '../../assets/images/asset 78.jpeg'
+import asset79 from '../../assets/images/asset 79.jpeg'
+import asset80 from '../../assets/images/asset 80.jpeg'
+import asset81 from '../../assets/images/asset 81.jpeg'
 
 import { Autoplay } from 'swiper/modules';
 
@@ -43,6 +43,10 @@ export function Slides() {
             disableOnInteraction: false,
           }}
         breakpoints={{
+          320:{
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
        
           576: {
             slidesPerView: 2,
@@ -81,7 +85,7 @@ export function Slides() {
 }
 /*--------------------------------------------------------------------------- */
 
-const Home_page = () => {
+const Wooden_home = () => {
   return (
     <>
       <Top_welcome />
@@ -382,11 +386,11 @@ const Home_page = () => {
 
     {/* ----------------- Footer area ----------------------------- */}
 
-    {/* <Footer/> */}
+    <Footer/>
     
     </>
   );
 };
 
 
-export default Home_page;
+export default Wooden_home;

@@ -10,14 +10,14 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="row">
             <div className="main-footer pb-3.5 mb-7 border-b border-[#e0e0e0]">
-              <div className="grid grid-cols-12">
-                <div className="lg:col-span-3 md:col-span-4 ">
+              <div className="grid grid-cols-12 sm:text-start text-center  ">
+                <div className="xl:col-span-3 lg:col-span-4 md:col-span-6 sm:col-span-6 col-span-12 ">
                   <div className="logo mb-7">
                     <a href="/">
-                      <img src={ninico} alt="logo" />
+                      <img src={ninico} alt="logo"  />
                     </a>
                   </div>
-                  <div className="footer-content text-[#777] text-[16px] w-56">
+                  <div className="footer-content text-[#777] text-[16px] w-56 ">
                     <p>
                       Elegant pink origami design three dimensional view and
                       decoration co-exist. Great for adding a decorative touch
@@ -25,7 +25,7 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-                <div className="lg:col-span-2 md:col-span-4">
+                <div className="xl:col-span-2 lg:col-span-3 md:col-span-3 sm:col-span-3 col-span-12">
                   <div className="footer-information ml-7 mb-10">
                     <h4 className="title mb-7 underline text-[16px] font-semibold">
                       Information
@@ -51,7 +51,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-2">
+                <div className="xl:col-span-2 lg:col-span-3  md:col-span-3 sm:col-span-3 col-span-12">
                   <div className="footer-information ml-4 mb-10">
                     <h4 className="title mb-7 underline text-[16px] font-semibold">
                       My Account
@@ -77,7 +77,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-2">
+                <div className="lg:col-span-2 md:col-span-3 sm:col-span-6 col-span-12">
                   <div className="footer-information ml-4 mb-10">
                     <h4 className="title mb-7 underline text-[16px] font-semibold">
                       Social Network
@@ -118,7 +118,7 @@ const Footer = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-3">
+                <div className="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12">
                   <div className="footer-information ml-4 mb-10">
                     <h4 className="title mb-7 underline text-[16px] font-semibold">
                       Get Newsletter
@@ -146,7 +146,8 @@ const Footer = () => {
 
             <div className="footer-cta pb-5">
               <div className="row items-center">
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-12 ">
+                  <div className="sm:col-span-6 col-span-12">
                   <div className="footer-contact flex items-center">
                     <div className="icon mr-4">
                       <i class="fa-solid fa-phone-flip bg-white rounded-full p-3 shadow-md"></i>
@@ -160,7 +161,8 @@ const Footer = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="footer-source flex justify-end">
+                  </div>
+                  <div className="sm:col-span-6 col-span-12 footer-source md:flex justify-end sm:mt-0 mt-4 ">
                     <div className="content mr-5">
                       <div className="title text-[18px] font-bold tracking-wide pb-1">
                         Download App on Mobile
@@ -169,8 +171,8 @@ const Footer = () => {
                         15% discount on your first purchase
                       </p>
                     </div>
-                    <div className="button flex items-center space-x-1">
-                      <a href="/">
+                    <div className="button flex items-center space-x-1 md:mt-0 mt-3">
+                      <a href="/" >
                         <img src={gpay} alt="" />
                       </a>
                       <a href="/">
@@ -187,7 +189,7 @@ const Footer = () => {
         <div className="footer-copyright pt-5 pb-6 bg-[#ededed]">
           <div className="container mx-auto px-2">
             <div className="row">
-              <div className="grid grid-cols-2">
+              <div className="grid sm:grid-cols-2 grid-cols-1">
                 <div className="copyright-content text-[16px] text-[#777]">
                   <span>
                     Copyright 2024
@@ -206,7 +208,7 @@ const Footer = () => {
                     </a>
                   </span>
                 </div>
-                <div className="copyright-brand items-center flex justify-end">
+                <div className="copyright-brand items-center flex sm:justify-end justify-center sm:mt-0 mt-4">
                   <img src={brand} alt="" />
                 </div>
               </div>

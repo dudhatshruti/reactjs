@@ -114,7 +114,6 @@ const Search_navbar = () => {
               </div>
               <div>
                 <a href="#">
-                  {" "}
                   <i class="fa-regular fa-user"></i>
                 </a>
               </div>
