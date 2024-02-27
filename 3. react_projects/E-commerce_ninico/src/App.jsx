@@ -5,6 +5,8 @@ import Product_track from './Pages/Shop/Product_track'
 import Whishlist from './Pages/Shop/Whishlist'
 import Sign_in from './Pages/Shop/Sign_in'
 import Error from './Pages/Pages/Error'
+import { Contact } from './Pages/Contact/Contact'
+import Blog from './Pages/Blog/Blog'
 
 
 const App = () => {
@@ -23,6 +25,12 @@ const App = () => {
 
     {/* ---------PAGES -------------- */}
     {/* <Error/> */}
+
+    {/* ---------- BLOG ------------- */}
+    {/* <Blog/> */}
+
+    {/* ----------- CONTACT ------------- */}
+    {/* <Contact/> */}
    
     </>
   )

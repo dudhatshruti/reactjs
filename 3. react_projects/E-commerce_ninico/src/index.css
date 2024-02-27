@@ -44,4 +44,8 @@
     .hover_text{
         @apply hover:text-[#d51243] ease-in-out duration-700
     }
+    /* blog btn */
+    .bttn{
+        @apply border px-5 py-0.5 text-[13px] text-[#777] hover:bg-[#d51243] hover:text-white ease-in-out duration-700 uppercase font-semibold
+    }
 }
