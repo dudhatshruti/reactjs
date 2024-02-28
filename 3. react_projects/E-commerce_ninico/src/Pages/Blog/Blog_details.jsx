@@ -9,8 +9,13 @@ import blog3 from "../../assets/images/blog3.jpg";
 import blog4 from "../../assets/images/blog4.jpg";
 import comment1 from "../../assets/images/comment-1.png";
 import comment2 from "../../assets/images/comment-2.png";
+import blog_sm_1 from "../../assets/images/blog-sm-1.jpg";
+import blog_sm_2 from "../../assets/images/blog-sm-2.jpg";
+import blog_sm_3 from "../../assets/images/blog-sm-3.jpg";
+import blog_sm_4 from "../../assets/images/blog-sm-4.jpg";
+import Footer from "../../components/footer/Footer";
 
-const Blog = () => {
+const Blog_details = () => {
   return (
     <>
       <Welcome />
@@ -54,8 +59,8 @@ const Blog = () => {
         <div className="container mx-auto px-4">
           <div className="row">
             <div className="grid grid-cols-12">
-              <div className="col-span-8">
-                <div className="box pr-5">
+              <div className="lg:col-span-8 md:col-span-7 col-span-12">
+                <div className="box md:pr-5">
                   <div className="image-part mb-6">
                     <div className="box-thumb mb-0">
                       <img src={blog1} alt="" className="rounded-md" />
@@ -126,13 +131,13 @@ const Blog = () => {
 
                     <div className="row">
                       <div className="grid grid-cols-12 gap-5">
-                        <div className="col-span-6">
-                          <div className="detail mb-12">
+                        <div className="sm:col-span-6 col-span-12">
+                          <div className="detail sm:mb-12 mb-5">
                             <h4 className="text-3xl font-bold mb-2">
                               Our Approach
                             </h4>
-                            <div className="text mb-7">
-                              <p className="text-[16px] w-96 leading-5 mb-7">
+                            <div className="text ">
+                              <p className="text-[16px] leading-5 mb-7">
                                 Must explain to you how all praising uts pain
                                 was born and I will gives you a itself completed
                                 account of the system, and sed expounds the ut
@@ -147,7 +152,7 @@ const Blog = () => {
                                   <i class="fa-solid fa-check text-[#d51243]"></i>
                                   <span>Bacteria Markers</span>
                                 </h6>
-                                <h6 className="space-x-4 font-medium mb-2">
+                                <h6 className="space-x-4 font-medium ">
                                   <i class="fa-solid fa-check text-[#d51243]"></i>
                                   <span>Nam nec mi euismod euismod</span>
                                 </h6>
@@ -155,7 +160,7 @@ const Blog = () => {
                             </div>
                           </div>
                         </div>
-                        <div className="col-span-6">
+                        <div className="sm:col-span-6 col-span-12">
                           <div className="blog2 ">
                             <img src={blog2} alt="" className="rounded-md" />
                           </div>
@@ -167,7 +172,8 @@ const Blog = () => {
                       <div className="grid grid-cols-12">
                         <div className="col-span-12">
                           <div className="techno mb-8">
-                            <h4 className="text-3xl font-bold mb-5">
+                            <h4 className="lg:text-3xl md:text-xl text-2xl  font-bold mb-5 md:mt-0 sm:mt-0 
+                            mt-10">
                               What Is A Business Technology Roadmap?
                             </h4>
                             <div className="text-[16px]">
@@ -194,12 +200,12 @@ const Blog = () => {
 
                     <div className="row">
                       <div className="grid grid-cols-12 gap-6 ">
-                        <div className="col-span-6">
+                        <div className="sm:col-span-6 col-span-12">
                           <div className="thumb">
                             <img src={blog3} alt="" className="rounded-md" />
                           </div>
                         </div>
-                        <div className="col-span-6">
+                        <div className="sm:col-span-6 col-span-12">
                           <div className="thumb">
                             <img src={blog4} alt="" className="rounded-md" />
                           </div>
@@ -208,9 +214,9 @@ const Blog = () => {
                     </div>
 
                     <div className="border border-b-gray-50 mt-8"></div>
-                    <div className="row">
-                      <div className="grid grid-cols-12 py-5">
-                        <div className="col-span-7  ">
+                    <div className="row items-center">
+                      <div className="grid grid-cols-12 py-4 ">
+                        <div className="lg:col-span-7 col-span-12 pt-3.5 ">
                           <div className="postbox_tag  space-x-2">
                             <span className="text-[20px] mr-4 font-bold">
                               Tag
@@ -226,8 +232,8 @@ const Blog = () => {
                             </button>
                           </div>
                         </div>
-                        <div className="col-span-5">
-                          <div className="icon flex justify-end space-x-6">
+                        <div className="md:col-span-5 col-span-12 md:mt-0 py-4 ">
+                          <div className="icon flex lg:justify-end  space-x-6">
                             <span className="text-[20px] font-bold">Share</span>
                             <a href="/">
                               <i class="fa-brands fa-linkedin-in"></i>
@@ -245,7 +251,7 @@ const Blog = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="border border-b-gray-50 mt-1.5"></div>
+                    <div className="border border-b-gray-50 "></div>
                   </div>
 
                   <div className="comment">
@@ -341,7 +347,7 @@ const Blog = () => {
                     <div className="form mt-12">
                       <div className="row">
                         <div className="grid grid-cols-12 gap-6">
-                          <div className="col-span-6">
+                          <div className="md:col-span-6 col-span-12">
                             <div className="contact_input  ">
                               <input
                                 type="text"
@@ -353,7 +359,7 @@ const Blog = () => {
                               ></input>
                             </div>
                           </div>
-                          <div className="col-span-6">
+                          <div className="md:col-span-6 col-span-12">
                             <div className="contact_input mb-2 ">
                               <input
                                 type="text"
@@ -366,7 +372,7 @@ const Blog = () => {
                             </div>
                           </div>
 
-                          <div className="col-span-6">
+                          <div className="md:col-span-6 col-span-12">
                             <div className="contact_input mb-5 ">
                               <input
                                 type="text"
@@ -379,7 +385,7 @@ const Blog = () => {
                             </div>
                           </div>
 
-                          <div className="col-span-6">
+                          <div className="md:col-span-6 col-span-12">
                             <div className="contact_input ">
                               <input
                                 type="text"
@@ -393,19 +399,21 @@ const Blog = () => {
                           </div>
 
                           <div className="col-span-12">
-                          <div className="">
-                            <textarea
-                              id=""
-                              rows="7"
-                              class="border p-5 outline-1 outline-[#d51243]  w-full text-sm rounded-md"
-                              placeholder="Enter message"
-                            ></textarea>
+                            <div className="">
+                              <textarea
+                                id=""
+                                rows="7"
+                                class="border p-5 outline-1 outline-[#d51243]  w-full text-sm rounded-md"
+                                placeholder="Enter message"
+                              ></textarea>
+                            </div>
                           </div>
-                        </div>
 
-                          <div className="col-span-3 text-center">
+                          <div className="sm:col-span-3 col-span-6  text-center">
                             <div className="btn">
-                              <button><a href="/"> Post Comment </a></button>
+                              <button>
+                                <a href="/"> Post Comment </a>
+                              </button>
                             </div>
                           </div>
                         </div>
@@ -414,13 +422,228 @@ const Blog = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-4">2</div>
+              <div className="lg:col-span-4 md:col-span-5 col-span-12 md:pl-6 pb-10 md:mt-0 mt-4">
+                <div className="search_area border pt-9 pr-7 pb-8  pl-7 px-5 rounded-md">
+                  <h1 className="text-md font-bold">Search</h1>
+                  <div className="search-info relative mt-5">
+                    <input
+                      type="text"
+                      placeholder="SEARCH POST"
+                      className="bg-slate-50  border-white w-full outline-0  text-xs"
+                    />
+                    <button className="search-icon absolute top-2 right-7">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <div className="category_area border mt-9 rounded-md">
+                  <div className=" pt-9 pr-7 pb-8  pl-7 px-5 ">
+                    <h1 className="text-lg font-bold mb-5">Category</h1>
+                    <div className="cat_list">
+                      <div className="category-sub mb-3">
+                        <h5>chemistry</h5>
+                        <h6>03</h6>
+                      </div>
+                      <div className="category-sub mb-3">
+                        <h5>Forensic science</h5>
+                        <h6>07</h6>
+                      </div>
+                      <div className="category-sub mb-3">
+                        <h5>Gemological</h5>
+                        <h6>09</h6>
+                      </div>{" "}
+                      <div className="category-sub mb-3">
+                        <h5>covid analysis</h5>
+                        <h6>01</h6>
+                      </div>
+                      <div className="category-sub mb-3">
+                        <h5>becteriology</h5>
+                        <h6>00</h6>
+                      </div>
+                      <div className="category-sub mb-3">
+                        <h5>angiosperm</h5>
+                        <h6>26</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="post_area border mt-9 rounded-md">
+                  <div className=" pt-9 pr-7 pb-8  pl-6 px-5 ">
+                    <h1 className="text-lg font-bold mb-5">Recent Post</h1>
+                    <div className="flex mb-4">
+                      <div className="img_thumb">
+                        <a href="/">
+                          <img
+                            src={blog_sm_1}
+                            alt=""
+                            className="w-[100px] h-[100px] object-cover"
+                          />
+                        </a>
+                      </div>
+                      <div className="info  ms-4 items-center mt-0.5 ">
+                        <p className="text-[#777] text-[15px] font-semibold mb-2">
+                          4 March. 2022
+                        </p>
+                        <p className="text-[16px] font-medium hover_text">
+                          Don't Underestimate Tree For Furniture
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex mb-4">
+                      <div className="img_thumb">
+                        <a href="/">
+                          <img
+                            src={blog_sm_2}
+                            alt=""
+                            className="w-[100px] h-[100px] object-cover "
+                          />
+                        </a>
+                      </div>
+                      <div className="info  ms-4 items-center mt-0.5 ">
+                        <p className="text-[#777] text-[15px] font-semibold mb-2">
+                          12 February. 2022
+                        </p>
+                        <p className="text-[16px] font-medium  hover_text">
+                          Equipping Researchers in the Developing World
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex mb-4">
+                      <div className="img_thumb">
+                        <a href="/">
+                          <img
+                            src={blog_sm_3}
+                            alt=""
+                            className="w-[100px] h-[100px] object-cover"
+                          />
+                        </a>
+                      </div>
+                      <div className="info  ms-4 items-center mt-0.5 ">
+                        <p className="text-[#777] text-[15px] font-semibold mb-2">
+                          14 January. 2022
+                        </p>
+                        <p className="text-[16px] font-medium  hover_text">
+                          Things To do before shopping
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="flex ">
+                      <div className="img_thumb">
+                        <a href="/">
+                          <img
+                            src={blog_sm_4}
+                            alt=""
+                            className="w-[100px] h-[100px] object-cover "
+                          />
+                        </a>
+                      </div>
+                      <div className="info  ms-4 items-center mt-0.5 ">
+                        <p className="text-[#777] text-[15px] font-semibold mb-2">
+                          12 February. 2022
+                        </p>
+                        <p className="text-[16px] font-medium hover_text">
+                          Research And Verify of a Quality Product
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="category_area border mt-9 rounded-md">
+                  <div className=" pt-9 pr-7 pb-10 pl-7 px-5 ">
+                    <h1 className="text-lg font-bold mb-5">Popular Tag</h1>
+                    <div className="content text-[12px] font-semibold uppercase text-[#777]  ">
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
+                      >
+                        Furniture
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        table
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        chair
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        clothes
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        toy
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        suit
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        t-shirt
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        dress
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        wooden
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        clock
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        craft
+                      </a>
+                      <a
+                        href="/"
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      >
+                        gift
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* footer */}
+
+      <Footer/>
     </>
   );
 };
 
-export default Blog;
+export default Blog_details;

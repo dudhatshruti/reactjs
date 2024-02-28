@@ -48,4 +48,9 @@
     .bttn{
         @apply border px-5 py-0.5 text-[13px] text-[#777] hover:bg-[#d51243] hover:text-white ease-in-out duration-700 uppercase font-semibold
     }
+
+    /* category blog details */
+    .category-sub{
+        @apply flex justify-between text-[13px] text-[#777] font-semibold uppercase  border py-[10px] px-[15px] items-center
+    }
 }
