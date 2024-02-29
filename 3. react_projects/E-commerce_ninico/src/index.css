@@ -42,7 +42,7 @@
         @apply text-[14px] font-semibold py-3 px-6 rounded-md bg-[#d51243] text-white 
     }
     .hover_text{
-        @apply hover:text-[#d51243] ease-in-out duration-700
+        @apply hover:text-[#d51243] ease-in-out duration-300
     }
     /* blog btn */
     .bttn{

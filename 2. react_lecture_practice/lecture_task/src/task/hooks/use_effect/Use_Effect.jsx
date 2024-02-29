@@ -48,8 +48,6 @@ const Use_Effect = () => {
 }
     useEffect(()=>{setData(data+1)},[state])
 
-
-
   return (
     <div>
       <span className='btn'>{state}</span>

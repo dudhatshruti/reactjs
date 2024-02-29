@@ -17,7 +17,6 @@ import Popular_product from "../../components/popular_product/Popular_product";
 import dealproduct from "../../assets/images/dealproduct.png";
 import Footer from "../../components/footer/Footer";
 import Swipper from "./Swipper";
-
 /*---------------- follow section slider ------------------- */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import asset76 from '../../assets/images/asset 76.jpeg'
@@ -379,7 +378,6 @@ const Wooden_home = () => {
               </div>
             </div>
           </div>
-         
            <Slides/>
         </div>
       </section>

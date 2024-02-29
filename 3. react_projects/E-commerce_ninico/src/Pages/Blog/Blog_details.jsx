@@ -355,7 +355,7 @@ const Blog_details = () => {
                                 name="name"
                                 required
                                 disable
-                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] outline-1 outline-[#d51243] w-full shadow-sm"
+                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] font-normal outline-1 outline-[#d51243] w-full  shadow-md shadow-gray-100"
                               ></input>
                             </div>
                           </div>
@@ -367,7 +367,7 @@ const Blog_details = () => {
                                 name="name"
                                 required
                                 disable
-                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] outline-1 outline-[#d51243] w-full shadow-sm"
+                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] font-normal outline-1 outline-[#d51243] w-full  shadow-md shadow-gray-100"
                               ></input>
                             </div>
                           </div>
@@ -380,7 +380,7 @@ const Blog_details = () => {
                                 name="name"
                                 required
                                 disable
-                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] outline-1 outline-[#d51243] w-full shadow-sm"
+                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] font-normal outline-1 outline-[#d51243] w-full shadow-md shadow-gray-100"
                               ></input>
                             </div>
                           </div>
@@ -393,7 +393,7 @@ const Blog_details = () => {
                                 name="name"
                                 required
                                 disable
-                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] outline-1 outline-[#d51243] w-full shadow-sm"
+                                className="border rounded-md py-1.5 h-11 px-5 text-[14px] font-normal outline-1 outline-[#d51243] w-full  shadow-md shadow-gray-100"
                               ></input>
                             </div>
                           </div>
@@ -402,14 +402,14 @@ const Blog_details = () => {
                             <div className="">
                               <textarea
                                 id=""
-                                rows="7"
-                                class="border p-5 outline-1 outline-[#d51243]  w-full text-sm rounded-md"
-                                placeholder="Enter message"
+                                rows="6"
+                                class="border p-5 outline-1 outline-[#d51243]  w-full text-[14px] font-normal rounded-md shadow-md shadow-gray-100"
+                                placeholder="Type your comment"
                               ></textarea>
                             </div>
                           </div>
 
-                          <div className=" col-span-3  text-center">
+                          <div className=" lg:col-span-3 md:col-span-4 sm:col-span-3 xs:col-span-4 col-span-7 text-center">
                             <div className="btn">
                               <button>
                                 <a href="/"> Post Comment </a>
@@ -429,7 +429,7 @@ const Blog_details = () => {
                     <input
                       type="text"
                       placeholder="SEARCH POST"
-                      className="bg-slate-50  border-white w-full outline-0  text-xs"
+                      className="bg-slate-50  border-white w-full outline-0  text-[12px] font-medium"
                     />
                     <button className="search-icon absolute top-2 right-7">
                       <i class="fa-solid fa-magnifying-glass"></i>
