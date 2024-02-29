@@ -1,3 +1,18 @@
+/* 1..What is the useState Hook?
+-------------------------------------
+=> useState is React Hook that allows you to add state to a functional component.
+=> It returns an array with two values: the current state and a function to update it
+=> The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called. 
+
+  const [state, setState] = useState(initialValue);
+
+Here, the initialValue is the value you want to start with, and state is the current state value that can be used in your component. The setState function can be used to update the state, triggering a re-render of your component.  
+
+2. What can useState hold?
+---------------------------
+
+=> useState can store any type of value, whereas the state in a class component is limited to being an object. This includes primitive data types like string, number, and Boolean, as well as complex data types such as array, object, and function.
+*/
 import React,{useState} from 'react'
 
 /* ------------------COUNT -------------------*/ 

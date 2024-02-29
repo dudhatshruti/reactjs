@@ -1,5 +1,5 @@
 import React from "react";
-export function Task1() {
+export function Export() {
     return (
       <img
         src="https://i.imgur.com/lICfvbD.jpg"

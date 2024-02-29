@@ -100,7 +100,7 @@ const Blog_details = () => {
                               </span>
                             </div>
 
-                            <h4 className="text-[36px] font-bold pb-6">
+                            <h4 className="lg:text-[36px] md:text-[25px] sm:text-[31px] text-[28px] font-bold pb-6">
                               Lavoratories used for scientic reseach take many
                               froms.
                             </h4>
@@ -409,7 +409,7 @@ const Blog_details = () => {
                             </div>
                           </div>
 
-                          <div className="sm:col-span-3 col-span-6  text-center">
+                          <div className=" col-span-3  text-center">
                             <div className="btn">
                               <button>
                                 <a href="/"> Post Comment </a>

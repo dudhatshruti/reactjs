@@ -9,7 +9,7 @@ function Profile() {
     );
   }
   
-  export default function Task3() {
+  export default function Spot_mistek() {
     return (
       <section>
         <h1>Amazing scientists</h1>
