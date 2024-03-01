@@ -1,6 +1,6 @@
 .header-welcome-text  a::after{
     content: "";
-    position: absolute;
+    /* position: absolute; */
     bottom: -3px;
     height: 1px;
     width: 100%;

@@ -18,6 +18,7 @@ import team3 from "../../assets/images/team3.jpg";
 import team4 from "../../assets/images/team4.jpg";
 
 import { Autoplay } from "swiper/modules";
+import Footer from "../../components/footer/Footer";
 
 export function Slides() {
   return (
@@ -134,7 +135,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="logo absolute bottom-1  mx-auto left-0 right-0">
+            <div className="logo absolute -bottom-5   left-80 right-0">
               <a href="/">
                 <img src={about_img_3} alt="" className="" />
               </a>
@@ -244,7 +245,7 @@ const About = () => {
 
       <section className="feature-area pb-5 ">
       <div className="container mx-auto px-2">
-            <div className="row items-center ">
+            <div className="row ">
               <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
                 <div className="col-span-6">
                   <div className="feature mb-16">
@@ -278,7 +279,7 @@ const About = () => {
             </div>
 
 
-            <div className="row items-center ">
+            <div className="row ">
               <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
                
                 <div className="col-span-6 ">
@@ -304,7 +305,7 @@ const About = () => {
                 </div>
 
                 <div className="col-span-6">
-                  <div className="feature mb-16">
+                  <div className="feature mb-10">
                     <div className="banner relative   ">
                       <img src={about_banner2} alt="about_banner" />
                     </div>
@@ -314,6 +315,9 @@ const About = () => {
             </div>
         </div>
       </section>
+
+      {/* footer */}
+    <Footer/>
     </>
   );
 };

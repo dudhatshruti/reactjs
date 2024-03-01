@@ -13,7 +13,7 @@ const Top_welcome = () => {
                 $100 up.
               </span>
               <span className="header-welcome-text  space-x-3  relative font-semibold text-xs text-[#d51243]">
-                <a href="/shop" className="font-bold font-serif ">
+                <a href="/shop" className="font-bold font-serif after:absolute ">
                   Shop Now
                 </a>
                 <span>
