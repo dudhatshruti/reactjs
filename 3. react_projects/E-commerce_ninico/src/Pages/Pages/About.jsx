@@ -6,68 +6,75 @@ import shop from "../../assets/images/shop.jpg";
 import about_img_1 from "../../assets/images/about_img_1.jpg";
 import about_img_2 from "../../assets/images/about_img_2.jpg";
 import about_img_3 from "../../assets/images/about_img_3.png";
+import about_banner1 from '../../assets/images/about_banner1.jpg'
+import about_banner2 from '../../assets/images/about_banner2.jpg'
+
 // import Swipper from "./Swipper";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import asset76 from '../../assets/images/asset 76.jpeg'
-import asset77 from '../../assets/images/asset 77.jpeg'
-import asset78 from '../../assets/images/asset 78.jpeg'
-import asset79 from '../../assets/images/asset 79.jpeg'
-import asset80 from '../../assets/images/asset 80.jpeg'
-import asset81 from '../../assets/images/asset 81.jpeg'
+import { Swiper, SwiperSlide } from "swiper/react";
+import team1 from "../../assets/images/team1.jpg";
+import team2 from "../../assets/images/team2.jpg";
+import team3 from "../../assets/images/team3.jpg";
+import team4 from "../../assets/images/team4.jpg";
 
-import { Autoplay } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
 
 export function Slides() {
   return (
     <>
       <Swiper
-        slidesPerView={6}
+        slidesPerView={4}
         spaceBetween={25}
         pagination={{
           clickable: true,
         }}
         autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-        breakpoints={{
-          320:{
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-       
-          576: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 10,
-          },
-          1000: {
-            slidesPerView: 4,
-            spaceBetween: 10,
-          },
-          1200: {
-            slidesPerView:5,
-            spaceBetween: 10,
-          },
-          1399: {
-            slidesPerView:6,
-            spaceBetween: 10,
-          },
+          delay: 2500,
+          disableOnInteraction: false,
         }}
-        modules={ [Autoplay ]}
+        breakpoints={
+          {
+            // 320:{
+            //   slidesPerView: 1,
+            //   spaceBetween: 0,
+            // },
+            // 576: {
+            //   slidesPerView: 2,
+            //   spaceBetween: 20,
+            // },
+            // 768: {
+            //   slidesPerView: 3,
+            //   spaceBetween: 10,
+            // },
+            // 1000: {
+            //   slidesPerView: 4,
+            //   spaceBetween: 10,
+            // },
+            // 1200: {
+            //   slidesPerView:5,
+            //   spaceBetween: 10,
+            // },
+            // 1399: {
+            //   slidesPerView:6,
+            //   spaceBetween: 10,
+            // },
+          }
+        }
+        modules={[Autoplay]}
       >
-        <SwiperSlide><img src={asset76} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset77} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset78} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset79} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset80} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset81} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset76} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset77} alt="" /></SwiperSlide>
+        <SwiperSlide>
+          <div className="gradient relative  mb-10">
+            <img src={team1} alt=""/>
+            <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
+              <p className="text-[15px] font-semibold">Founder</p>
+              <h5 className="text-[25px]">Rosalina D. Willson</h5>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide><img src={team2} alt=""/></SwiperSlide>
+         <SwiperSlide><img src={team3} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={team4} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={team1} alt="" /></SwiperSlide>
       </Swiper>
     </>
   );
@@ -219,7 +226,7 @@ const About = () => {
 
       {/* team section */}
 
-      <section className="bg-gray-100">
+      <section className="bg-gray-100 pb-4 mb-10">
         <div className="container mx-auto px-2">
           <div className="row">
             <div className="grid grid-cols-12">
@@ -230,9 +237,81 @@ const About = () => {
                 </div>
               </div>
             </div>
-          <Slides/>
+            <Slides />
           </div>
+        </div>
+      </section>
 
+      <section className="feature-area pb-5 ">
+      <div className="container mx-auto px-2">
+            <div className="row items-center ">
+              <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
+                <div className="col-span-6">
+                  <div className="feature mb-16">
+                    <div className="banner relative   ">
+                      <img src={about_banner1} alt="about_banner" />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-span-6 ">
+                  <div className="feature-info  mx-[50px] mb-[70px]">
+                    <div className="feature text-[14px] mb-1 text-[#777]">
+                      <p>Features #01</p>
+                    </div>
+                    <div className="product_text ">
+                      <h4 className="title mb-4 lg:text-[39px] font-semibold tracking-tight">
+                        <a href="/">Solutions that work together</a>
+                      </h4>
+                      <p className="text-[#777] lg:text-[17px] text-[17px] mb-9">
+                      Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.
+                      </p>
+                    </div>
+                    
+                    <div className="">
+                      <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
+                        <a href="/">Get In Touch</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="row items-center ">
+              <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
+               
+                <div className="col-span-6 ">
+                  <div className="feature-info  mx-[50px] mb-[70px]">
+                    <div className="feature text-[14px] mb-1 text-[#777]">
+                      <p>Features #02</p>
+                    </div>
+                    <div className="product_text ">
+                      <h4 className="title mb-4 lg:text-[39px] font-semibold tracking-tight">
+                        <a href="/">All kinds of payments securely</a>
+                      </h4>
+                      <p className="text-[#777] lg:text-[17px] text-[17px] mb-9">
+                      Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.
+                      </p>
+                    </div>
+                    
+                    <div className="">
+                      <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
+                        <a href="/">Contact With Us</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-span-6">
+                  <div className="feature mb-16">
+                    <div className="banner relative   ">
+                      <img src={about_banner2} alt="about_banner" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
     </>
