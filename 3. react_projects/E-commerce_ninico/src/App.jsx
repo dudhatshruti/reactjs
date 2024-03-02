@@ -9,6 +9,8 @@ import { Contact } from './Pages/Contact/Contact'
 import Blog_details from './Pages/Blog/Blog_details'
 import Blog from './Pages/Blog/Blog'
 import About from './Pages/Pages/About'
+import Checkout from './Pages/Shop/Checkout'
+import Shop_location from './Pages/Shop/Shop_location'
 
 
 const App = () => {
@@ -17,13 +19,15 @@ const App = () => {
     <>
 
     {/* --------- HOME ------------ */}
-    <Wooden_home/>
+    {/* <Wooden_home/> */}
 
     {/* --------- SHOP------------- */}
     {/* <Shop/> */}
     {/* <Product_track/> */}
     {/* <Whishlist/> */}
     {/* <Sign_in/> */}
+    {/* <Checkout/> */}
+    <Shop_location/>
 
     {/* ---------PAGES -------------- */}
     {/* <About/> */}

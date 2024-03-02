@@ -20,7 +20,7 @@ export default {
     extend: {
       screens:{
         'xs':{'min':'576px'},
-        'xxs':{'min':'320px'}
+        'xxs':{'min':'320'}
       },
       
     },

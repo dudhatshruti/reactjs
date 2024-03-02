@@ -1,5 +1,4 @@
 import React from "react";
-import "../welcome/top_welcome.css";
 
 const Top_welcome = () => {
   return (
@@ -13,7 +12,7 @@ const Top_welcome = () => {
                 $100 up.
               </span>
               <span className="header-welcome-text  space-x-3  relative font-semibold text-xs text-[#d51243]">
-                <a href="/shop" className="font-bold font-serif after:absolute ">
+                <a href="/shop" className="font-bold font-serif after:absolute after:content-[''] after:bottom-[-3px] after:h-[1px] after:w-full after:bg-[#d51243] after:left-0 ">
                   Shop Now
                 </a>
                 <span>
