@@ -54,7 +54,7 @@ const Shop_location = () => {
           <div className="row flex justify-center pb-8">
             <div className="grid grid-cols-12">
               <div className="col-span-12">
-                <div className="shop-search text-center relative  pb-7">
+                <div className="shop-search text-center relative pb-7">
                   <input
                     type="text"
                     placeholder="Search here"
@@ -118,7 +118,7 @@ const Shop_location = () => {
                     </div>
                   </div>
                   <div className="image">
-                    <img src={location1} alt="shop" className="w-full"   />
+                    <img src={location1} alt="shop" className="w-full xs:mt-0 mt-4"   />
                   </div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ const Shop_location = () => {
                     </div>
                   </div>
                   <div className="image">
-                    <img src={location2} alt="shop" className="w-full" />
+                    <img src={location2} alt="shop" className="w-full xs:mt-0 mt-4" />
                   </div>
                 </div>
               </div>
@@ -175,10 +175,10 @@ const Shop_location = () => {
           </div>
 
 
-          <div className="row pb-4">
+          <div className="row ">
             <div className="grid grid-cols-12 gap-6">
             <div className="lg:col-span-6 col-span-12">
-                <div className="shop-location mb-7 items-center xs:flex xs:justify-between  border rounded-md">
+                <div className="shop-location items-center xs:flex xs:justify-between  border rounded-md">
                   <div className="content  xl:px-10 lg:pl-2.5 md:pl-8 sm:pl-5 pl-1">
                     <div className="title mb-3 text-[18px] font-semibold text-black ">
                     Vegas BGM Crenshaw Plaza
@@ -220,7 +220,7 @@ const Shop_location = () => {
                     </div>
                   </div>
                   <div className="image">
-                    <img src={location3} alt="shop" className="w-full"  />
+                    <img src={location3} alt="shop" className="w-full xs:mt-0 mt-4"  />
                   </div>
                 </div>
               </div>
@@ -269,7 +269,7 @@ const Shop_location = () => {
                     </div>
                   </div>
                   <div className="image">
-                    <img src={location4} alt="shop" className="w-full"  />
+                    <img src={location4} alt="shop" className="w-full xs:mt-0 mt-4"  />
                   </div>
                 </div>
               </div>
