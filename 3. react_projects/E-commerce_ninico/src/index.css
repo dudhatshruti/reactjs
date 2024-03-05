@@ -53,4 +53,10 @@
     .category-sub{
         @apply flex justify-between text-[13px] text-[#777] font-semibold uppercase  border py-[10px] px-[15px] items-center
     }
+
+    /* shop location 2 */
+
+    .span{
+        @apply text-[16px] text-[#777] font-semibold transition ease-in-out duration-1000 hover:text-[#d51243] 
+    }
 }

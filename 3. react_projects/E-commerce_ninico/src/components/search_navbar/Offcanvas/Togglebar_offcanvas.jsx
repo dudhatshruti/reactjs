@@ -97,7 +97,7 @@ const Togglebar_offcanvas = () => {
                 >
                   Pages
                 </a>
-                <button className=" ">
+                <button className="">
                   <span className="ms-48 border border-slate-100 ">
                     <i class="fa-solid fa-plus px-0.5  "></i>
                   </span>

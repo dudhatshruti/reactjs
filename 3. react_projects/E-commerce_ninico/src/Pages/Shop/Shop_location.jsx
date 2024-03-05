@@ -9,14 +9,16 @@ import location3 from "../../assets/images/location3.jpg";
 import location4 from "../../assets/images/location4.jpg";
 import Map from "../../components/Map/Map";
 import Footer from "../../components/footer/Footer";
+import Button from '@mui/material/Button';
+
 
 
 
 const Shop_location = () => {
   return (
     <>
-      <Welcome />
-      <Search_navbar />
+      <Welcome/>
+      <Search_navbar/>
       <div className="border border-b-gray-50 mt-3"></div>
       <Navbarclickbtn />
 
@@ -58,7 +60,7 @@ const Shop_location = () => {
                   <input
                     type="text"
                     placeholder="Search here"
-                    className="w-full h-12 text-[15px] font-semibold border rounded-md pr-72 pl-7 outline-0"
+                    className="w-full h-12 text-[15px] font-semibold border rounded-md xl:pr-72 md:pr-[220px] sm:pr-[550px] pr-52 pl-7 outline-0"
                   />
                   <button className=" font-semibold right-0 rounded-r-md bg-[#d51243] text-white absolute px-5 py-3.5 text-[16px]">
                     <a href="/">
@@ -277,6 +279,10 @@ const Shop_location = () => {
           </div>
         </div>
       </section>
+  
+
+  <Button variant="contained">Hello world</Button>
+
 
       {/* map */}
 

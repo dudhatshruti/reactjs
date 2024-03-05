@@ -11,23 +11,31 @@ import Blog from './Pages/Blog/Blog'
 import About from './Pages/Pages/About'
 import Checkout from './Pages/Shop/Checkout'
 import Shop_location from './Pages/Shop/Shop_location'
+import Cart from './Pages/Shop/Cart'
+import Shop_details_2 from './Pages/Shop/Shop_details_2'
+import Tabs from './components/Tabs'
+import Shop_details from './Pages/Shop/Shop_details'
 
 
 const App = () => {
   return (
 
     <>
-
+{/* <Tabs/> */}
     {/* --------- HOME ------------ */}
-    {/* <Wooden_home/> */}
+    <Wooden_home/>
 
     {/* --------- SHOP------------- */}
     {/* <Shop/> */}
+    {/* <Shop_details_2/> */}
     {/* <Product_track/> */}
     {/* <Whishlist/> */}
     {/* <Sign_in/> */}
     {/* <Checkout/> */}
-    <Shop_location/>
+    {/* <Shop_location/> */}
+    {/* <Cart/> */}
+    {/* <Shop_details/> */}
+    
 
     {/* ---------PAGES -------------- */}
     {/* <About/> */}

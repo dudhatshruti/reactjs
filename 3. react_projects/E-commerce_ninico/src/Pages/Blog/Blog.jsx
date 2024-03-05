@@ -269,7 +269,7 @@ const Blog = () => {
                       <div className="category-sub mb-3">
                         <h5>Gemological</h5>
                         <h6>09</h6>
-                      </div>{" "}
+                      </div>
                       <div className="category-sub mb-3">
                         <h5>covid analysis</h5>
                         <h6>01</h6>

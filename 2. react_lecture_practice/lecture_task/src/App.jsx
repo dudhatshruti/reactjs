@@ -12,14 +12,15 @@ import Use_Effect from './task/hooks/use_effect/Use_Effect'
 import Side_Effect from './task/hooks/use_effect/Side_Effect'
 import Use_Effect_2 from './task/hooks/use_effect/Use_Effect2'
 import Use_Effect_3 from './task/hooks/use_effect/Use_Effect3'
+import State_components from './components/State_component'
 
 const App = () => {
   return (
     <>
     {/* --------- use state ----------- */}
-    {/* <Use_state/>
-    <Use_state2/>
-    <Age_name_photo/> */}
+    <Use_state/>
+    {/* <Use_state2/> */}
+    {/* <Age_name_photo/> */}
     {/* <Inputvalue/>
     <Counter/>
     <Checkbox/>
@@ -53,7 +54,9 @@ const App = () => {
     {/* <Use_Effect/> */}
     {/* <Side_Effect name="react"/> */}
     {/* <Use_Effect_2 message="react"/> */}
-    <Use_Effect_3 message="hello"/>
+    {/* <Use_Effect_3 message="hello"/> */}
+
+    {/* <State_components/> */}
 
     </>
   )
