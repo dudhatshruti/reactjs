@@ -23,11 +23,11 @@ const App = () => {
     <>
 {/* <Tabs/> */}
     {/* --------- HOME ------------ */}
-    <Wooden_home/>
+    {/* <Wooden_home/> */}
 
     {/* --------- SHOP------------- */}
     {/* <Shop/> */}
-    {/* <Shop_details_2/> */}
+    <Shop_details_2/>
     {/* <Product_track/> */}
     {/* <Whishlist/> */}
     {/* <Sign_in/> */}
