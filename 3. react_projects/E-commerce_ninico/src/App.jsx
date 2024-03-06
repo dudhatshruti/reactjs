@@ -13,25 +13,25 @@ import Checkout from './Pages/Shop/Checkout'
 import Shop_location from './Pages/Shop/Shop_location'
 import Cart from './Pages/Shop/Cart'
 import Shop_details_2 from './Pages/Shop/Shop_details_2'
-import Tabs from './components/Tabs'
 import Shop_details from './Pages/Shop/Shop_details'
+import { Clicklogin } from './components/category_btn_navbar/Categories_btn'
 
 
 const App = () => {
   return (
 
     <>
-{/* <Tabs/> */}
+    {/* <Clicklogin/> */}
     {/* --------- HOME ------------ */}
     {/* <Wooden_home/> */}
 
     {/* --------- SHOP------------- */}
     {/* <Shop/> */}
-    <Shop_details_2/>
+    {/* <Shop_details_2/> */}
     {/* <Product_track/> */}
     {/* <Whishlist/> */}
     {/* <Sign_in/> */}
-    {/* <Checkout/> */}
+    <Checkout/>
     {/* <Shop_location/> */}
     {/* <Cart/> */}
     {/* <Shop_details/> */}

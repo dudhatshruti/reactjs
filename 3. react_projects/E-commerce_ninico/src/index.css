@@ -22,6 +22,9 @@
         @apply  bg-white p-1.5 md:mx-12 sm:mx-16 xs:mx-10 mx-28  rounded-md space-x-3 text-[#999] shadow-sm shadow-[#999] text-sm transition duration-700 ease-in-out group-hover:-translate-y-6
        
     }
+    .related_proicon{
+        @apply  bg-white p-1.5  rounded-md space-x-3 text-[#999] shadow-sm shadow-[#999] text-sm transition duration-700 ease-in-out group-hover:-translate-y-6 hover:bg-[#d51243] hover:text-white
+    }
     .img_info{
         @apply text-[15px] font-normal transition ease-in-out duration-1000 hover:text-[#d51243]  cursor-pointer text-[#777]
     }
@@ -58,5 +61,11 @@
 
     .span{
         @apply text-[16px] text-[#777] font-semibold transition ease-in-out duration-1000 hover:text-[#d51243] 
+    }
+
+    /* footer2 footer-widge */
+
+    .footer2{
+        @apply text-[#a0a0a0] pr-[18px] text-[17px] mb-2.5 inline-block relative before:absolute before:content-[''] before:h-[18px] before:w-[1px] before:bg-[#303030] before:right-[5px] before:top-[20%]  hover:underline
     }
 }

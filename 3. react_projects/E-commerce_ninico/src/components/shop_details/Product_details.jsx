@@ -71,7 +71,7 @@ const Product_details = () => {
           </button>
         </div>
         <div className="whishlist ms-4">
-          <div className="pro-fav border rounded-md py-3 px-4 text-[#d3d3d3] hover:bg-[#d51243]  transition ease-in-out duration-700">
+          <div className="pro-fav border rounded-md py-3 px-4 hover:text-white text-[#d3d3d3] hover:bg-[#d51243]  transition ease-in-out duration-700">
             <i class="fa-regular fa-heart"></i>
           </div>
         </div>

@@ -139,6 +139,8 @@ const Categories_btn = () => {
   );
 };
 
+export default Categories_btn;
+
 //  categories btn open when click
 
 export const Categories2_btn = () => {
@@ -286,4 +288,133 @@ export const Categories2_btn = () => {
   );
 };
 
-export default Categories_btn;
+export const Clicklogin = () => {
+  const [show, setShow] = useState(false);
+
+  const Showdetails = () => {
+    if (show == true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  return (
+    <>
+      <button onClick={Showdetails} className=" ">
+        <a href="#" className="  ">
+          <span className="text-[16px] ms-1  text-[#777]">
+            Click here to login
+          </span>
+        </a>
+      </button>
+      {show && (
+        <>
+          <div className=" mt-2">
+            <div className="row">
+              <div className="grid grid-cols-6">
+                <div className="col-span-6 bg-white">
+                  <div className="form border p-[30px] text-[18px]">
+                    <div className="notice   text-start leading-6">
+                      <p className=" font-normal ">
+                        Quisque gravida turpis sit amet nulla posuere lacinia.
+                        Cras sed est sit amet ipsum luctus.
+                      </p>
+                    </div>
+                    <div className="forma text-start">
+                      <label className="text-[#999]">
+                        Username or email
+                        <span className="ms-1 text-red-500 text-xl">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        className="flex border   h-9 px-5 text-xs outline-1 outline-[#d51243] w-full"
+                      />
+                    </div>
+
+                    <div className="forma text-start mt-3">
+                      <label className="text-[#999]">
+                        Password
+                        <span className="ms-1 text-red-500 text-xl">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        className="flex border   h-9 px-5 text-xs outline-1 outline-[#d51243] w-full"
+                      />
+                    </div>
+
+                    <div className="mt-4 text-start">
+                      <div className="form-btn">
+                        <button className="btn px-7">Login</button>
+                        <input type="checkbox" className="ms-3" />
+                        <label className="text-[#777]">Remember me</label>
+                      </div>
+                    </div>
+
+                    <div className="pass text-start mt-3.5 text-[#777]">
+                      <a href="/">Lost your password?</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+};
+
+export const ClickCode = () => {
+  const [show, setShow] = useState(false);
+
+  const Showdetails = () => {
+    if (show == true) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  return (
+    <>
+      <button onClick={Showdetails} className=" ">
+        <a href="#" className="  ">
+          <span className="text-[16px] ms-1  text-[#777]">
+            Click here to enter your code
+          </span>
+        </a>
+      </button>
+      {show && (
+        <>
+          <div className=" mt-2">
+            <div className="row">
+              <div className="grid grid-cols-6">
+                <div className="col-span-6 bg-white">
+                  <div className="form border p-[30px] text-[18px]">
+                    <div className="notice   text-start leading-6">
+                      <p className=" font-normal ">
+                        Quisque gravida turpis sit amet nulla posuere lacinia.
+                        Cras sed est sit amet ipsum luctus.
+                      </p>
+                    </div>
+                    <div className="form">
+                      <input
+                        type="text" placeholder="Coupon Code"
+                        className="flex border   h-9 px-5 text-xs outline-1 outline-[#d51243] w-full"
+                      />
+                    </div> 
+
+                    <button className="btn mt-4">
+                      Apply Coupon
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+};

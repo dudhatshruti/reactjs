@@ -1,3 +1,7 @@
 .outer:hover .inner{
     display:block;
 }
+
+.outer:hover .price{
+    display:block;
+}

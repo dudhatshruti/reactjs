@@ -13,12 +13,13 @@ import Side_Effect from './task/hooks/use_effect/Side_Effect'
 import Use_Effect_2 from './task/hooks/use_effect/Use_Effect2'
 import Use_Effect_3 from './task/hooks/use_effect/Use_Effect3'
 import State_components from './components/State_component'
+import Use_context from './task/hooks/use_context/Use_context'
 
-const App = () => {
+const App = ({name}) => {
   return (
     <>
     {/* --------- use state ----------- */}
-    <Use_state/>
+    {/* <Use_state/> */}
     {/* <Use_state2/> */}
     {/* <Age_name_photo/> */}
     {/* <Inputvalue/>
@@ -57,6 +58,10 @@ const App = () => {
     {/* <Use_Effect_3 message="hello"/> */}
 
     {/* <State_components/> */}
+
+    {/* --------------Use_context -------------- */}
+    <Use_context name="shruti"/>
+    {name}
 
     </>
   )

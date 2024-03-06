@@ -8,6 +8,9 @@ import shop_pro2 from "../../assets/images/shop_pro2.jpeg";
 import shop_pro3 from "../../assets/images/shop_pro3.jpeg";
 import Product_details from "../../components/shop_details/Product_details";
 import Details_condition from "../../components/shop_details/Details_condition";
+import Tabs from "../../components/Tabs/Tabs";
+import Related_products from "../../components/popular_product/Related_products";
+import { Footer2 } from "../../components/footer/Footer";
 
 const Shop_details_2 = () => {
   return (
@@ -48,7 +51,7 @@ const Shop_details_2 = () => {
 
       {/* product area */}
 
-      <section className="product-area pt-10">
+      <section className="product-area pt-10 pb-12">
         <div className="container mx-auto px-2">
           <div className="row">
             <div className="grid grid-cols-12">
@@ -67,16 +70,49 @@ const Shop_details_2 = () => {
               </div>
               <div className="col-span-5 ">
                 <div className="sticky top-6">
-                <Product_details/>
+                  <Product_details />
                 </div>
               </div>
               <div className="col-span-2">
-                <Details_condition/>
+                <Details_condition />
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section className="tabs">
+        <div className="container mx-auto px-2">
+          <div className="row">
+            <div className="grid grid-cols-12">
+              <div className="col-span-12">
+                <Tabs />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="border border-b-gray-50"></div>
+      </section>
+
+      <section className="related-product mt-10 mb-10">
+        <div className="container mx-auto px-2">
+          <div className="row">
+            <div className="grid grid-cols-12">
+              <div className="col-span-12">
+                <h1 className="text-[26px] font-semibold mb-7">Related Products</h1>
+              </div>
+            </div>
+          <Related_products/>
+          </div>
+        </div>
+      </section>
+
+      {/* footer */}
+
+        <Footer2/>
     </>
   );
 };
