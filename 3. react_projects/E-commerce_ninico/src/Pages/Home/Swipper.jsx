@@ -28,10 +28,11 @@ export default function  Swipper() {
         modules={[Autoplay,Grid, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide><img src={flower} alt="" className='mx-auto ml-48 overflow-hidden' /></SwiperSlide>
-        <SwiperSlide><img src={flower} alt="" className='mx-auto ml-48 overflow-hidden'/></SwiperSlide>
-        <SwiperSlide><img src={flower} alt="" className='mx-auto ml-48 overflow-hidden'/></SwiperSlide>
-      </Swiper>
-    </>
-  );
+        <SwiperSlide><img src={flower} alt="" className='overflow-hidden' /></SwiperSlide>
+        <SwiperSlide><img src={flower} alt="" className='overflow-hidden'/></SwiperSlide>
+        <SwiperSlide><img src={flower} alt="" className='overflow-hidden'/></SwiperSlide>
+      </Swiper></>  );
 }
+
+
+

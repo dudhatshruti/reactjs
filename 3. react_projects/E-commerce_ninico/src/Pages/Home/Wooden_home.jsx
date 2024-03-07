@@ -1,5 +1,5 @@
 import React from "react";
-import "../Home/home.css";
+import { Link } from "react-router-dom";
 import Top_welcome from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import Navbar from "../../components/category_btn_navbar/Navbar";
@@ -15,6 +15,7 @@ import recievers from "../../assets/images/recievers.svg";
 import plate_set from "../../assets/images/plate_set.svg";
 import Popular_product from "../../components/popular_product/Popular_product";
 import dealproduct from "../../assets/images/dealproduct.png";
+import Time from "../../components/Timer/Time";
 import Footer from "../../components/footer/Footer";
 import Swipper from "./Swipper";
 /*---------------- follow section slider ------------------- */
@@ -100,7 +101,7 @@ const Wooden_home = () => {
             </div>
 
             <div className="lg:col-span-3 md:col-span-3 lg:inline md:inline sm:hidden  hidden overflow-hidden  ">
-              <a href="/">
+              <Link to="/shop_details" href="">
                 <div className="slider_banner_img relative    hover:scale-110 duration-1000 ">
                   <img
                     src={pencil}
@@ -116,8 +117,8 @@ const Wooden_home = () => {
                     </h4>
                   </div>
                 </div>
-              </a>
-              <a href="/">
+              </Link>
+              <Link to="/shop_details" href="">
                 <div className="slider_banner_img relative  hover:scale-110 duration-1000">
                   <img
                     src={spoon}
@@ -133,7 +134,7 @@ const Wooden_home = () => {
                     </h4>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -142,7 +143,7 @@ const Wooden_home = () => {
       <div className="container mx-auto mt-2 px-2">
         <div className="row lg:hidden md:hidden sm:inline inline">
           <div className="grid sm:grid-cols-2 grid-cols-1 gap-4 overflow-hidden">
-            <a href="/">
+            <Link to="/shop_details" href="/">
               <div className="slider_banner_img relative  hover:scale-110 duration-1000 ">
                 <img src={pencil} alt="" className="mt-2 w-full rounded-md " />
                 <div className="banner_img_info absolute top-0 left-0 p-5">
@@ -154,8 +155,8 @@ const Wooden_home = () => {
                   </h4>
                 </div>
               </div>
-            </a>
-            <a href="/">
+            </Link>
+            <Link to="/shop_details" href="/">
               <div className="slider_banner_img relative  hover:scale-110 duration-1000 overflow-hidden">
                 <img src={spoon} alt="" className="mt-2 w-full rounded-md " />
                 <div className="banner_img_info absolute top-0 left-0 p-5">
@@ -167,7 +168,7 @@ const Wooden_home = () => {
                   </h4>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -201,7 +202,7 @@ const Wooden_home = () => {
               </div>
               <div className="lg:category_content">
                 <h5 className="w-20 font-semibold text-sm text-center ms-2">
-                  <a href="/">Driftwood Table Decor</a>
+                  <Link to="/shop" href="">Driftwood Table Decor</Link>
                 </h5>
               </div>
             </div>
@@ -223,7 +224,7 @@ const Wooden_home = () => {
               </div>
               <div className="category_content">
                 <h5 className="w-28 font-semibold text-sm">
-                  <a href="/">Driftwood Christmas Tree</a>
+                  <Link to="/shop" href="">Driftwood Christmas Tree</Link>
                 </h5>
               </div>
             </div>
@@ -234,7 +235,7 @@ const Wooden_home = () => {
               </div>
               <div className="category_content text-center">
                 <h5 className="w-28 font-semibold text-sm ">
-                  <a href="/">Wooden Bluetooth Speaker</a>
+                  <Link to="/shop" href="">Wooden Bluetooth Speaker</Link>
                 </h5>
               </div>
             </div>
@@ -245,7 +246,7 @@ const Wooden_home = () => {
               </div>
               <div className="category_content ">
                 <h5 className="w-20 font-semibold text-sm text-center ms-4">
-                  <a href="/">Recievers Amplifires</a>
+                  <Link to="/shop" href="/">Recievers Amplifires</Link>
                 </h5>
               </div>
             </div>
@@ -256,7 +257,7 @@ const Wooden_home = () => {
               </div>
               <div className="category_content">
                 <h5 className="w-20 font-semibold text-sm ms-4">
-                  <a href="/">Appetizer Plate Set</a>
+                  <Link to="/shop" href="/">Appetizer Plate Set</Link>
                 </h5>
               </div>
             </div>
@@ -343,17 +344,18 @@ const Wooden_home = () => {
                         tables or side tables.
                       </p>
                     </div>
-                    <div className="product_progress mb-8 bg-white w-full">
+                    <div className="product_progress mb-7 bg-white w-full">
                       <div className="progress">
                         <div class="w-[75%]  rounded-full h-1.5 mb-4 ">
                           <div class="bg-[#d51243] h-1.5 rounded-full "></div>
                         </div>
                       </div>
                     </div>
-                    <div className="product_count flex items-center">
-                      <div className="count">
-                      
+                    <div className="product_count lg:flex md:flex-0 sm:flex">
+                      <div className="count-down flex">
+                          <Time duration={78 * 24 * 60 * 60 * 1000} />
                       </div>
+                      <p className="lg:ml-4 sm:ml-4  lg:mt-3 sm:mt-3 mt-1 text-[16px] text-[#777] lg:w-28 sm:w-28 leading-5">Remains until the end of the offer</p>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../components/category_btn_navbar/categories_btn.css";
 
 //  categories btn open by default
@@ -28,108 +29,108 @@ const Categories_btn = () => {
         <>
           <ul className="menu  text-black bg-[#fff] border border-slate-100  ">
             <li className="ml-5 pt-2">
-              <a href="#" className="text-xs space-x-3 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-regular fa-user text-[#d51243] "></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Candles
                 </span>
-              </a>
+              </Link>
             </li>
 
-            <li className="ml-5 pt-1.5">
-              <a href="#" className="text-xs space-x-3 ">
+            <li className="ml-5 pt-1.5 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-regular fa-user text-[#d51243]  "></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Handmade
                 </span>
                 <i class="fa-solid fa-arrow-right text-xs text-gray-400 hover:text-[#d51243] "></i>
-              </a>
-              <ul className=" menu text-left  text-xs  bg-[#fff] border border-slate-100   ">
+              </Link>
+              <ul className=" menu text-left  text-xs  bg-[#fff] border border-slate-100 h-96  ">
                 <li className="ml-2  pt-4 hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Chair</a>
+                  <Link to="/shop" href="">Chair</Link>
                 </li>
                 <li className="ml-2  hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Table</a>
+                <Link to="/shop" href="">Table</Link>
                 </li>
                 <li className="ml-2  hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Wooden</a>
+                <Link to="/shop" href="">Wooden</Link>
                 </li>
                 <li className="ml-2 hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Furniture</a>
+                <Link to="/shop" href="">Furniture</Link>
                 </li>
                 <li className="ml-2  hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Clock</a>
+                <Link to="/shop" href="">Clock</Link>
                 </li>
                 <li className="ml-2  hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Gifts</a>
+                <Link to="/shop" href="#">Gifts</Link>
                 </li>
                 <li className="ml-2  hover:text-[#d51243]  transition ease-in-out ">
-                  <a href="#">Crafts</a>
+                <Link to="/shop" href="#">Crafts</Link>
                 </li>
               </ul>
             </li>
 
             <li className="ml-5  pt-1.5">
-              <a href="#" className="text-xs space-x-3 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-solid fa-shoe-prints text-[#d51243]"></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Gift Sets
                 </span>
-              </a>
+              </Link>
             </li>
 
             <li className="ml-5  pt-1.5">
-              <a href="#" className="text-xs space-x-3 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-regular fa-face-smile text-[#d51243]"></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Plastic Gifts
                 </span>
-              </a>
+              </Link>
             </li>
 
             <li className="ml-5  pt-1.5">
-              <a href="#" className="text-xs space-x-3 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-regular fa-futbol text-[#d51243]"></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Handy Cream
                 </span>
-              </a>
+              </Link>
             </li>
 
             <li className="ml-5  pt-1.5">
-              <a href="#" className="text-xs space-x-3 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-solid fa-crown text-[#d51243]"></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Cosmetics
                 </span>
-              </a>
+              </Link>
             </li>
 
             <li className="ml-5  pt-1.5 pb-2">
-              <a href="#" className="text-xs space-x-3 ">
+              <Link to="/shop" href="" className="text-xs space-x-3 ">
                 <i class="fa-solid fa-gift text-[#d51243]"></i>
                 <span className="text-xs  hover:text-[#d51243]  transition ease-in-out ">
                   Silk Accessories
                 </span>
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="daily-offer text-[14px] bg-gray-100  py-5 ">
             <ul className="ms-5 text-black font-semibold">
               <li className="py-1">
-                <a href="#" className="relative hover:text-[#d51243]">
+                <Link to="/shop" href="#" className="relative hover:text-[#d51243]">
                   Value of the Day
-                </a>
+                </Link>
               </li>
               <li className="py-1">
-                <a href="#" className="relative hover:text-[#d51243]">
+                <Link to="/shop" href="" className="relative hover:text-[#d51243]">
                   Top 100 Offers
-                </a>
+                </Link>
               </li>
               <li className="py-1">
-                <a href="#" className="relative hover:text-[#d51243]">
+                <Link to="/shop" href="" className="relative hover:text-[#d51243]">
                   New Arrivals
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

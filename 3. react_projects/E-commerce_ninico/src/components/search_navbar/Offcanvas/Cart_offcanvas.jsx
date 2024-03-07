@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../Offcanvas/offcanvas.css";
 
 const Cart_offcanvas = () => {
@@ -14,10 +15,10 @@ const Cart_offcanvas = () => {
   return (
     <>
       <button className="cart-button " onClick={openMenu}>
-        <a href="#" className="relative">
+        <a  className="">
           <i class="fa-solid fa-cart-shopping  "></i>
         </a>
-        <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[77px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243]">1</div> 
+        <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[77px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243] ">1</div> 
         
       </button>
       <div
@@ -38,12 +39,12 @@ const Cart_offcanvas = () => {
         <div className="px-4 mt-5">
           <div className="border-2 border-[#d51243] rounded-full text-center p-1.5 hover:bg-[#d41d4b] text-[#d51243]  hover:text-white ">
             <button className="text-sm font-semibold  ">
-              <a href="/">View cart</a>
+              <Link to="/cart" href="">View cart</Link>
             </button>
           </div>
           <div className="border-2 mt-4 bg-[#d51243] border-[#d51243] rounded-full text-center p-1.5">
             <button className="text-sm font-semibold text-white ">
-              <a href="/">Checkout</a>
+              <Link to="/checkout" href="">Checkout</Link>
             </button>
           </div>
         </div>

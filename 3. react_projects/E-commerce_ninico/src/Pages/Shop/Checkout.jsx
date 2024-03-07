@@ -7,6 +7,7 @@ import {
   ClickCode,
   Clicklogin,
 } from "../../components/category_btn_navbar/Categories_btn";
+import Footer, { Footer2 } from "../../components/footer/Footer";
 
 const Checkout = () => {
   return (
@@ -282,27 +283,95 @@ const Checkout = () => {
               <div className="col-span-6 border-2 border-red-500">
                 <div className="form p-[42px]">
                   <div className="billing">
-                    <h1 className="text-[25px] font-semibold">
-                      Your Order
-                    </h1>
+                    <h1 className="text-[25px] font-semibold">Your Order</h1>
                     <div className="border border-b-gray-50 mt-2 mb-3"></div>
                   </div>
-                  
-                  
 
                   <div className="row mt-4">
-    
                     <div className="grid grid-cols-12 mt-6">
                       <div className="col-span-12">
                         <div className="form">
-                          <label className="text-[#6f7172] text-sm">
-                            Order Notes
-                          </label>
-                          <input
-                            type="text"
-                            placeholder="Street address"
-                            className="flex border  h-32  px-2  text-sm outline-1 outline-[#d51243] w-full mt-1"
-                          />
+                          <div className="tabel">
+                            <table className="w-full">
+                              <thead>
+                                <tr>
+                                  <th className="product-name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[15px] border-b-[1px]">
+                                    Product
+                                  </th>
+                                  <th className="product-total text-[#6f7172] text-left font-normal w-[250px] text-[14px] py-[15px] border-b-[1px]">
+                                    Total
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr className="cart-item">
+                                  <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
+                                    Vestibulum suscript{" "}
+                                    <strong className="ms-0.5">
+                                      {" "}
+                                      <i class="fa-solid fa-xmark"></i>1
+                                    </strong>
+                                  </th>
+                                  <th className="pro_name text-[#6f7172] text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
+                                    $165.00
+                                  </th>
+                                </tr>
+
+                                <tr className="cart-item">
+                                  <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
+                                    Vestibulum dictum magna{" "}
+                                    <strong className="ms-0.5">
+                                      {" "}
+                                      <i class="fa-solid fa-xmark"></i>1
+                                    </strong>
+                                  </th>
+                                  <th className="pro_name text-[#6f7172] text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
+                                    $50.00
+                                  </th>
+                                </tr>
+
+                                <tr className="cart-item">
+                                  <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
+                                    Cart Subtotal{" "}
+                                  </th>
+                                  <th className="pro_name text-[#6f7172] text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
+                                    $215.00
+                                  </th>
+                                </tr>
+
+                                <tr className="shipping border-b-[1px] ">
+                                  <th className="product-name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[30px]  ">
+                                    Shipping
+                                  </th>
+                                  <td>
+                                    <ul>
+                                      <li>
+                                        <input type="radio" name="shipping" />
+                                        <label className="text-[#6f7172]   font-normal text-[14px]  ">
+                                          Flate Rate: $7.00
+                                        </label>
+                                      </li>
+                                      <li>
+                                        <input type="radio" name="shipping" />
+                                        <label className="text-[#6f7172]  font-normal text-[14px]  ">
+                                          Free Shipping:
+                                        </label>
+                                      </li>
+                                    </ul>
+                                  </td>
+                                </tr>
+
+                                <tr className="cart-item">
+                                  <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px]">
+                                    Order Total
+                                  </th>
+                                  <th className="pro_name text-[#6f7172] text-left font-normal w-[250px] text-[20px] py-[17px] font-semibold">
+                                    $215.00
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -313,6 +382,9 @@ const Checkout = () => {
           </div>
         </div>
       </section>
+
+      {/* footer */}
+      <Footer />
     </>
   );
 };

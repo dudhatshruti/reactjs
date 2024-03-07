@@ -102,17 +102,19 @@ const Shop_details_2 = () => {
           <div className="row">
             <div className="grid grid-cols-12">
               <div className="col-span-12">
-                <h1 className="text-[26px] font-semibold mb-7">Related Products</h1>
+                <h1 className="text-[26px] font-semibold mb-7">
+                  Related Products
+                </h1>
               </div>
             </div>
-          <Related_products/>
+            <Related_products />
           </div>
         </div>
       </section>
 
       {/* footer */}
 
-        <Footer2/>
+      <Footer2 />
     </>
   );
 };

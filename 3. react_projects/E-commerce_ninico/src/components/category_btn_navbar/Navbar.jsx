@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
 import Categories_btn, { Categories2_btn } from "./Categories_btn";
 
@@ -16,26 +17,26 @@ function Navbar() {
                 <nav>
                   <ul className="dropdown-home flex py-3.5">
                     <li className="drop-down text-xs font-semibold relative">
-                      <a
-                        href="#"
+                      <Link to="/"
+                        href=""
                         className="hover:text-[#d51243]  transition ease-in-out"
                       >
                         Home
                         <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out text-gray-300 "></i>
-                      </a>
+                      </Link>
                       <ul className="mt-3.5  rounded-b-xl border-2 border-t-[#d51243]">
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6 hover:translate-x-1    "
+                          <Link to="/"
+                            href=""
+                            className="hover_text   "
                           >
                             Wooden Home
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
                           <a
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                            className="hover_text"
                           >
                             Fashion Home
                           </a>
@@ -43,7 +44,7 @@ function Navbar() {
                         <li className="px-5 py-2">
                           <a
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                            className="hover_text"
                           >
                             Furniture Home
                           </a>
@@ -51,7 +52,7 @@ function Navbar() {
                         <li className="px-5 py-2">
                           <a
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                            className="hover_text"
                           >
                             Cosmetics Home
                           </a>
@@ -59,7 +60,7 @@ function Navbar() {
                         <li className="px-5 py-2">
                           <a
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                            className="hover_text"
                           >
                             Food Grocery
                           </a>
@@ -67,202 +68,202 @@ function Navbar() {
                       </ul>
                     </li>
                     <li className="drop-down ms-10 text-xs font-semibold">
-                      <a
-                        href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                      <Link to="/shop"
+                        href=""
+                        className="hover_text"
                       >
                         Shop
-                        <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out text-gray-300"></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1 hover_text text-gray-300"></i>
+                      </Link>
                       <ul className="mt-3.5  rounded-b-xl border-2 border-t-[#d51243]">
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6  "
+                          <Link to="/shop"
+                            href=""
+                            className="hover_text  "
                           >
                             Shop
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_2"
+                            href=""
+                            className="hover_text"
                           >
                             Shop 2
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_details"
+                            href=""
+                            className="hover_text"
                           >
                             Shop Details
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_details_2"
+                            href=""
+                            className="hover_text"
                           >
                             Shop Details 2
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_location"
+                            href=""
+                            className="hover_text"
                           >
                             Shop Location
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/cart"
+                            href=""
+                            className="hover_text"
                           >
                             Cart
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/sign_in"
+                            href=""
+                            className="hover_text"
                           >
                             Sign In
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/checkout"
+                            href=""
+                            className="hover_text"
                           >
                             Checkout
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/whishlist"
+                            href=""
+                            className="hover_text"
                           >
                             Whishlist
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/product_track"
+                            href=""
+                            className="hover_text"
                           >
                             Product Track
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
 
                     <li className="drop-down ms-10 text-xs font-semibold">
-                      <a
-                        href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                      <Link to="/about"
+                        href=""
+                        className="hover_text"
                       >
                         Pages
-                        <i class="angel fa-solid fa-angle-down ms-1  text-gray-300 hover:text-[#d51243]  transition ease-in-out "></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1  text-gray-300 hover_text "></i>
+                      </Link>
                       <ul className="mega-menu flex justify-around mt-3.5  rounded-b-xl border-2 border-t-[#d51243] ">
                         <li className="px-5 py-1">
-                          <h6 className="title px-2.5 py-2 font-bold hover:text-[#d51243]  transition ease-in-out">
+                          <h6 className="title px-2.5 py-2 font-bold hover_text">
                             Page Layout
                           </h6>
-                          <li className="px-2.5 pt-4 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Filters V1</a>
+                          <li className="px-2.5 pt-4 py-2 hover_text">
+                            <Link to="/shop" href="">Shop Filters V1</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Filters V2</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_2" href="">Shop Filters V2</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Sidebar</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_details" href="">Shop Sidebar</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Right Sidebar</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_details_2" href="">Shop Right Sidebar</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop List View</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_location" href="">Shop List View</Link>
                           </li>
                         </li>
                         <li className="px-5 py-1">
-                          <h6 className="title px-1 py-2 font-bold hover:text-[#d51243]  transition ease-in-out">
+                          <h6 className="title px-1 py-2 font-bold hover_text">
                             Page Layout
                           </h6>
-                          <li className="px-2.5 pt-4 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">About</a>
+                          <li className="px-2.5 pt-4 py-2 hover_text">
+                            <Link to="/about" href="">About</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Cart</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/cart" href="">Cart</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Checkout</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/checkout" href="">Checkout</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Sign In</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/sign_in" href="#">Sign In</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Log In</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/sign_in" href="">Log In</Link>
                           </li>
                         </li>
                         <li className="px-5 py-1  ">
-                          <h6 className="title px-5 py-2 font-bold hover:text-[#d51243]  transition ease-in-out">
+                          <h6 className="title px-5 py-2 font-bold hover_text">
                             Page Type
                           </h6>
-                          <li className="px-2.5 pt-4 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Product Track</a>
+                          <li className="px-2.5 pt-4 py-2 hover_text">
+                            <Link to="/product_track" href="">Product Track</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Whishlist</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/whishlist" href="">Whishlist</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">404 / Error</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/error" href="">404 / Error</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Coming Soon</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/coming_soon" href="">Coming Soon</Link>
                           </li>
                         </li>
                       </ul>
                     </li>
 
                     <li className="drop-down ms-10 text-xs font-semibold">
-                      <a
+                      <Link to="/blog"
                         href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                        className="hover_text"
                       >
                         Blog
-                        <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out  text-gray-300 "></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1 hover_text text-gray-300 "></i>
+                      </Link>
                       <ul className="mt-3.5  rounded-b-xl border-2 border-t-[#d51243]">
                         <li className="px-5 py-2">
-                          <a
+                          <Link to="/blog"
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6  "
+                            className="hover_text  "
                           >
                             Blog
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
+                          <Link to="/blog_details"
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6  "
+                            className="hover_text  "
                           >
                             Blog Details
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
 
                     <li className="ms-10 text-xs font-semibold">
-                      <a
+                      <Link to="/contact"
                         href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                        className="hover_text"
                       >
                         Contact
-                        <i class="angel fa-solid fa-angle-down ms-1  hover:text-[#d51243]  transition ease-in-out text-gray-300 text "></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1  hover_text text-gray-300 text "></i>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -271,16 +272,16 @@ function Navbar() {
 
             <div className="col-span-3 lg:inline hidden ">
               <div className="flex justify-end text-xs font-semibold">
-                <div className="menu-content py-3.5 mr-10">
+                <div className="menu-content py-3.5 mr-10 hover_text">
                   <i class="fa-solid fa-phone-flip text-[#d51243] mr-2"></i>
                   <span>
-                    <a href="#">908. 408. 501. 89</a>
+                    <Link to="/error" href="#">908. 408. 501. 89</Link>
                   </span>
                 </div>
-                <div className="menu-content py-3.5">
+                <div className="menu-content py-3.5 hover_text">
                   <i class="fa-solid fa-location-dot text-[#d51243] mr-2"></i>
                   <span>
-                    <a href="#">Find Store</a>
+                    <Link to="/shop_location" href="#">Find Store</Link>
                   </span>
                 </div>
               </div>
@@ -310,21 +311,21 @@ export function Navbarclickbtn() {
                 <nav>
                   <ul className="dropdown-home flex py-3.5">
                     <li className="drop-down text-xs font-semibold relative">
-                      <a
+                      <Link to="/"
                         href="#"
                         className="hover:text-[#d51243]  transition ease-in-out"
                       >
                         Home
                         <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out text-gray-300 "></i>
-                      </a>
+                      </Link>
                       <ul className="mt-3.5  rounded-b-xl border-2 border-t-[#d51243]">
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
+                          <Link to="/"
+                            href=""
                             className="hover:text-[#d51243]  transition ease-in-out translate-x-6 hover:translate-x-1    "
                           >
                             Wooden Home
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
                           <a
@@ -361,202 +362,201 @@ export function Navbarclickbtn() {
                       </ul>
                     </li>
                     <li className="drop-down ms-10 text-xs font-semibold">
-                      <a
-                        href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                      <Link to="/shop"
+                        href=""
+                        className="hover_text"
                       >
                         Shop
-                        <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out text-gray-300"></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1 hover_text text-gray-300"></i>
+                      </Link>
                       <ul className="mt-3.5  rounded-b-xl border-2 border-t-[#d51243]">
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6  "
+                          <Link to="/shop"
+                            href=""
+                            className="hover_text  "
                           >
                             Shop
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_2"
+                            href=""
+                            className="hover_text"
                           >
                             Shop 2
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_details"
+                            href=""
+                            className="hover_text"
                           >
                             Shop Details
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_details_2"
+                            href=""
+                            className="hover_text"
                           >
                             Shop Details 2
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/shop_location"
+                            href=""
+                            className="hover_text"
                           >
                             Shop Location
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/cart"
+                            href=""
+                            className="hover_text"
                           >
                             Cart
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/sign_in"
+                            href=""
+                            className="hover_text"
                           >
                             Sign In
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/checkout"
+                            href=""
+                            className="hover_text"
                           >
                             Checkout
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/whishlist"
+                            href=""
+                            className="hover_text"
                           >
                             Whishlist
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
-                            href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out"
+                          <Link to="/product_track"
+                            href=""
+                            className="hover_text"
                           >
                             Product Track
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
-
                     <li className="drop-down ms-10 text-xs font-semibold">
-                      <a
-                        href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                      <Link to="/about"
+                        href=""
+                        className="hover_text"
                       >
                         Pages
-                        <i class="angel fa-solid fa-angle-down ms-1  text-gray-300 hover:text-[#d51243]  transition ease-in-out "></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1  text-gray-300 hover_text "></i>
+                      </Link>
                       <ul className="mega-menu flex justify-around mt-3.5  rounded-b-xl border-2 border-t-[#d51243] ">
                         <li className="px-5 py-1">
-                          <h6 className="title px-2.5 py-2 font-bold hover:text-[#d51243]  transition ease-in-out">
+                          <h6 className="title px-2.5 py-2 font-bold hover_text">
                             Page Layout
                           </h6>
-                          <li className="px-2.5 pt-4 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Filters V1</a>
+                          <li className="px-2.5 pt-4 py-2 hover_text">
+                            <Link to="/shop" href="">Shop Filters V1</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Filters V2</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_2" href="">Shop Filters V2</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Sidebar</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_details" href="">Shop Sidebar</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop Right Sidebar</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_details_2" href="">Shop Right Sidebar</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Shop List View</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/shop_location" href="">Shop List View</Link>
                           </li>
                         </li>
                         <li className="px-5 py-1">
-                          <h6 className="title px-1 py-2 font-bold hover:text-[#d51243]  transition ease-in-out">
+                          <h6 className="title px-1 py-2 font-bold hover_text">
                             Page Layout
                           </h6>
-                          <li className="px-2.5 pt-4 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">About</a>
+                          <li className="px-2.5 pt-4 py-2 hover_text">
+                            <Link to="/about" href="">About</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Cart</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/cart" href="">Cart</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Checkout</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/checkout" href="">Checkout</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Sign In</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/sign_in" href="#">Sign In</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Log In</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/sign_in" href="">Log In</Link>
                           </li>
                         </li>
                         <li className="px-5 py-1  ">
-                          <h6 className="title px-5 py-2 font-bold hover:text-[#d51243]  transition ease-in-out">
+                          <h6 className="title px-5 py-2 font-bold hover_text">
                             Page Type
                           </h6>
-                          <li className="px-2.5 pt-4 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Product Track</a>
+                          <li className="px-2.5 pt-4 py-2 hover_text">
+                            <Link to="/product_track" href="">Product Track</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Whishlist</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/whishlist" href="">Whishlist</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">404 / Error</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/error" href="">404 / Error</Link>
                           </li>
-                          <li className="px-2.5 py-2 hover:text-[#d51243]  transition ease-in-out">
-                            <a href="#">Coming Soon</a>
+                          <li className="px-2.5 py-2 hover_text">
+                            <Link to="/coming_soon" href="">Coming Soon</Link>
                           </li>
                         </li>
                       </ul>
                     </li>
 
                     <li className="drop-down ms-10 text-xs font-semibold">
-                      <a
+                      <Link to="/blog"
                         href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                        className="hover_text"
                       >
                         Blog
-                        <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out  text-gray-300 "></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1 hover_text text-gray-300 "></i>
+                      </Link>
                       <ul className="mt-3.5  rounded-b-xl border-2 border-t-[#d51243]">
                         <li className="px-5 py-2">
-                          <a
+                          <Link to="/blog"
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6  "
+                            className="hover_text  "
                           >
                             Blog
-                          </a>
+                          </Link>
                         </li>
                         <li className="px-5 py-2">
-                          <a
+                          <Link to="/blog_details"
                             href="#"
-                            className="hover:text-[#d51243]  transition ease-in-out translate-x-6  "
+                            className="hover_text  "
                           >
                             Blog Details
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>
 
                     <li className="ms-10 text-xs font-semibold">
-                      <a
+                      <Link to="/contact"
                         href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                        className="hover_text"
                       >
                         Contact
-                        <i class="angel fa-solid fa-angle-down ms-1  hover:text-[#d51243]  transition ease-in-out text-gray-300 text "></i>
-                      </a>
+                        <i class="angel fa-solid fa-angle-down ms-1  hover_text text-gray-300 text "></i>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -565,16 +565,16 @@ export function Navbarclickbtn() {
 
             <div className="col-span-3 lg:inline hidden ">
               <div className="flex justify-end text-xs font-semibold">
-                <div className="menu-content py-3.5 mr-10">
+                <div className="menu-content hover_text py-3.5 mr-10">
                   <i class="fa-solid fa-phone-flip text-[#d51243] mr-2"></i>
                   <span>
-                    <a href="#">908. 408. 501. 89</a>
+                    <Link to="/error" href="">908. 408. 501. 89</Link>
                   </span>
                 </div>
-                <div className="menu-content py-3.5">
+                <div className="menu-content py-3.5 hover_text">
                   <i class="fa-solid fa-location-dot text-[#d51243] mr-2"></i>
                   <span>
-                    <a href="#">Find Store</a>
+                    <Link to="/shop_location" href="">Find Store</Link>
                   </span>
                 </div>
               </div>

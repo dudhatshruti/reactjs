@@ -1,3 +1,4 @@
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import asset15 from "../../assets/images/asset 15.jpeg";
 import asset16 from "../../assets/images/asset 16.jpeg";
@@ -11,9 +12,7 @@ import asset23 from "../../assets/images/asset 23.jpeg";
 import asset24 from "../../assets/images/asset 24.jpeg";
 import asset25 from "../../assets/images/asset 25.jpeg";
 import asset26 from "../../assets/images/asset 26.jpeg";
-
-
-import "../../Pages/Home/home.css";
+import "./product.css";
 
 import { Autoplay } from "swiper/modules";
 

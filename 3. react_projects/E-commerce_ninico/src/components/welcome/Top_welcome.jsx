@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Top_welcome = () => {
   return (
@@ -12,9 +13,13 @@ const Top_welcome = () => {
                 $100 up.
               </span>
               <span className="header-welcome-text  space-x-3  relative font-semibold text-xs text-[#d51243]">
-                <a href="/shop" className="font-bold font-serif after:absolute after:content-[''] after:bottom-[-3px] after:h-[1px] after:w-full after:bg-[#d51243] after:left-0 ">
+                <Link
+                  to="/shop"
+                  href=""
+                  className="font-bold font-serif after:absolute after:content-[''] after:bottom-[-3px] after:h-[1px] after:w-full after:bg-[#d51243] after:left-0 "
+                >
                   Shop Now
-                </a>
+                </Link>
                 <span>
                   <i class="fa-solid fa-arrow-right transition hover:translate-x-1  hover:ease-in-out "></i>
                 </span>
@@ -42,9 +47,13 @@ export const Welcome = () => {
                   orders $100 up.
                 </span>
                 <span className="header-welcome-text space-x-3  relative font-semibold text-xs text-[#d51243]">
-                  <a href="/shop" className="font-bold font-serif ">
+                  <Link
+                    to="/shop"
+                    href=""
+                    className="font-bold font-serif after:absolute after:content-[''] after:bottom-[-3px] after:h-[1px] after:w-full after:bg-[#d51243] after:left-0 "
+                  >
                     Shop Now
-                  </a>
+                  </Link>
                   <span>
                     <i class="fa-solid fa-arrow-right transition hover:translate-x-1  hover:ease-in-out "></i>
                   </span>
@@ -56,20 +65,30 @@ export const Welcome = () => {
                   <div className="account text-[14px] font-bold hover_text ">
                     <a href="/">
                       <i class="fa-regular fa-user"></i>
-                    <span className="ms-2">Account</span>
+                      <span className="ms-2">Account</span>
                     </a>
                   </div>
                   <div className="track_order text-[14px] mx-5 hover_text">
-                    <a href=""><i class="fa-solid fa-plane-departure transition hover:translate-x-1  hover:ease-in-out"></i>
-                    <span className="ms-2 font-bold">Track Your Order</span></a>
+                    <a href="">
+                      <i class="fa-solid fa-plane-departure transition hover:translate-x-1  hover:ease-in-out"></i>
+                      <span className="ms-2 font-bold">Track Your Order</span>
+                    </a>
                   </div>
                   <div className="icon text-[14px] space-x-2 ">
-                    <a href="/"></a><i class="fa-brands fa-facebook-f hover_text"></i>
-                    <a href="/"><i class="fa-brands fa-twitter hover_text"></i></a>
-                    <a href="/"><i class="fa-brands fa-behance hover_text"></i></a>
-                    <a href="/"><i class="fa-brands fa-youtube hover_text"></i></a>
-                    <a href="/"><i class="fa-brands fa-linkedin hover_text"></i></a>
-
+                    <a href="/"></a>
+                    <i class="fa-brands fa-facebook-f hover_text"></i>
+                    <a href="/">
+                      <i class="fa-brands fa-twitter hover_text"></i>
+                    </a>
+                    <a href="/">
+                      <i class="fa-brands fa-behance hover_text"></i>
+                    </a>
+                    <a href="/">
+                      <i class="fa-brands fa-youtube hover_text"></i>
+                    </a>
+                    <a href="/">
+                      <i class="fa-brands fa-linkedin hover_text"></i>
+                    </a>
                   </div>
                 </div>
               </div>
