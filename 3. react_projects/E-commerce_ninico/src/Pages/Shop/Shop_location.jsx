@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -9,7 +10,6 @@ import location3 from "../../assets/images/location3.jpg";
 import location4 from "../../assets/images/location4.jpg";
 import Map from "../../components/Map/Map";
 import Footer from "../../components/footer/Footer";
-import Button from '@mui/material/Button';
 
 
 
@@ -63,12 +63,12 @@ const Shop_location = () => {
                     className="w-full h-12 text-[15px] font-semibold border rounded-md xl:pr-72 md:pr-[220px] sm:pr-[550px] pr-52 pl-7 outline-0"
                   />
                   <button className=" font-semibold right-0 rounded-r-md bg-[#d51243] text-white absolute px-5 py-3.5 text-[16px]">
-                    <a href="/">
+                    <Link to="#z" href="">
                       Find Nearby Store
                       <span className="ms-2">
                         <i class="fa-solid fa-arrow-right"></i>
                       </span>
-                    </a>
+                    </Link>
                   </button>
                 </div>
               </div>
@@ -89,9 +89,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-location-dot "></i>
                         </div>
                         <div className=" w-60  ms-2 hover_text leading-5">
-                          <a href="/">
+                          <Link to="#" href="">
                             24/26 Strait Barget, Boston, PE21, United Kingdom
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -100,9 +100,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-phone-flip"></i>
                         </div>
                         <div className=" text-[17px] w-32 ms-2 leading-5">
-                          <a href="/" className="hover_text">
+                          <Link to="/error" href="" className="hover_text">
                             +098 (905) 786 897 8 6 - 146 - 389 - 5748
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -111,10 +111,8 @@ const Shop_location = () => {
                           <i class="fa-regular fa-clock"></i>
                         </div>
                         <div className=" text-[17px] w-21 ms-2 leading-5">
-                          <a href="/" className="hover_text">
                             <span>Store Hours:</span>
                             <p>10 am - 10 pm EST, 7 days a week</p>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -138,9 +136,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-location-dot "></i>
                         </div>
                         <div className=" w-60  ms-2 hover_text leading-5">
-                          <a href="/">
+                          <Link to="#" href="">
                             36/26 Strait Barget, Boston, PE21, United Kingdom
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -149,9 +147,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-phone-flip"></i>
                         </div>
                         <div className=" text-[17px] w-32 ms-2 leading-5">
-                          <a href="/" className="hover_text">
+                          <Link to="/error" href="" className="hover_text">
                             +098 112 786 897 8 697 - 146 - 963 - 57
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -160,10 +158,8 @@ const Shop_location = () => {
                           <i class="fa-regular fa-clock"></i>
                         </div>
                         <div className=" text-[17px] w-21 ms-2 leading-5">
-                          <a href="/" className="hover_text">
                             <span>Store Hours:</span>
                             <p>9 am - 10 pm EST, 5 days a week</p>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -191,9 +187,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-location-dot "></i>
                         </div>
                         <div className=" w-60  ms-2 hover_text leading-5">
-                          <a href="/">
+                          <Link to="#" href="">
                             40/26 Strait Barget, Boston, PE21, United Kingdom
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -202,9 +198,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-phone-flip"></i>
                         </div>
                         <div className=" text-[17px] w-32 ms-2 leading-5">
-                          <a href="/" className="hover_text">
+                          <Link to="/error" href="" className="hover_text">
                             +098 (905) 786 897 8 648 85952 -555
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -213,10 +209,8 @@ const Shop_location = () => {
                           <i class="fa-regular fa-clock"></i>
                         </div>
                         <div className=" text-[17px] w-21 ms-2 leading-5">
-                          <a href="/" className="hover_text">
                             <span>Store Hours:</span>
                             <p>10 am - 10 pm EST, 7 days a week</p>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -240,9 +234,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-location-dot "></i>
                         </div>
                         <div className=" w-60  ms-2 hover_text leading-5">
-                          <a href="/">
+                          <Link to="#" href="">
                             38/26 Strait Barget, Boston, PE21, United Kingdom
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -251,9 +245,9 @@ const Shop_location = () => {
                           <i class="fa-solid fa-phone-flip"></i>
                         </div>
                         <div className=" text-[17px] w-32 ms-2 leading-5">
-                          <a href="/" className="hover_text">
+                          <Link to="/error" href="" className="hover_text">
                             +098 (905) 786 897 8 6 - 146 - 389 - 5748
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -262,10 +256,8 @@ const Shop_location = () => {
                           <i class="fa-regular fa-clock"></i>
                         </div>
                         <div className=" text-[17px] w-21 ms-2 leading-5">
-                          <a href="/" className="hover_text">
                             <span>Store Hours:</span>
                             <p>10 am - 10 pm EST, 7 days a week</p>
-                          </a>
                         </div>
                       </div>
                     </div>
@@ -280,10 +272,6 @@ const Shop_location = () => {
         </div>
       </section>
   
-
-  <Button variant="contained">Hello world</Button>
-
-
       {/* map */}
 
       <Map/>

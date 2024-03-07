@@ -28,7 +28,7 @@ function Navbar() {
                         <li className="px-5 py-2">
                           <Link to="/"
                             href=""
-                            className="hover_text   "
+                            className="hover_text"
                           >
                             Wooden Home
                           </Link>
@@ -306,14 +306,14 @@ export function Navbarclickbtn() {
             <div className="col-span-2 lg:inline  hidden  ">
              <Categories2_btn/>
             </div>
-            <div className="col-span-7 lg:inline hidden">
+            <div className="col-span-7  lg:inline hidden">
               <div className="nav-item">
                 <nav>
                   <ul className="dropdown-home flex py-3.5">
-                    <li className="drop-down text-xs font-semibold relative">
+                    <li className="drop-down text-xs font-semibold relative ">
                       <Link to="/"
                         href="#"
-                        className="hover:text-[#d51243]  transition ease-in-out"
+                        className="hover:text-[#d51243]  transition ease-in-out "
                       >
                         Home
                         <i class="angel fa-solid fa-angle-down ms-1 hover:text-[#d51243]  transition ease-in-out text-gray-300 "></i>

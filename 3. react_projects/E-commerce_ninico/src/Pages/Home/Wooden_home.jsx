@@ -71,14 +71,14 @@ export function Slides() {
         }}
         modules={ [Autoplay ]}
       >
-        <SwiperSlide><img src={asset76} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset77} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset78} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset79} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset80} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset81} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset76} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={asset77} alt="" /></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset76} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset77} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset78} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset79} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset80} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset81} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset76} alt="ninico_shop" /></Link></SwiperSlide>
+        <SwiperSlide><Link to="/"><img src={asset77} alt="ninico_shop" /></Link></SwiperSlide>
       </Swiper>
     </>
   );
@@ -335,7 +335,7 @@ const Wooden_home = () => {
                     </div>
                     <div className="product_text mb-[30px]">
                       <h4 className="title mb-3 lg:text-[50px] md:text-2xl sm:text-[50px]  text-2xl text-black font-semibold tracking-tight">
-                        <a href="/">Pro2 Abstract Folded Pots</a>
+                        <Link to="/shop_details" href="">Pro2 Abstract Folded Pots</Link>
                       </h4>
                       <p className="text-[#777] lg:text-[18px] text-[17px] lg:leading-6 md:leading-5">
                         Elegant pink origami design three-dimensional view and

@@ -98,8 +98,7 @@ const Checkout = () => {
                     id="pet-select"
                     className="w-full h-10  px-2 mt-2 text-[18px] border"
                   >
-                    <option value="">United States</option>
-                    <option value="">United States</option>
+                    <option>United States</option>
                     <option> Algeria</option>
                     <option>Canada</option>
                     <option>Givenchyy</option>
@@ -306,9 +305,8 @@ const Checkout = () => {
                               <tbody>
                                 <tr className="cart-item">
                                   <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
-                                    Vestibulum suscript{" "}
+                                    Vestibulum suscript
                                     <strong className="ms-0.5">
-                                      {" "}
                                       <i class="fa-solid fa-xmark"></i>1
                                     </strong>
                                   </th>
@@ -319,9 +317,8 @@ const Checkout = () => {
 
                                 <tr className="cart-item">
                                   <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
-                                    Vestibulum dictum magna{" "}
+                                    Vestibulum dictum magna
                                     <strong className="ms-0.5">
-                                      {" "}
                                       <i class="fa-solid fa-xmark"></i>1
                                     </strong>
                                   </th>
@@ -332,7 +329,7 @@ const Checkout = () => {
 
                                 <tr className="cart-item">
                                   <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
-                                    Cart Subtotal{" "}
+                                    Cart Subtotal
                                   </th>
                                   <th className="pro_name text-[#6f7172] text-left font-normal w-[250px] text-[14px] py-[17px] border-b-[1px]">
                                     $215.00

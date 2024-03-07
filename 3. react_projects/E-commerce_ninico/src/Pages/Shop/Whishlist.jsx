@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -74,12 +75,12 @@ const Whishlist = () => {
                           className="product border  py-[20px]"
                           style={{ textAlign: "-webkit-center" }}
                         >
-                          <a href="/">
+                          <Link to="/shop_details" href="">
                             <img src={asset15} alt="" className="w-[125px]" />
-                          </a>
+                          </Link>
                         </td>
                         <td className="product-name border  text-[16px]   py-[20px]  font-medium hover_text">
-                          <a href="/">Bradley Burgess 2</a>
+                          <Link to="/shop_details" href="">Bradley Burgess 2</Link>
                         </td>
                         <td className="product-name border text-[17px]  py-[20px] px-[20px] ">
                           $20
@@ -115,12 +116,12 @@ const Whishlist = () => {
                           className="product border  py-[20px]"
                           style={{ textAlign: "-webkit-center" }}
                         >
-                          <a href="/">
+                          <Link to="/shop_details" href="">
                             <img src={asset17} alt="" className="w-[125px]" />
-                          </a>
+                          </Link>
                         </td>
                         <td className="product-name border  text-[16px]   py-[20px] px-[20px] font-medium hover_text">
-                          <a href="/">Allie Sharp</a>
+                          <Link to="/shop_details" href="/">Allie Sharp</Link>
                         </td>
                         <td className="product-name border text-[17px]  py-[20px] px-[20px] ">
                           $30

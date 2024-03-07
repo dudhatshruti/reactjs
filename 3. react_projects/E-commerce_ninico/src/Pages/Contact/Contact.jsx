@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -31,9 +32,9 @@ export const Contact = () => {
                           <i class="fa-solid fa-location-dot "></i>
                         </div>
                         <div className="  w-52  ms-2 hover_text leading-5">
-                          <a href="/">
+                          <Link to="#" href="">
                             24/26 Strait Barget, Boston, PE21, United Kingdom
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -42,9 +43,9 @@ export const Contact = () => {
                           <i class="fa-solid fa-phone-flip"></i>
                         </div>
                         <div className=" text-[17px] w-32 ms-2 leading-5">
-                          <a href="/" className="hover_text">
+                          <Link to="/error" href="" className="hover_text">
                             +098 (905) 786 897 8 6 - 146 - 389 - 5748
-                          </a>
+                          </Link>
                         </div>
                       </div>
 
@@ -53,10 +54,8 @@ export const Contact = () => {
                           <i class="fa-regular fa-clock"></i>
                         </div>
                         <div className=" text-[17px] w-21 ms-2 leading-5">
-                          <a href="/" className="hover_text">
                             <span>Store Hours:</span>
                             <p>10 am - 10 pm EST, 7 days a week</p>
-                          </a>
                         </div>
                       </div>
                     </div>

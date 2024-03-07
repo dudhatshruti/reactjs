@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ninico from "../../assets/images/ninico.png";
 import gpay from "../../assets/images/google play.jpeg";
 import app_store from "../../assets/images/app store.jpeg";
@@ -41,10 +42,10 @@ const Footer = () => {
                           <a href="/">FAQs</a>
                         </li>
                         <li className="footer-links">
-                          <a href="/">Ordering Tracking</a>
+                          <Link to="/product_track" href="/">Ordering Tracking</Link>
                         </li>
                         <li className="footer-links">
-                          <a href="/">Contacts</a>
+                          <Link to="/contact" href="/">Contacts</Link>
                         </li>
                         <li className="footer-links">
                           <a href="/">Events</a>
@@ -155,9 +156,9 @@ const Footer = () => {
                       <i class="fa-solid fa-phone-flip bg-white rounded-full p-3 shadow-md"></i>
                     </div>
                     <div className="text">
-                      <a href="/" className="text-[20px] font-bold leading-3 ">
+                      <Link to="/error" href="" className="text-[20px] font-bold leading-3 hover_text ">
                         980.029.666.99
-                      </a>
+                      </Link>
                       <p className="text-[14px] font-normal text-[#777]">
                         Working 8:00 - 22:00
                       </p>
@@ -174,9 +175,9 @@ const Footer = () => {
                       </p>
                     </div>
                     <div className="button flex items-center space-x-1 md:mt-0 mt-3">
-                      <a href="/" >
+                      <Link to="/error" href="" >
                         <img src={gpay} alt="" />
-                      </a>
+                      </Link>
                       <a href="/">
                         <img src={app_store} alt="" />
                       </a>
@@ -197,14 +198,14 @@ const Footer = () => {
                     Copyright 2024
                     <a
                       href="/"
-                      className="text-[#040404] font-bold hover:text-[#d51243] transition ease-in-out duration-700"
+                      className="text-[#040404] font-bold hover_text"
                     >
                       &copy;Ninico.
                     </a>
                     <span> All rights reserved. Developed by</span>
                     <a
                       href="/"
-                      className="text-[#040404] font-bold hover:text-[#d51243] transition ease-in-out duration-700"
+                      className="text-[#040404] font-bold hover_text"
                     >
                       Ali Themes.
                     </a>

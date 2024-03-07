@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -222,31 +223,31 @@ const Blog_details = () => {
                               Tag
                             </span>
                             <button className="bttn">
-                              <a href="/">furniture</a>
+                              <Link to="/blog" href="/">furniture</Link>
                             </button>
                             <button className="bttn">
-                              <a href="/">Table</a>
+                              <Link to="/blog" href="/">Table</Link>
                             </button>
                             <button className="bttn">
-                              <a href="/">Fashion</a>
+                              <Link to="/blog" href="/">Fashion</Link>
                             </button>
                           </div>
                         </div>
                         <div className="md:col-span-5 col-span-12 md:mt-0 py-4 ">
                           <div className="icon flex lg:justify-end  space-x-6">
                             <span className="text-[20px] font-bold">Share</span>
-                            <a href="/">
+                            <Link to="#" href="">
                               <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="/">
+                            </Link>
+                            <Link to="#" href="">
                               <i class="fa-brands fa-pinterest-p"></i>
-                            </a>
-                            <a href="/">
+                            </Link>
+                            <Link to="#" href="">
                               <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                            <a href="/">
+                            </Link>
+                            <Link to="#" href="">
                               <i class="fa-brands fa-twitter"></i>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -287,9 +288,9 @@ const Blog_details = () => {
                                         MedicineNet doctor.
                                       </p>
                                       <div className="reply mt-4 ms-3 text-[#d51243] hover:text-white ">
-                                        <a href="/">
+                                        <Link to="/blog_details" href="/">
                                           <i class="fa-solid fa-reply-all bg-white hover:bg-[#d51243] ease-in-out duration-500 p-1"></i>
-                                        </a>
+                                        </Link>
                                       </div>
                                     </div>
                                   </div>
@@ -319,9 +320,9 @@ const Blog_details = () => {
                                         that you feel others would find useful.
                                       </p>
                                       <div className="reply mt-4 ms-3 text-[#d51243] hover:text-white ">
-                                        <a href="/">
+                                        <Link to="/blog_details" href="/">
                                           <i class="fa-solid fa-reply-all bg-white hover:bg-[#d51243] ease-in-out duration-500 p-1"></i>
-                                        </a>
+                                        </Link>
                                       </div>
                                     </div>
                                   </div>
@@ -412,7 +413,7 @@ const Blog_details = () => {
                           <div className=" lg:col-span-3 md:col-span-4 sm:col-span-3 xs:col-span-4 col-span-7 text-center">
                             <div className="btn">
                               <button>
-                                <a href="/"> Post Comment </a>
+                                <Link to="/blog_details" href=""> Post Comment </Link>
                               </button>
                             </div>
                           </div>
@@ -558,78 +559,78 @@ const Blog_details = () => {
                   <div className=" pt-9 pr-7 pb-10 pl-7 px-5 ">
                     <h1 className="text-lg font-bold mb-5">Popular Tag</h1>
                     <div className="content text-[12px] font-semibold uppercase text-[#777]  ">
-                      <a
-                        href="/"
+                      <Link to="/"
+                        href=""
                         className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         Furniture
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        table
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Table
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        chair
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Chair
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        clothes
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Clothes
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        toy
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Toy
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        suit
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Suit
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         t-shirt
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         dress
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        wooden
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Wooden
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        clock
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Clock
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        craft
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Craft
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        gift
-                      </a>
+                        Gift
+                      </Link>
                     </div>
                   </div>
                 </div>

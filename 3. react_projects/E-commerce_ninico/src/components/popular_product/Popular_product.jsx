@@ -26,8 +26,8 @@ const Popular_product = () => {
   return (
     <>
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <Link to="/shop_details" href="">
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
             <img src={asset15} alt="" />
             <div className="group inner absolute top-0 left-0 hidden ">
               <img src={asset16} alt="" />
@@ -95,665 +95,683 @@ const Popular_product = () => {
                 </div>
               </div>
             </div>
-          </Link>
-        </div>
+          </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12 rounded-md  hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset17} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset18} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset17} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset18} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center  ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center  ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className=" img_info ">Allie Sharp</h3>
+              <div className="price-info relative">
+                <div className="amount text-[17px] font-bold mt-0.5">
+                  <span>$30.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className=" img_info ">Allie Sharp</h3>
-            <div className="price-info relative">
-              <div className="amount text-[17px] font-bold mt-0.5">
-                <span>$30.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12 rounded-md  hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset19} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset20} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset19} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset20} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info ">Nathaniel Baldwin</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$40.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info ">Nathaniel Baldwin</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$40.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset21} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset22} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset21} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset22} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center  ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center  ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info">Effie Rios</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$40.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info">Effie Rios</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$40.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset23} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset24} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset23} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset24} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center  ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center  ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info">Carolyn Goodwin</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$50.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info">Carolyn Goodwin</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$50.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset25} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset26} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset25} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset26} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center top-28 ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center top-28 ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info ">Evelyn patton</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$60.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info ">Evelyn patton</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$60.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12  rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset27} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset28} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset27} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset28} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center  ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center  ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info">Sally Ray</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$70.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info">Sally Ray</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$70.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12  rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset29} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset30} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset29} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset30} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center  ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center  ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info">Ora Bowman</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$80.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info">Ora Bowman</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$80.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset31} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset32} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset31} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset32} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info">Frederick Valdez</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$90.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info">Frederick Valdez</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$90.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
 
       <div className=" main_bg pb-12  rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <div className="img_area outer relative  ">
-          <img src={asset33} alt="" />
-          <div className="group inner absolute top-0 left-0 hidden   ">
-            <img src={asset34} alt="" />
+        <Link to="/shop_details" href="">
+          <div className="img_area outer relative  ">
+            <img src={asset33} alt="" />
+            <div className="group inner absolute top-0 left-0 hidden   ">
+              <img src={asset34} alt="" />
 
-            <div className=" product_4icon  absolute left-0 right-0 text-center  ">
-              <div className="pro_addicon hidden inner">
-                <a href="/">
-                  <i class="fa-solid fa-basket-shopping"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-solid fa-arrow-right-arrow-left"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-eye"></i>
-                </a>
-                <a href="/">
-                  <i class="fa-regular fa-heart"></i>
-                </a>
+              <div className=" product_4icon  absolute left-0 right-0 text-center  ">
+                <div className="pro_addicon hidden inner">
+                  <a href="/">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-eye"></i>
+                  </a>
+                  <a href="/">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
+                <div className="flex items-center justify-between">
+                  <div className="pro_dot "></div>
+                  <div className="pro_rating  ">
+                    <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-solid fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/" className="star">
+                          <i class="fa-regular fa-star"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <span className="text-[10px]">(81)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className=" inner img_rating_area absolute left-0 right-0   hidden ">
-              <div className="flex items-center justify-between">
-                <div className="pro_dot "></div>
-                <div className="pro_rating  ">
-                  <ul className="flex text-[10px] transform duration-700 group-hover:-translate-y-4  ease-in-out  ">
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-solid fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/" className="star">
-                        <i class="fa-regular fa-star"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <span className="text-[10px]">(81)</span>
-                    </li>
-                  </ul>
+            <div className="img_info_area z-10 relative mt-4">
+              <h3 className="img_info">Terry Byrd</h3>
+              <div className="price-info relative">
+                <div className="amount  text-[17px] font-bold mt-0.5">
+                  <span>$100.00</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="img_info_area z-10 relative mt-4">
-            <h3 className="img_info">Terry Byrd</h3>
-            <div className="price-info relative">
-              <div className="amount  text-[17px] font-bold mt-0.5">
-                <span>$100.00</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        </Link>
       </div>
     </>
   );

@@ -25,9 +25,9 @@ const Tabs = () => {
                     </Tab>
                   </Tab.List>
 
-                  <Tab.Panels className="mt-2">
+                  <Tab.Panels className="mt-2">  
                     <Tab.Panel>
-                      <div className="border border-b-gray-50 mt-3"></div>
+                      <div className=" border border-b-gray-50 mt-3"></div>
                       <p className="w-full text-[15px] text-[#777] mt-6 leading-5">
                         In marketing a product is an object or system made
                         available for consumer use it is anything that can be
@@ -65,8 +65,96 @@ const Tabs = () => {
                         loans.
                       </p>
                     </Tab.Panel>
-                    <Tab.Panel className="rounded-xl bg-white p-3">2</Tab.Panel>
-                    <Tab.Panel className="rounded-xl bg-white p-3">
+                    <Tab.Panel className="rounded-xl bg-white p-1">
+                      <div className="border border-b-gray-50"></div>
+                      <div className="tabel ">
+                        <table className="w-full">
+                          <tbody>
+                            <tr className="border-b-[1px] bg-gray-100 ">
+                              <td className="product-name   text-left font-medium  text-[18px] py-[18px] ">
+                                Weight
+                              </td>
+                              <td className="product-total  text-left font-normal  text-[18px] py-[15px] ">
+                                2 lbs
+                              </td>
+                            </tr>
+                            <tr className="cart-item">
+                              <td className="pro_name text-left font-medium  text-[18px] py-[17px] border-b-[1px]">
+                                Dimensions
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] border-b-[1px]">
+                                12&times; 16&times; 19 in
+                              </td>
+                            </tr>
+
+                            <tr className="cart-item bg-gray-100">
+                              <td className="pro_name   text-left font-medium w-[250px] text-[18px] py-[17px] border-b-[1px]">
+                              Product
+                              </td>
+                              <td className="pro_name  text-left font-normal w-[250px] text-[18px] py-[17px] border-b-[1px]">
+                              Purchase this product on rag-bone.com
+                              </td>
+                            </tr>
+
+                            <tr className="cart-item">
+                              <td className="pro_name  text-left font-medium  text-[18px] py-[17px] border-b-[1px]">
+                                Color
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] border-b-[1px]">
+                                Gray, Black
+                              </td>
+                            </tr>
+
+                            <tr className="shipping border-b-[1px] bg-gray-100">
+                              <td className="product-name  text-left font-medium text-[18px] py-[17px]  ">
+                                Size
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] ">
+                                S, M ,L ,XL
+                              </td>
+                            </tr>
+
+                            <tr className="cart-item border-b-[1px]">
+                              <td className="pro_name   text-left font-medium text-[18px] py-[17px]">
+                                Model
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] ">
+                                Model
+                              </td>
+                            </tr>
+
+                            <tr className="cart-item border-b-[1px] bg-gray-100">
+                              <td className="pro_name   text-left font-medium text-[18px] py-[17px]">
+                                Shipping
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] ">
+                              Standard shipping: $5,95L
+                              </td>
+                            </tr>
+
+                            <tr className="cart-item border-b-[1px]">
+                              <td className="pro_name   text-left font-medium text-[18px] py-[17px]">
+                                Care Info
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] ">
+                              Machine Wash up to 40ºC/86ºF Gentle Cycle
+                              </td>
+                            </tr>
+
+                            <tr className="cart-item border-b-[1px] bg-gray-100">
+                              <td className="pro_name   text-left font-medium text-[18px] py-[17px]">
+                                Brand
+                              </td>
+                              <td className="pro_name  text-left font-normal  text-[18px] py-[17px] ">
+                                Kazen2
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </Tab.Panel>
+                    <Tab.Panel className="rounded-xl bg-white p-1">
+                    <div className="border border-b-gray-50"></div>
                       <div className="review">
                         <h4 className="text-[24px] ">
                           3 reviews for "Wide Cotton Tunic extern hammer"
@@ -238,7 +326,6 @@ const Tabs = () => {
                           </div>
                         </div>
                       </div>
-                      
                     </Tab.Panel>
                   </Tab.Panels>
                 </Tab.Group>
@@ -248,7 +335,6 @@ const Tabs = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 

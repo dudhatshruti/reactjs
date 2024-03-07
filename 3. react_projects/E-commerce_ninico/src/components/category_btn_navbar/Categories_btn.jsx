@@ -159,7 +159,7 @@ export const Categories2_btn = () => {
     <div className="absolute">
       <button
         onClick={Showcategory2}
-        className=" lg:w-44 md:w-32 py-2 bg-[#d51243] rounded-t-md flex"
+        className=" lg:w-44 md:w-32 py-2.5 bg-[#d51243]  flex"
       >
         <a href="#" className="space-x-2  text-white ">
           <i class="fa-solid fa-bars text-sm pl-4  "></i>

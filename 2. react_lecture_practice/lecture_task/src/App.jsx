@@ -13,9 +13,10 @@ import Side_Effect from './task/hooks/use_effect/Side_Effect'
 import Use_Effect_2 from './task/hooks/use_effect/Use_Effect2'
 import Use_Effect_3 from './task/hooks/use_effect/Use_Effect3'
 import State_components from './components/State_component'
-import Use_context from './task/hooks/use_context/Use_context'
+import Component_A from './task/hooks/use_context/Component_A'
 
-const App = ({name}) => {
+export const Usercontext = React.createContext();
+const App = () => {
   return (
     <>
     {/* --------- use state ----------- */}
@@ -60,9 +61,10 @@ const App = ({name}) => {
     {/* <State_components/> */}
 
     {/* --------------Use_context -------------- */}
-    <Use_context name="shruti"/>
-    {name}
-
+    
+      <Usercontext.Provider value={"react"}>
+        <Component_A/>
+      </Usercontext.Provider>
     </>
   )
 }

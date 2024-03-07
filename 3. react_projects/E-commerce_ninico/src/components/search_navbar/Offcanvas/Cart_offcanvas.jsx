@@ -18,7 +18,7 @@ const Cart_offcanvas = () => {
         <a  className="">
           <i class="fa-solid fa-cart-shopping  "></i>
         </a>
-        <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[77px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243] ">1</div> 
+        {/* <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[77px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243] ">1</div>  */}
         
       </button>
       <div
@@ -26,7 +26,7 @@ const Cart_offcanvas = () => {
       >
         <button className="close-button absolute" onClick={closeMenu}>
           <div className="flex justify-between bg-gray-100 p-2.5 px-4">
-            <h5 className=" your-cart text-black font-bold  mr-40">YOUR CART</h5>
+            <h5 className=" your-cart  text-[14px] text-black font-bold  mr-40">YOUR CART</h5>
             <i class="fa-solid fa-xmark text-xs text-[#d51243]  "></i>
           </div>
         </button>

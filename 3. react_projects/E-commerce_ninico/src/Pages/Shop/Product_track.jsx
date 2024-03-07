@@ -57,7 +57,7 @@ const Product_track = () => {
                   <div className="details bg-gray-100 p-10 rounded-md">
                     <div className="track_item flex mb-4">
                       <div className="track_icon mr-5   ">
-                        <img src={track} alt="" className="bg-white p-3 rounded-md w-full"/>
+                        <img src={track} alt="track" className="bg-white p-3 rounded-md w-full"/>
                       </div>
                       <div className="content">
                         <h4 className="title text-[18px] text-black font-semibold pb-1">
@@ -99,8 +99,8 @@ const Product_track = () => {
                         </div>
                       </form>
                     </div>
-                    <div className="btn mt-2 flex justify-center">
-                        <button className=" text-[16px] py-1 font-semibold">Track Now </button>
+                    <div className="btn mt-2 flex justify-center hover:bg-pink-800">
+                        <button className=" text-[16px] py-1 font-semibold ">Track Now </button>
                         <span><i class="fa-solid fa-arrow-right mt-2.5 pl-2 transition hover:translate-x-1  hover:ease-in-out"></i></span>
                     </div>
                   </div>

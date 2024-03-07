@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import asset15 from "../../assets/images/asset 15.jpeg";
 import asset16 from "../../assets/images/asset 16.jpeg";
@@ -60,6 +61,7 @@ function Related_products() {
       >
         <SwiperSlide>
           <div className=" main_bg  rounded-md p-2.5 ">
+            <Link to="/shop_details_2">
             <div className="img_area outer relative  ">
               <img src={asset15} alt="" />
               <div className="group inner absolute top-0 left-0 hidden ">
@@ -106,11 +108,13 @@ function Related_products() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className=" main_bg rounded-md p-2.5 ">
+          <Link to="/shop_details_2">
             <div className="img_area outer relative  ">
               <img src={asset17} alt="" />
               <div className="group inner absolute top-0 left-0 hidden ">
@@ -157,11 +161,13 @@ function Related_products() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className=" main_bg rounded-md p-2.5 ">
+          <Link to="/shop_details_2">
             <div className="img_area outer relative  ">
               <img src={asset19} alt="" />
               <div className="group inner absolute top-0 left-0 hidden ">
@@ -208,11 +214,13 @@ function Related_products() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className=" main_bg pb-12 rounded-md p-2.5 ">
+          <Link to="/shop_details_2">
             <div className="img_area outer relative  ">
               <img src={asset21} alt="" />
               <button className="bg-[#d51243] absolute  top-3 left-5 text-white text-[14px] font-semibold px-2 rounded-md animate-pulse">
@@ -266,11 +274,13 @@ function Related_products() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className=" main_bg pb-12 rounded-md p-2.5 ">
+          <Link to="/shop_details_2">
             <div className="img_area outer relative  ">
               <img src={asset23} alt="" />
               <div className="group inner absolute top-0 left-0 hidden ">
@@ -319,11 +329,13 @@ function Related_products() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className=" main_bg pb-12 rounded-md p-2.5 ">
+          <Link to="/shop_details_2">
             <div className="img_area outer relative  ">
               <img src={asset25} alt="" />
               <button className="bg-[#777] absolute  top-3 left-5 text-white text-[14px] font-semibold px-1 rounded-md animate-pulse">
@@ -334,7 +346,6 @@ function Related_products() {
                 <button className="bg-[#777] absolute  top-3 left-5 text-white text-[14px] font-semibold px-1 rounded-md animate-pulse">
                 <a href="/"><i class="fa-solid fa-bolt-lightning"></i></a>
               </button>
-
                 <div className=" product_4icon mx-12 absolute flex  ">
                   <div className="related_proicon hidden inner px-3 py-2 ">
                     <a href="/">
@@ -376,6 +387,7 @@ function Related_products() {
                 </div>
               </div>
             </div>
+            </Link>
           </div>
         </SwiperSlide>
 

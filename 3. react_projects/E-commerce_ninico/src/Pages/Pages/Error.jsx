@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -49,7 +50,9 @@ import Footer from "../../components/footer/Footer";
               <div className="col-span-12">
                 <div className="error_part text-center ">
                   <div className="error_thumb mb-9 justify-center flex">
+                    <Link to="/">
                     <img src={error} alt="" />
+                    </Link>
                   </div>
                   <div className="content">
                     <h4 className="error_title mb-6 font-bold text-4xl">404. Page not Found</h4>

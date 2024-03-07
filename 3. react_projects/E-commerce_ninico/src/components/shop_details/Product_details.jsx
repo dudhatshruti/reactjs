@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Product_details = () => {
   return (
     <>
       <div className="product-details flex items-center mb-0.5 ">
         <div className="tag-area ">
-          <span className="tag text-[14px] text-[#d51243] font-semibold bg-[#fbe1e7] pt-0.5 pb-0.5 px-2 leading-normal rounded-sm">
+          <span className="tag text-[14px] text-[#d51243] font-semibold bg-[#fbe1e7]  pb-0.5 px-2 leading-normal rounded-sm">
             Dress
           </span>
         </div>
@@ -20,7 +21,7 @@ const Product_details = () => {
             <i class="fa-solid fa-star"></i>
           </a>
         </div>
-        <div className="review text-[14px] text-[#777] cursor-pointer ms-1">
+        <div className="review text-[14px] text-[#777] cursor-pointer ms-1 hover_text">
           10 Reviews
         </div>
       </div>
@@ -72,7 +73,8 @@ const Product_details = () => {
         </div>
         <div className="whishlist ms-4">
           <div className="pro-fav border rounded-md py-3 px-4 hover:text-white text-[#d3d3d3] hover:bg-[#d51243]  transition ease-in-out duration-700">
-            <i class="fa-regular fa-heart"></i>
+            <Link href="/shop_details" >
+            <i class="fa-regular fa-heart"></i></Link>
           </div>
         </div>
       </div>

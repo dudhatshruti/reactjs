@@ -63,32 +63,32 @@ export const Welcome = () => {
               <div className="col-span-5 lg:inline hidden">
                 <div className="flex justify-end space-x-7">
                   <div className="account text-[14px] font-bold hover_text ">
-                    <a href="/">
+                    <Link  to="#" href="">
                       <i class="fa-regular fa-user"></i>
                       <span className="ms-2">Account</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="track_order text-[14px] mx-5 hover_text">
-                    <a href="">
+                    <Link to="#" href="">
                       <i class="fa-solid fa-plane-departure transition hover:translate-x-1  hover:ease-in-out"></i>
                       <span className="ms-2 font-bold">Track Your Order</span>
-                    </a>
+                    </Link>
                   </div>
                   <div className="icon text-[14px] space-x-2 ">
-                    <a href="/"></a>
+                    <Link to="#" href=""></Link>
                     <i class="fa-brands fa-facebook-f hover_text"></i>
-                    <a href="/">
+                    <Link to="#" href="">
                       <i class="fa-brands fa-twitter hover_text"></i>
-                    </a>
-                    <a href="/">
+                    </Link>
+                    <Link to="#" href="">
                       <i class="fa-brands fa-behance hover_text"></i>
-                    </a>
-                    <a href="/">
+                    </Link>
+                    <Link to="#" href="">
                       <i class="fa-brands fa-youtube hover_text"></i>
-                    </a>
-                    <a href="/">
+                    </Link>
+                    <Link to="#" href="">
                       <i class="fa-brands fa-linkedin hover_text"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

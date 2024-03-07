@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -135,10 +136,10 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="logo absolute -bottom-5   left-80 right-0">
-              <a href="/">
+            <div className="logo absolute -bottom-5 ">
+              <Link to="/" href="">
                 <img src={about_img_3} alt="" className="" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -270,7 +271,7 @@ const About = () => {
                     
                     <div className="">
                       <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
-                        <a href="/">Get In Touch</a>
+                        <Link to="/contact" href="">Get In Touch</Link>
                       </button>
                     </div>
                   </div>
@@ -298,7 +299,7 @@ const About = () => {
                     
                     <div className="">
                       <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
-                        <a href="/">Contact With Us</a>
+                        <Link to="/contact" href="">Contact With Us</Link>
                       </button>
                     </div>
                   </div>

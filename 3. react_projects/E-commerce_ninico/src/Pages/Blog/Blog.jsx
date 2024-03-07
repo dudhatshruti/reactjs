@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
 import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
@@ -55,7 +56,9 @@ const Blog = () => {
                 <div className="box md:pr-5">
                   <div className="image-part mb-6">
                     <div className="box-thumb mb-0">
-                      <img src={blog1} alt="" className="rounded-md" />
+                      <Link to="/blog_details">
+                        <img src={blog1} alt="" className="rounded-md" />
+                      </Link>
                     </div>
                   </div>
                   <div className="box-content">
@@ -65,12 +68,12 @@ const Blog = () => {
                           <div className="content-area mb-14">
                             <div className="box-meta mb-2 ">
                               <span className="text-[15px] font-semibold mr-[55px]">
-                                <a href="/">
+                                <Link to="#" href="">
                                   <i class="fa-regular fa-user text-[#d51243]"></i>
-                                </a>
-                                <span className="ms-1.5 uppercase text-[#5b5757] ">
-                                  alextina
-                                </span>
+                                  <span className="ms-1.5 uppercase text-[#5b5757] hover_text ">
+                                    alextina
+                                  </span>
+                                </Link>
                               </span>
 
                               <span className="text-[15px] font-semibold mr-[55px]">
@@ -83,17 +86,19 @@ const Blog = () => {
                               </span>
 
                               <span className="text-[15px] font-semibold mr-[55px]">
-                                <a href="/">
+                                <Link to="#" href="">
                                   <i class="fa-regular fa-comment-alt text-[#d51243]"></i>
-                                </a>
-                                <span className="ms-1.5 uppercase text-[#5b5757]">
-                                  (04) comments
-                                </span>
+                                  <span className="ms-1.5 uppercase text-[#5b5757] hover_text">
+                                    (04) comments
+                                  </span>
+                                </Link>
                               </span>
                             </div>
 
                             <h4 className="lg:text-[34px] md:text-[25px] sm:text-[31px] text-[28px] font-bold pb-6 hover_text cursor-pointer">
-                              Scientists speculate that ours might not be held
+                              <Link to="/blog_details">
+                                Scientists speculate that ours might not be held
+                              </Link>
                             </h4>
 
                             <p className="text-[16px] pb-7">
@@ -105,7 +110,9 @@ const Blog = () => {
 
                             <div className="btn w-28">
                               <button className="text-[14px] ">
-                                <a href="/">Read More</a>
+                                <Link to="/blog_details" href="">
+                                  Read More
+                                </Link>
                               </button>
                             </div>
                           </div>
@@ -116,7 +123,9 @@ const Blog = () => {
 
                   <div className="image-part mb-6">
                     <div className="box-thumb mb-0">
-                      <img src={blog2} alt="" className="rounded-md" />
+                      <Link to="/blog_details">
+                        <img src={blog2} alt="" className="rounded-md" />
+                      </Link>
                     </div>
                   </div>
                   <div className="box-content">
@@ -126,12 +135,12 @@ const Blog = () => {
                           <div className="content-area mb-14">
                             <div className="box-meta mb-2 ">
                               <span className="text-[15px] font-semibold mr-[55px]">
-                                <a href="/">
+                                <Link to="#" href="">
                                   <i class="fa-regular fa-user text-[#d51243]"></i>
-                                </a>
-                                <span className="ms-1.5 uppercase text-[#5b5757] ">
-                                  alextina
-                                </span>
+                                  <span className="ms-1.5 uppercase text-[#5b5757] hover_text ">
+                                    alextina
+                                  </span>
+                                </Link>
                               </span>
 
                               <span className="text-[15px] font-semibold mr-[55px]">
@@ -144,18 +153,20 @@ const Blog = () => {
                               </span>
 
                               <span className="text-[15px] font-semibold mr-[55px]">
-                                <a href="/">
+                              <Link to="#" href="">
                                   <i class="fa-regular fa-comment-alt text-[#d51243]"></i>
-                                </a>
-                                <span className="ms-1.5 uppercase text-[#5b5757]">
-                                  (04) comments
-                                </span>
+                                  <span className="ms-1.5 uppercase text-[#5b5757] hover_text">
+                                    (04) comments
+                                  </span>
+                                </Link>
                               </span>
                             </div>
 
                             <h4 className="lg:text-[34px] md:text-[25px] sm:text-[31px] text-[28px] font-bold pb-3 hover_text cursor-pointer">
-                              The Multiverse is the collection of alternate
-                              universe
+                              <Link to="/blog_details">
+                                The Multiverse is the collection of alternate
+                                universe
+                              </Link>
                             </h4>
 
                             <p className="text-[16px] pb-7">
@@ -167,7 +178,9 @@ const Blog = () => {
 
                             <div className="btn w-28">
                               <button className="text-[14px] ">
-                                <a href="/">Read More</a>
+                                <Link to="/blog_details" href="">
+                                  Read More
+                                </Link>
                               </button>
                             </div>
                           </div>
@@ -177,7 +190,9 @@ const Blog = () => {
 
                     <div className="image-part mb-6">
                       <div className="box-thumb mb-0">
-                        <img src={blog_sm_3} alt="" className="rounded-md" />
+                        <Link to="/blog_details">
+                          <img src={blog_sm_3} alt="" className="rounded-md" />
+                        </Link>
                       </div>
                     </div>
                     <div className="box-content">
@@ -187,12 +202,12 @@ const Blog = () => {
                             <div className="content-area mb-14">
                               <div className="box-meta mb-2 ">
                                 <span className="text-[15px] font-semibold mr-[55px]">
-                                  <a href="/">
+                                  <Link to="#" href="">
                                     <i class="fa-regular fa-user text-[#d51243]"></i>
-                                  </a>
-                                  <span className="ms-1.5 uppercase text-[#5b5757] ">
-                                    alextina
-                                  </span>
+                                    <span className="ms-1.5 uppercase text-[#5b5757] hover_text ">
+                                      alextina
+                                    </span>
+                                  </Link>
                                 </span>
 
                                 <span className="text-[15px] font-semibold mr-[55px]">
@@ -205,18 +220,20 @@ const Blog = () => {
                                 </span>
 
                                 <span className="text-[15px] font-semibold mr-[55px]">
-                                  <a href="/">
-                                    <i class="fa-regular fa-comment-alt text-[#d51243]"></i>
-                                  </a>
-                                  <span className="ms-1.5 uppercase text-[#5b5757]">
+                                <Link to="#" href="">
+                                  <i class="fa-regular fa-comment-alt text-[#d51243]"></i>
+                                  <span className="ms-1.5 uppercase text-[#5b5757] hover_text">
                                     (04) comments
                                   </span>
+                                </Link>
                                 </span>
                               </div>
 
                               <h4 className="lg:text-[34px] md:text-[25px] sm:text-[31px] text-[28px] font-bold pb-3 hover_text cursor-pointer">
+                                <Link to="/blog_details">
                                 That share a universal hierarchy a large variety
                                 of these
+                                </Link>
                               </h4>
 
                               <p className="text-[16px] pb-7">
@@ -228,7 +245,7 @@ const Blog = () => {
 
                               <div className="btn w-28 mb-24">
                                 <button className="text-[14px] ">
-                                  <a href="/">Read More</a>
+                                  <Link to="/blog_details" href="">Read More</Link>
                                 </button>
                               </div>
                             </div>
@@ -291,13 +308,13 @@ const Blog = () => {
                     <h1 className="text-lg font-bold mb-5">Recent Post</h1>
                     <div className="flex mb-4">
                       <div className="img_thumb">
-                        <a href="/">
+                        <Link to="/blog_details" href="">
                           <img
                             src={blog_sm_1}
                             alt=""
                             className="w-[100px] h-[100px] object-cover"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="info  ms-4 items-center mt-0.5 ">
                         <p className="text-[#777] text-[15px] font-semibold mb-2">
@@ -311,13 +328,13 @@ const Blog = () => {
 
                     <div className="flex mb-4">
                       <div className="img_thumb">
-                        <a href="/">
+                      <Link to="/blog_details" href="">
                           <img
                             src={blog_sm_2}
                             alt=""
-                            className="w-[100px] h-[100px] object-cover "
+                            className="w-[100px] h-[100px] object-cover"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="info  ms-4 items-center mt-0.5 ">
                         <p className="text-[#777] text-[15px] font-semibold mb-2">
@@ -331,13 +348,13 @@ const Blog = () => {
 
                     <div className="flex mb-4">
                       <div className="img_thumb">
-                        <a href="/">
+                      <Link to="/blog_details" href="">
                           <img
                             src={blog_sm_3}
                             alt=""
                             className="w-[100px] h-[100px] object-cover"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="info  ms-4 items-center mt-0.5 ">
                         <p className="text-[#777] text-[15px] font-semibold mb-2">
@@ -351,13 +368,13 @@ const Blog = () => {
 
                     <div className="flex ">
                       <div className="img_thumb">
-                        <a href="/">
+                      <Link to="/blog_details" href="">
                           <img
                             src={blog_sm_4}
                             alt=""
-                            className="w-[100px] h-[100px] object-cover "
+                            className="w-[100px] h-[100px] object-cover"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="info  ms-4 items-center mt-0.5 ">
                         <p className="text-[#777] text-[15px] font-semibold mb-2">
@@ -375,78 +392,78 @@ const Blog = () => {
                   <div className=" pt-9 pr-7 pb-10 pl-7 px-5 ">
                     <h1 className="text-lg font-bold mb-5">Popular Tag</h1>
                     <div className="content text-[12px] font-semibold uppercase text-[#777]  ">
-                      <a
-                        href="/"
+                      <Link to="/"
+                        href=""
                         className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         Furniture
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        table
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Table
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        chair
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Chair
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        clothes
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Clothes
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        toy
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Toy
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        suit
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Suit
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        t-shirt
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        T-shirt
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        dress
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Dress
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
-                        wooden
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                        Wooden
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         clock
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         craft
-                      </a>
-                      <a
-                        href="/"
-                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white "
+                      </Link>
+                      <Link to="/"
+                        href=""
+                        className="border py-1.5  font-bold px-6 my-1 inline-block mx-1 hover:bg-[#d51243] ease-in-out duration-500 hover:text-white"
                       >
                         gift
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -458,7 +475,7 @@ const Blog = () => {
 
       {/* footer */}
 
-      <Footer/>
+      <Footer />
     </>
   );
 };
