@@ -88,10 +88,15 @@ export function Slides() {
 const Wooden_home = () => {
   return (
     <>
+
+      {/* -------------------- TOP Navbar -------------------------- */}
+
       <Top_welcome />
       <Search_navbar />
       <Navbar />
+
       {/* -------------------- IMAGE Slide--------------------------  */}
+      
       <div className="container mx-auto px-2 ">
         <div className="row">
           <div className="grid grid-cols-12 space-x-3">

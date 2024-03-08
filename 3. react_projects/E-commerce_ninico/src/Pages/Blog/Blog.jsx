@@ -17,7 +17,7 @@ const Blog = () => {
     <>
       <Welcome />
       <Search_navbar />
-      <div className="border border-b-gray-50 mt-3"></div>
+      <div className="lg:border lg:border-b-gray-50 lg:mt-3"></div>
       <Navbarclickbtn />
 
       {/*  image */}

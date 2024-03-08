@@ -11,12 +11,12 @@ export const Contact = () => {
     <>
       <Welcome />
       <Search_navbar />
-      <div className="border border-b-gray-50 mt-3"></div>
+      <div className="lg:border lg:border-b-gray-50 lg:mt-3"></div>
       <Navbarclickbtn />
 
       {/* contact area */}
 
-      <section className="contact_area py-16">
+      <section className="contact_area lg:py-16 py-14">
         <div className="container mx-auto px-2">
           <div className="row">
             <div className="grid grid-cols-12">

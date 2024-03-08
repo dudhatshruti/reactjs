@@ -7,8 +7,8 @@ import shop from "../../assets/images/shop.jpg";
 import about_img_1 from "../../assets/images/about_img_1.jpg";
 import about_img_2 from "../../assets/images/about_img_2.jpg";
 import about_img_3 from "../../assets/images/about_img_3.png";
-import about_banner1 from '../../assets/images/about_banner1.jpg'
-import about_banner2 from '../../assets/images/about_banner2.jpg'
+import about_banner1 from "../../assets/images/about_banner1.jpg";
+import about_banner2 from "../../assets/images/about_banner2.jpg";
 
 // import Swipper from "./Swipper";
 
@@ -66,17 +66,25 @@ export function Slides() {
       >
         <SwiperSlide>
           <div className="gradient relative  mb-10">
-            <img src={team1} alt=""/>
+            <img src={team1} alt="" className="brightness-75"/>
             <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
               <p className="text-[15px] font-semibold">Founder</p>
               <h5 className="text-[25px]">Rosalina D. Willson</h5>
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide><img src={team2} alt=""/></SwiperSlide>
-         <SwiperSlide><img src={team3} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={team4} alt="" /></SwiperSlide>
-        <SwiperSlide><img src={team1} alt="" /></SwiperSlide>
+        <SwiperSlide>
+          <img src={team2} alt="" className="brightness-75"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={team3} alt="" className="brightness-75"/>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={team4} alt="" className="brightness-75" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={team1} alt="" className="brightness-75" />
+        </SwiperSlide>
       </Swiper>
     </>
   );
@@ -87,7 +95,7 @@ const About = () => {
     <>
       <Welcome />
       <Search_navbar />
-      <div className="border border-b-gray-50 mt-3"></div>
+      <div className="lg:border lg:border-b-gray-50 lg:mt-3"></div>
       <Navbarclickbtn />
 
       {/* ---------------------image----------------  */}
@@ -105,7 +113,7 @@ const About = () => {
             <div className="grid md:grid-cols-7">
               <div className="shop_content">
                 <div className="link mb-2 text-[16px]">
-                  <span className="item_active relative font-normal pr-10 text-[#040404] after:absolute after:content-[''] after:h-[2px] after:w-[33px] after:bg-[#e4ded5] after:top-[50%] after:translate-x-[-50%] after:right-[-9px]">
+                  <span className="item_active relative font-normal pr-10 text-[#040404] after:absolute after:content-[''] after:h-[2px] after:w-[33px] after:bg-[#e4ded5] after:top-[50%] after:translate-x-[-50%] after:right-[-9px] ">
                     <a href="/">Home</a>
                   </span>
                   <span className="text-[#777]">About Us</span>
@@ -124,21 +132,21 @@ const About = () => {
           <div className="about-inner-logo relative ">
             <div className="row">
               <div className="grid grid-cols-12 gap-3">
-                <div className="col-span-6">
+                <div className="md:col-span-6 col-span-12">
                   <div className="about_1">
                     <img src={about_img_1} alt="" />
                   </div>
                 </div>
-                <div className="col-span-6">
+                <div className="md:col-span-6 col-span-12">
                   <div className="about_2">
                     <img src={about_img_2} alt="" />
                   </div>
                 </div>
               </div>
             </div>
-            <div className="logo absolute -bottom-5 ">
+            <div className="logo absolute xl:start-80 lg:start-56 md:start-32  left-5  -bottom-6 ">
               <Link to="/" href="">
-                <img src={about_img_3} alt="" className="" />
+                <img src={about_img_3} alt="" />
               </Link>
             </div>
           </div>
@@ -164,9 +172,9 @@ const About = () => {
             </div>
           </div>
           <div className="grid grid-cols-12">
-            <div className="col-span-4">
+            <div className="lg:col-span-4 md:col-span-6 col-span-12">
               <div className="story mb-10">
-                <p className="text-[17px] text-[#777] mr-1">
+                <p className="lg:text-[17px] text-[16px] text-[#777] mr-1">
                   Publish your eCommerce site quickly with our easy-to-use store
                   builder— no coding required. Migrate your items from your
                   point of sale system or turn your Instagram feed into a
@@ -178,8 +186,8 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div className="col-span-5">
-              <p className="text-[17px] text-[#777] ml-16">
+            <div className="lg:col-span-5 md:col-span-6 col-span-12">
+              <p className="lg:text-[17px]  text-[16px] text-[#777] lg:ml-16 md:ml-3">
                 Expand your reach and sell more using seamless integrations with
                 Google, Instagram, Facebook, and more. Built- in SEO tools make
                 it easy for shoppers to find your business on search engines.
@@ -190,7 +198,7 @@ const About = () => {
                 promotions to your customers using the contact information
               </p>
             </div>
-            <div className="col-span-3 ml-10">
+            <div className="lg:col-span-3 col-span-12  lg:ml-10 lg:mt-0 md:mt-2 mt-9">
               <div className="list_item text-[17px] mb-10">
                 <h6 className="space-x-4  mb-5 flex">
                   <div>
@@ -245,80 +253,92 @@ const About = () => {
       </section>
 
       <section className="feature-area pb-5 ">
-      <div className="container mx-auto px-2">
-            <div className="row ">
-              <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
-                <div className="col-span-6">
-                  <div className="feature mb-16">
-                    <div className="banner relative   ">
-                      <img src={about_banner1} alt="about_banner" />
-                    </div>
+        <div className="container mx-auto px-2">
+          <div className="row ">
+            <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
+              <div className="col-span-6">
+                <div className="feature mb-16">
+                  <div className="banner relative   ">
+                    <img src={about_banner1} alt="about_banner" />
                   </div>
                 </div>
-                <div className="col-span-6 ">
-                  <div className="feature-info  mx-[50px] mb-[70px]">
-                    <div className="feature text-[14px] mb-1 text-[#777]">
-                      <p>Features #01</p>
-                    </div>
-                    <div className="product_text ">
-                      <h4 className="title mb-4 lg:text-[39px] font-semibold tracking-tight">
-                        <a href="/">Solutions that work together</a>
-                      </h4>
-                      <p className="text-[#777] lg:text-[17px] text-[17px] mb-9">
-                      Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.
-                      </p>
-                    </div>
-                    
-                    <div className="">
-                      <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
-                        <Link to="/contact" href="">Get In Touch</Link>
-                      </button>
-                    </div>
+              </div>
+              <div className="col-span-6 ">
+                <div className="feature-info  mx-[50px] mb-[70px]">
+                  <div className="feature text-[14px] mb-1 text-[#777]">
+                    <p>Features #01</p>
+                  </div>
+                  <div className="product_text ">
+                    <h4 className="title mb-4 lg:text-[39px] font-semibold tracking-tight">
+                      <a href="/">Solutions that work together</a>
+                    </h4>
+                    <p className="text-[#777] lg:text-[17px] text-[17px] mb-9">
+                      Publish your eCommerce site quickly with our easy-to-use
+                      store builder— no coding required. Migrate your items from
+                      your point of sale system or turn your Instagram feed into
+                      a shopping site and start selling fast. Square Online
+                      works for all kinds of businesses—retail, restaurants,
+                      services.
+                    </p>
+                  </div>
+
+                  <div className="">
+                    <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
+                      <Link to="/contact" href="">
+                        Get In Touch
+                      </Link>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
+          <div className="row ">
+            <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
+              <div className="col-span-6 ">
+                <div className="feature-info  mx-[50px] mb-[70px]">
+                  <div className="feature text-[14px] mb-1 text-[#777]">
+                    <p>Features #02</p>
+                  </div>
+                  <div className="product_text ">
+                    <h4 className="title mb-4 lg:text-[39px] font-semibold tracking-tight">
+                      <a href="/">All kinds of payments securely</a>
+                    </h4>
+                    <p className="text-[#777] lg:text-[17px] text-[17px] mb-9">
+                      Publish your eCommerce site quickly with our easy-to-use
+                      store builder— no coding required. Migrate your items from
+                      your point of sale system or turn your Instagram feed into
+                      a shopping site and start selling fast. Square Online
+                      works for all kinds of businesses—retail, restaurants,
+                      services.
+                    </p>
+                  </div>
 
-            <div className="row ">
-              <div className="grid md:grid-cols-12 sm:grid-cols-6 lg:space-x-0 md:space-x-4">
-               
-                <div className="col-span-6 ">
-                  <div className="feature-info  mx-[50px] mb-[70px]">
-                    <div className="feature text-[14px] mb-1 text-[#777]">
-                      <p>Features #02</p>
-                    </div>
-                    <div className="product_text ">
-                      <h4 className="title mb-4 lg:text-[39px] font-semibold tracking-tight">
-                        <a href="/">All kinds of payments securely</a>
-                      </h4>
-                      <p className="text-[#777] lg:text-[17px] text-[17px] mb-9">
-                      Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.
-                      </p>
-                    </div>
-                    
-                    <div className="">
-                      <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
-                        <Link to="/contact" href="">Contact With Us</Link>
-                      </button>
-                    </div>
+                  <div className="">
+                    <button className="border px-6 py-3 text-[18px] font-semibold rounded-md mx-auto hover:bg-[#d51243] ease-in-out duration-500 hover:text-white">
+                      <Link to="/contact" href="">
+                        Contact With Us
+                      </Link>
+                    </button>
                   </div>
                 </div>
+              </div>
 
-                <div className="col-span-6">
-                  <div className="feature mb-10">
-                    <div className="banner relative   ">
-                      <img src={about_banner2} alt="about_banner" />
-                    </div>
+              <div className="col-span-6">
+                <div className="feature mb-10">
+                  <div className="banner relative   ">
+                    <img src={about_banner2} alt="about_banner" />
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </section>
 
       {/* footer */}
-    <Footer/>
+      <Footer />
     </>
   );
 };
