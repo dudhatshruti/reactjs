@@ -304,7 +304,7 @@ export const Clicklogin = () => {
     <>
       <button onClick={Showdetails} className=" ">
         <a href="#" className="  ">
-          <span className="text-[16px] ms-1  text-[#777]">
+          <span className="text-[14px] ms-1  text-[#777]">
             Click here to login
           </span>
         </a>
@@ -381,7 +381,7 @@ export const ClickCode = () => {
     <>
       <button onClick={Showdetails} className=" ">
         <a href="#" className="  ">
-          <span className="text-[16px] ms-1  text-[#777]">
+          <span className="text-[14px] ms-1  text-[#777] ">
             Click here to enter your code
           </span>
         </a>
@@ -391,7 +391,7 @@ export const ClickCode = () => {
           <div className=" mt-2">
             <div className="row">
               <div className="grid grid-cols-6">
-                <div className="col-span-6 bg-white">
+                <div className="col-span-6 ">
                   <div className="form border p-[30px] text-[18px]">
                     <div className="notice   text-start leading-6">
                       <p className=" font-normal ">

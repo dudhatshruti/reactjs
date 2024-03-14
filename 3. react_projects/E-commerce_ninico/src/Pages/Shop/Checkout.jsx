@@ -48,9 +48,9 @@ const Checkout = () => {
       <section className="coupan-area pt-12 pb-12">
         <div className="container mx-auto px-2">
           <div className="row">
-            <div className="grid grid-cols-12 gap-5">
-              <div className="col-span-6  pt-1.5 border-2 border-t-[#d51243]">
-                <button className="text-start">
+            <div className="grid grid-cols-12 gap-5 ">
+              <div className="sm:col-span-6 col-span-12  bg-gray-100 border-2 border-t-[#d51243]">
+                <button className="text-start py-1.5 ">
                   <div className="txt">
                     <i class="fa-solid fa-folder text-xs px-3 text-[#777]"></i>
                     <span className=" text-[14px] text-black font-semibold">
@@ -60,8 +60,8 @@ const Checkout = () => {
                   </div>
                 </button>
               </div>
-              <div className="col-span-6  pt-1.5 border-2 border-t-[#d51243]">
-                <button className="text-start">
+              <div className="sm:col-span-6 col-span-12 bg-gray-100  border-2 border-t-[#d51243]">
+                <button className="text-start py-1.5 ">
                   <div className="txt">
                     <i class="fa-solid fa-folder text-xs px-3 text-[#777]"></i>
                     <span className=" text-[14px] text-black font-semibold">
@@ -81,7 +81,7 @@ const Checkout = () => {
         <div className="container mx-auto px-2 mb-52">
           <div className="row">
             <div className="grid grid-cols-12 gap-5">
-              <div className="col-span-6 ">
+              <div className="md:col-span-6 col-span-12 ">
                 <div className="form">
                   <div className="billing">
                     <h1 className="text-[25px] font-semibold">
@@ -279,9 +279,9 @@ const Checkout = () => {
                 </div>
               </div>
 
-              <div className="col-span-6 border-2 border-red-500">
+              <div className="md:col-span-6 col-span-12 border-2 border-red-500 ">
                 <div className="form p-[42px]">
-                  <div className="billing">
+                  <div className="billing ">
                     <h1 className="text-[25px] font-semibold">Your Order</h1>
                     <div className="border border-b-gray-50 mt-2 mb-3"></div>
                   </div>
@@ -362,7 +362,7 @@ const Checkout = () => {
                                   <th className="pro_name text-[#6f7172]  text-left font-normal w-[250px] text-[14px] py-[17px]">
                                     Order Total
                                   </th>
-                                  <th className="pro_name text-[#6f7172] text-left font-normal w-[250px] text-[20px] py-[17px] font-semibold">
+                                  <th className="pro_name text-[#6f7172] text-left w-[250px] text-[20px] py-[17px] font-semibold">
                                     $215.00
                                   </th>
                                 </tr>

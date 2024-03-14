@@ -9,7 +9,7 @@ import Togglebar_offcanvas from "./Offcanvas/Togglebar_offcanvas";
 const Search_navbar = () => {
   return (
     <>
-      <section className="lg:relative sm:sticky shadow-md shadow-slate-50  lg:py-0 lg:pb-0 sm:py-0.5 sm:pb-7 sm:top-0 bg-white ">
+      <section className="lg:relative sm:sticky md:shadow-none  sm:shadow-md  lg:py-0 lg:pb-0 sm:py-0.5 sm:pb-7 sm:top-0 sm:bg-white ">
         <div className="container mx-auto px-2 ">
           <div className="row  sm:inline hidden ">
             <div className="grid grid-cols-12 items-center mt-6 ">

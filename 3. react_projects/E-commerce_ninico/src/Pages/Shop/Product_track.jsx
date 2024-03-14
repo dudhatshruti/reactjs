@@ -53,11 +53,13 @@ const Product_track = () => {
                 <div className="product_track_content">
                   <div className="product">
                     <img src={product_track} alt="" />
+                    
                   </div>
                   <div className="details bg-gray-100 p-10 rounded-md">
                     <div className="track_item flex mb-4">
                       <div className="track_icon mr-5   ">
-                        <img src={track} alt="track" className="bg-white p-3 rounded-md w-full"/>
+                        {/* <img src={track} alt="track" className="bg-white p-3 rounded-md w-full"/> */}
+                        <i class="fa-solid fa-truck bg-white p-3 rounded-md text-xs"></i>
                       </div>
                       <div className="content">
                         <h4 className="title text-[18px] text-black font-semibold pb-1">

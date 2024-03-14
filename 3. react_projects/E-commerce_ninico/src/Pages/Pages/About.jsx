@@ -36,37 +36,33 @@ export function Slides() {
         }}
         breakpoints={
           {
-            // 320:{
-            //   slidesPerView: 1,
-            //   spaceBetween: 0,
-            // },
-            // 576: {
-            //   slidesPerView: 2,
-            //   spaceBetween: 20,
-            // },
-            // 768: {
-            //   slidesPerView: 3,
-            //   spaceBetween: 10,
-            // },
-            // 1000: {
-            //   slidesPerView: 4,
-            //   spaceBetween: 10,
-            // },
-            // 1200: {
-            //   slidesPerView:5,
-            //   spaceBetween: 10,
-            // },
-            // 1399: {
-            //   slidesPerView:6,
-            //   spaceBetween: 10,
-            // },
+            320:{
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
+            576: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+            1000: {
+              slidesPerView: 4,
+              spaceBetween: 10,
+            },
+            1399: {
+              slidesPerView:4,
+              spaceBetween: 10,
+            },
           }
         }
         modules={[Autoplay]}
       >
         <SwiperSlide>
-          <div className="gradient relative  mb-10">
-            <img src={team1} alt="" className="brightness-75"/>
+          <div className="gradient relative   mb-10">
+            <img src={team1} alt="" className="brightness-75 w-full"/>
             <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
               <p className="text-[15px] font-semibold">Founder</p>
               <h5 className="text-[25px]">Rosalina D. Willson</h5>
@@ -74,16 +70,40 @@ export function Slides() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={team2} alt="" className="brightness-75"/>
+        <div className="gradient relative  mb-10">
+            <img src={team2} alt="" className="brightness-75  w-full"/>
+            <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
+              <p className="text-[15px] font-semibold">CEO</p>
+              <h5 className="text-[25px]">UKolilix X. Xilanorix</h5>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={team3} alt="" className="brightness-75"/>
+        <div className="gradient relative  mb-10">
+            <img src={team3} alt="" className="brightness-75  w-full"/>
+            <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
+              <p className="text-[15px] font-semibold">Designer</p>
+              <h5 className="text-[25px]">Alonso M.Miklonax</h5>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={team4} alt="" className="brightness-75" />
+        <div className="gradient relative  mb-10">
+            <img src={team4} alt="" className="brightness-75  w-full"/>
+            <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
+              <p className="text-[15px] font-semibold">Developer</p>
+              <h5 className="text-[25px]">Miranda H.Halim</h5>
+            </div>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={team1} alt="" className="brightness-75" />
+        <div className="gradient relative  mb-10">
+            <img src={team1} alt="" className="brightness-75  w-full"/>
+            <div className="profile absolute bottom-[35px] z-50 left-7 text-white">
+              <p className="text-[15px] font-semibold">Founder</p>
+              <h5 className="text-[25px]">Rosalina D. Willson</h5>
+            </div>
+          </div>
         </SwiperSlide>
       </Swiper>
     </>
@@ -263,8 +283,8 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-6 ">
-                <div className="feature-info  mx-[50px] mb-[70px]">
+              <div className="col-span-6  ">
+                <div className="feature-info  mx-[50px] mb-[70px] place-content-center ">
                   <div className="feature text-[14px] mb-1 text-[#777]">
                     <p>Features #01</p>
                   </div>

@@ -5,6 +5,7 @@ import Search_navbar from "../../components/search_navbar/Search_navbar";
 import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
 import shop from "../../assets/images/shop.jpg";
 import asset17 from "../../assets/images/asset 17.jpeg";
+import Footer from "../../components/footer/Footer";
 
 const Cart = () => {
   return (
@@ -124,9 +125,9 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="row mt-10">
+          <div className="row flex justify-end  mt-10 mb-16">
             <div className="grid grid-cols-12 ">
-              <div className="col-span-5 ">
+              <div className="col-span-12  ">
                 <div className="cart-total  ">
                   <h1 className="text-[25px] mb-5">Cart Totals</h1>
                   <div className="cat_list">
@@ -144,10 +145,15 @@ const Cart = () => {
                   </button>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
+      </section>
+
+      {/* ------------------FOOTER------------------- */}
+      
+      <section>
+        <Footer/>
       </section>
     </>
   );
