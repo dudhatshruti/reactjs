@@ -44,7 +44,7 @@ const Product_track = () => {
         </div>
       </section>
 
-      {/* track area */}
+      {/*-------------------- track area------------------------ */}
       <section className="track_area py-16">
         <div className="container mx-auto px-2">
           <div className="row flex justify-center">
@@ -53,7 +53,6 @@ const Product_track = () => {
                 <div className="product_track_content">
                   <div className="product">
                     <img src={product_track} alt="" />
-                    
                   </div>
                   <div className="details bg-gray-100 p-10 rounded-md">
                     <div className="track_item flex mb-4">
