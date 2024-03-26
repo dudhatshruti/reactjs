@@ -100,21 +100,20 @@ const Cart = () => {
 
           <div className="row mt-5">
             <div className="grid grid-cols-12">
-              <div className="col-span-6 ">
+              <div className="col-span-6">
                 <div className="coupoun-all ">
                   <div className="coupon">
                     <input
                       type="text"
                       placeholder="Coupon code"
                       name="coupon code"
-                      className="border h-[52px] px-[15px] text-[17px] text-black rounded-md outline-0 mr-2"
-                    />
-
+                      className="border h-[52px] px-[15px] text-[17px] text-black rounded-md outline-0 mr-2"/>
+                    
                     <button className="btn">
                       <a href="/">Apply Coupon</a>
                     </button>
                   </div>
-                  <div className="coupon2"></div>
+                  {/* <div className="coupon2"></div> */}
                 </div>
               </div>
               <div className="col-span-6 flex justify-end">
@@ -125,7 +124,7 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="row flex justify-end  mt-10 mb-16">
+          {/* <div className="row flex justify-end  mt-10 mb-16">
             <div className="grid grid-cols-12 ">
               <div className="col-span-12  ">
                 <div className="cart-total  ">
@@ -146,7 +145,7 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
