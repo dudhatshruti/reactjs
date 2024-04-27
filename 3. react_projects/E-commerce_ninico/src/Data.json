@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "title":"Bradley Burgess 2",
+        "price":"$20.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-1.jpg"
+    },
+    {
+        "id":2,
+        "title":"Allie Sharp",
+        "price":"$30.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-3.jpg"
+    },
+    {
+        "id":3,
+        "title":"Natheniel Baldwin",
+        "price":"$40.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-5.jpg"
+    },
+    {
+        "id":4,
+        "title":"Effie Rios",
+        "price":"$40.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-7.jpg"
+    },
+    {
+        "id":5,
+        "title":"Carolyn Goodwin",
+        "price":"$50.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-9.jpg"
+    },
+    {
+        "id":6,
+        "title":"Evelyn Patton",
+        "price":"$60.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-11.jpg"
+    },
+    {
+        "id":7,
+        "title":"Sally Ray",
+        "price":"$70.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-13.jpg"
+    },
+    {
+        "id":8,
+        "title":"Ora Bowman",
+        "price":"$80.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-15.jpg"
+    },
+    {
+        "id":9,
+        "title":"Frederick Valdez",
+        "price":"$90.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-17.jpg"
+    },
+    {
+        "id":10,
+        "title":"Terry Byrd",
+        "price":"$100.00",
+        "thumbnail":"https://ninico-nextjs.vercel.app/assets/img/product/product-19.jpg"
+    }
+]

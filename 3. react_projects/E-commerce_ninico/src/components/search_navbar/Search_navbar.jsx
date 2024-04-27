@@ -5,16 +5,17 @@ import ninico from "../../assets/images/ninico.png";
 import flag from "../../assets/images/flag.png";
 import Cart_offcanvas from "./Offcanvas/Cart_offcanvas";
 import Togglebar_offcanvas from "./Offcanvas/Togglebar_offcanvas";
+import user from '../../assets/images/user.jpg'
 
 const Search_navbar = () => {
   return (
     <>
-      <section className="lg:relative sm:sticky md:shadow-none  sm:shadow-md  lg:py-0 lg:pb-0 sm:py-0.5 sm:pb-7 sm:top-0 sm:bg-white ">
+      <section className="lg:relative  lg:py-0 lg:pb-0 sm:py-0.5 sm:pb-7 sm:top-0 ">
         <div className="container mx-auto px-2 ">
           <div className="row  sm:inline hidden ">
             <div className="grid grid-cols-12 items-center mt-6 ">
               <div className="lg:col-span-2 md:col-span-3 sm:col-span-4 flex items-center">
-                <Togglebar_offcanvas />
+                <Togglebar_offcanvas/>
                 <div>
                   <Link to="/">
                     <img
@@ -33,14 +34,14 @@ const Search_navbar = () => {
                   <input
                     type="text"
                     placeholder="Serach Products..."
-                    className=" input-field w-full  bg-slate-100 border-white rounded-md outline-0 text-sm "
+                    className="input-field w-full  bg-slate-100 border-white rounded-md outline-0 text-sm"
                   />
                 </div>
               </div>
               <div className=" country col-span-2 xl:inline lg:inline md:hidden hidden  border border-slate-100 ml-8 mr-2.5">
                 <div className="home-dropdown flex justify-between ">
                   <div className="rounded flex items-center mx-auto space-x-2 py-1">
-                    <img src={flag} alt="" className=" " />
+                    <img src={flag} alt="flag" className=" " />
                     <span className="text-xs font-bold">English</span>
                     <span className="angelgown text-[11px]">
                       <i class="fa-solid fa-angle-down  text-gray-200 hover:text-[#d51243]"></i>
@@ -52,19 +53,19 @@ const Search_navbar = () => {
                             href="#"
                             className="text-sm hover:text-[#d51243]  transition ease-in-out duration-1000"
                           >
-                            Arabic
+                            <span>Arabic</span>
                           </a>
                           <a
                             href="#"
                             className="text-sm hover:text-[#d51243]  transition ease-in-out duration-1000 "
                           >
-                            Spanish
+                            <span>Spanish</span>
                           </a>
                           <a
                             href="#"
                             className="text-sm hover:text-[#d51243]  transition ease-in-out duration-1000"
                           >
-                            Mandarin
+                            <span>Mandarin</span>
                           </a>
                         </li>
                       </ul>
@@ -72,7 +73,7 @@ const Search_navbar = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-span-1  xl:inline lg:inline md:hidden hidden  border py-1.5 border-slate-100 w-4/6 rounded-sm ">
+              <div className="col-span-1 xl:inline lg:inline md:hidden hidden  border py-1.5 border-slate-100 w-4/6 rounded-sm">
                 <select className="outline-0 text-sm">
                   <option>USD</option>
                   <option>YEAN</option>
@@ -83,17 +84,23 @@ const Search_navbar = () => {
                 <div>
                   <Cart_offcanvas />
                 </div>
-                {/* <span className="top-10 start-75 w-3 h-4 text-center  rounded bg-[#d51243] absolute ">0</span> */}
+                {/* <span className="sm:top-2   rounded-full w-3.5 h-3.5 text-xs text-center text-white   bg-[#d51243] absolute ">0</span> */}
                 <div>
                   <Link to="/sign_in" href="">
                     <i class="fa-regular fa-user"></i>
                   </Link>
+                  <span className="">
+                    <img src={user} alt="" className="bg-black"/>
+                </span>
                 </div>
+               
+                
+                
                 <div>
                   <Link to="/whishlist" href="" className="relative ">
                     <i class="fa-regular fa-heart  "></i>
                   </Link>
-                  {/* <div className=" text-center w-3.5 h-3.5 rounded-full text-xs text-white absolute top-2 right-0 bg-[#d51243] ">
+                  {/* <div className=" text-center w-3.5 h-3.5 rounded-full text-xs text-white absolute sm:top-2   bg-[#d51243] ">
                     2
                   </div> */}
                 </div>
@@ -128,7 +135,7 @@ const Search_navbar = () => {
           </div>
         </div>
       </div>
-      </div>
+    </div>
     </>
   );
 };

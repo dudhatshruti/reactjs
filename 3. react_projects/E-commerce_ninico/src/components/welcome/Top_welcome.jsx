@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Top_welcome = () => {
   return (
     <>
-      <div className="bg-[#e7e7e7]">
+      <div className="bg-[#f3eee7]">
         <div className="container mx-auto px-2 py-1 ">
           <div className="row ">
             <div className=" cols-12 sm:text-start items-center">
@@ -37,7 +37,7 @@ export default Top_welcome;
 export const Welcome = () => {
   return (
     <>
-      <div className="bg-[#e7e7e7]">
+      <div className="bg-[#f3eee7]">
         <div className="container mx-auto px-2 py-1 ">
           <div className="row ">
             <div className="grid grid-cols-12 sm:text-start items-center">

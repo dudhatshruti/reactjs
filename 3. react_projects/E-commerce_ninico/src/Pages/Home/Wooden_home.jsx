@@ -28,6 +28,7 @@ import asset80 from '../../assets/images/asset 80.jpeg'
 import asset81 from '../../assets/images/asset 81.jpeg'
 
 import { Autoplay } from 'swiper/modules';
+import { Changeheader } from "../../components/category_btn_navbar/Change_header";
 
 export function Slides() {
   return (
@@ -101,7 +102,7 @@ const Wooden_home = () => {
         <div className="row">
           <div className="grid grid-cols-12 space-x-3">
             <div className="lg:col-span-9 md:col-span-9 sm:col-span-12 col-span-12   flex justify-end  ">
-              <img src={flower} alt="" />
+              <img src={flower} alt=""/>
               {/* <Swipper/> */}
             </div>
 
@@ -191,7 +192,7 @@ const Wooden_home = () => {
                     Categories
                     <img
                       src={top_category}
-                      alt=""
+                      alt="categories"
                       className="absolute left-0  bottom-0 -z-50 "
                     />
                   </span>
@@ -199,10 +200,10 @@ const Wooden_home = () => {
               </div>
             </div>
           </div>
-          <div className="row flex flex-wrap justify-around pb-11 border-b border-gray-500 ">
+          <div className="row flex flex-wrap justify-around pb-11 border-b border-gray-200 ">
             <div className="category relative text-center   ">
               <div className="group cat_icon mb-5  bg-slate-50 rounded-full  py-8 px-10">
-                <img src={chair} alt="" />
+                <img src={chair} alt="chair" />
                 <span className="categories6 ">20</span>
               </div>
               <div className="lg:category_content">
@@ -213,7 +214,7 @@ const Wooden_home = () => {
             </div>
             <div className="category relative text-center ">
               <div className="group cat_icon  mb-5  bg-slate-50 rounded-full py-8 px-9">
-                <img src={lamp} alt="" />
+                <img src={lamp} alt="lamp" />
                 <span className="categories6">12</span>
               </div>
               <div className="category_content">
@@ -235,7 +236,7 @@ const Wooden_home = () => {
             </div>
             <div className="category relative text-center  ">
               <div className="group cat_icon   mb-3 bg-slate-50 rounded-full  py-8 px-9">
-                <img src={Bluetooth} alt="" />
+                <img src={Bluetooth} alt="Bluetooth" />
                 <span className="categories6">09</span>
               </div>
               <div className="category_content text-center">
@@ -246,23 +247,23 @@ const Wooden_home = () => {
             </div>
             <div className="category relative text-center ">
               <div className="group cat_icon  mb-5  bg-slate-50 rounded-full  py-8 px-10">
-                <img src={recievers} alt="" />
+                <img src={recievers} alt="recievers" />
                 <span className="categories6">10</span>
               </div>
               <div className="category_content ">
                 <h5 className="w-20 font-semibold text-sm text-center ms-4">
-                  <Link to="/shop" href="/">Recievers Amplifires</Link>
+                  <Link to="/shop" href="">Recievers Amplifires</Link>
                 </h5>
               </div>
             </div>
             <div className="category relative text-center  ">
               <div className="group cat_icon  mb-5  bg-slate-50 rounded-full  py-8 px-9">
-                <img src={plate_set} alt="" />
+                <img src={plate_set} alt="plate_set" />
                 <span className="categories6">05</span>
               </div>
               <div className="category_content">
                 <h5 className="w-20 font-semibold text-sm ms-4">
-                  <Link to="/shop" href="/">Appetizer Plate Set</Link>
+                  <Link to="/shop" href="">Appetizer Plate Set</Link>
                 </h5>
               </div>
             </div>
@@ -392,7 +393,7 @@ const Wooden_home = () => {
     {/* ----------------- Footer area ----------------------------- */}
 
     <Footer/>
-    
+    {/* <Changeheader/> */}
     </>
   );
 };

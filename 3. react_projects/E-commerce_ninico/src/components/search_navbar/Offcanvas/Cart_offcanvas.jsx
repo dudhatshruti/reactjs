@@ -22,7 +22,7 @@ const Cart_offcanvas = () => {
         
       </button>
       <div
-        className={`offcanvas-menu   bg-white  ${isOpen ? "open" : "close"}`}
+        className={`offcanvas-menu bg-white z-50  ${isOpen ? "open" : "close"}`}
       >
         <button className="close-button absolute" onClick={closeMenu}>
           <div className="flex justify-between bg-gray-100 p-2.5 px-4">

@@ -90,31 +90,31 @@ const Footer = () => {
                         <li className="footer-links ">
                           <a href="/">
                             <i class="fa-brands fa-facebook-f w-8 text-black "></i>
-                            Facebook
+                            <span> Facebook</span>
                           </a>
                         </li>
                         <li className="footer-links">
                           <a href="/">
                             <i class="fa-brands fa-dribbble w-8 text-black"></i>
-                            Dribbble
+                            <span>Dribbble</span>
                           </a>
                         </li>
                         <li className="footer-links">
                           <a href="/">
                             <i class="fa-brands fa-twitter w-8 text-black"></i>
-                            Twitter
+                            <span>Twitter</span>
                           </a>
                         </li>
                         <li className="footer-links">
                           <a href="/">
                             <i class="fa-brands fa-behance w-8 text-black"></i>
-                            Behance
+                            <span> Behance</span>
                           </a>
                         </li>
                         <li className="footer-links">
                           <a href="/">
                             <i class="fa-brands fa-youtube w-8 text-black"></i>
-                            Youtube
+                            <span>Youtube</span>
                           </a>
                         </li>
                       </ul>
@@ -156,8 +156,8 @@ const Footer = () => {
                       <i class="fa-solid fa-phone-flip bg-white rounded-full p-3 shadow-md"></i>
                     </div>
                     <div className="text">
-                      <Link to="/error" href="" className="text-[20px] font-bold leading-3 hover_text ">
-                        980.029.666.99
+                      <Link to="/error" href="" className="text-[19px] font-bold leading-3 hover_text ">
+                        980. 029. 666. 99
                       </Link>
                       <p className="text-[14px] font-normal text-[#777]">
                         Working 8:00 - 22:00
@@ -198,14 +198,14 @@ const Footer = () => {
                     Copyright 2024
                     <a
                       href="/"
-                      className="text-[#040404] font-bold hover_text"
+                      className="text-[#040404] font-bold hover_text ms-1"
                     >
                       &copy;Ninico.
                     </a>
                     <span> All rights reserved. Developed by</span>
                     <a
                       href="/"
-                      className="text-[#040404] font-bold hover_text"
+                      className="text-[#040404] font-bold hover_text ms-1"
                     >
                       Ali Themes.
                     </a>

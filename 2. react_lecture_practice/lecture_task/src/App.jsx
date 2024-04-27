@@ -29,11 +29,14 @@ import Reducer_multiple from "./task/hooks/Use_Reducer/Reducer_multiple";
 import Reducer_Multiple_2 from "./task/hooks/Use_Reducer/Reducer_multiple_2";
 import Reducer_Multiple_3 from "./task/hooks/Use_Reducer/Reduce_multiple_3";
 import Reducer_Multiple_4 from "./task/hooks/Use_Reducer/Reduce_multiple_4";
-import Passing_initstate from "./task/hooks/Use_Reducer/Passing_initstate";
+import Passing_initstate from "./task/hooks/Use_Reducer/To_doList";
 import Use_callback from "./task/hooks/Use_callback/Use_callback";
 import UseRef from "./task/hooks/Use_Ref/UseRef";
 import Click_counter from "./task/hooks/Use_Ref/Click_counter";
 import Stop_watch from "./task/hooks/Use_Ref/Stop_watch";
+import To_doList from "./task/hooks/Use_Reducer/To_doList";
+import To_do from "./task/hooks/Use_Reducer/Todo";
+import To_doApp from "./task/hooks/Use_Reducer/To_doApp";
 // import Component_A from './task/hooks/use_context/Component_A'/
 
 {
@@ -120,14 +123,16 @@ const App = () => {
       </div>
 
     {/*----------- use_Reducer------------  */}
-      {/* <Use_Reducer/> */}
-      {/* <Use_Reducer1/> */}
-      {/* <Reducer_multiple/> */}
-      {/* <Reducer_Multiple_2/> */}
-      {/* <Reducer_Multiple_3/> */}
-      {/* <Reducer_Multiple_4/> */}
+      {/* <Use_Reducer/>
+      <Use_Reducer1/>
+      <Reducer_multiple/>
+      <Reducer_Multiple_2/>
+      <Reducer_Multiple_3/>
+      <Reducer_Multiple_4/> */}
       {/* <Passing_initstate/> */}
-
+      {/* <To_doList/> */}
+      {/* <To_do/> */}
+      {/* <To_doApp/> */}
     {/*-------------Use_callback-----------*/}
 
       {/* <Use_callback/> */}
@@ -136,7 +141,7 @@ const App = () => {
 
     {/* <UseRef/> */}
     {/* <Click_counter/> */}
-    <Stop_watch/>
+    {/* <Stop_watch/> */}
     </>
   );
 };

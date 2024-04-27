@@ -156,7 +156,7 @@ export const Categories2_btn = () => {
   };
 
   return (
-    <div className="absolute">
+    <div className="absolute z-10">
       <button
         onClick={Showcategory2}
         className=" lg:w-44  py-2.5 bg-[#d51243]  flex"
