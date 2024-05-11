@@ -21,21 +21,26 @@ import asset31 from "../../assets/images/asset 31.jpeg";
 import asset32 from "../../assets/images/asset 32.jpeg";
 import asset33 from "../../assets/images/asset 33.jpeg";
 import asset34 from "../../assets/images/asset 34.jpeg";
+import { useDispatch } from "react-redux";
+import { AddToCart } from "../../Pages/Cart/Redux/CartSlice";
 
 const Popular_product = () => {
+  const dispatch = useDispatch();
+  
+
   return (
     <>
-      <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset15} alt="" />
             <div className="group inner absolute top-0 left-0 hidden ">
               <img src={asset16} alt="" />
               <div className=" product_4icon  absolute left-0 right-0 text-center ">
                 <div className="pro_addicon hidden inner">
-                  <a href="/">
+                  <button onClick={()=>dispatch(AddToCart())}>
                     <i class="fa-solid fa-basket-shopping"></i>
-                  </a>
+                  </button> 
                   <a href="/">
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                   </a>
@@ -100,7 +105,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12 rounded-md  hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset17} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -108,9 +113,9 @@ const Popular_product = () => {
 
               <div className=" product_4icon  absolute left-0 right-0 text-center  ">
                 <div className="pro_addicon hidden inner">
-                  <a href="/">
+                <button onClick={()=>dispatch(AddToCart())}>
                     <i class="fa-solid fa-basket-shopping"></i>
-                  </a>
+                  </button>
                   <a href="/">
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                   </a>
@@ -175,7 +180,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12 rounded-md  hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset19} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -183,9 +188,9 @@ const Popular_product = () => {
 
               <div className=" product_4icon  absolute left-0 right-0 text-center ">
                 <div className="pro_addicon hidden inner">
-                  <a href="/">
+                <button onClick={()=>dispatch(AddToCart())}>
                     <i class="fa-solid fa-basket-shopping"></i>
-                  </a>
+                  </button>
                   <a href="/">
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                   </a>
@@ -250,7 +255,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset21} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -325,7 +330,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset23} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -400,7 +405,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset25} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -475,7 +480,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12  rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset27} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -550,7 +555,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12  rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset29} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -625,7 +630,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12 rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset31} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -700,7 +705,7 @@ const Popular_product = () => {
       </div>
 
       <div className=" main_bg pb-12  rounded-md hover:bg-white hover:shadow-lg shadow-slate-200 p-2.5 ">
-        <Link to="/shop_details" href="">
+        <Link to="/" href="">
           <div className="img_area outer relative  ">
             <img src={asset33} alt="" />
             <div className="group inner absolute top-0 left-0 hidden   ">
@@ -772,7 +777,14 @@ const Popular_product = () => {
             </div>
           </div>
         </Link>
-      </div>
+      </div> 
+
+
+
+
+
+
+
     </>
   );
 };

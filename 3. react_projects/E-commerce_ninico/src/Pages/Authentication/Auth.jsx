@@ -3,26 +3,27 @@ import { useState,createContext,useContext } from 'react'
 
 const AuthContext = createContext()
 
-export const AuthProvider = ({children}) => {
-    const [user, setuser] = useState(" ")
+export const AuthProvider = ({children})=>{
+    const [user, setuser] = useState('')
 
-    const login = (user) => {
+    const login = (user)=>{
         setuser(user)
     }
 
-    const logout = () => {
+    const logout = () =>{
         setuser(null)
     }
 
     return(
         <>
-            <AuthContext.Provider value={{login,logout,user}}>
-                {children}
-            </AuthContext.Provider>
+        <AuthContext.Provider value={{login,logout,user}}>
+            {children}
+        </AuthContext.Provider>
         </>
     )
 }
 
-export const authUse = ()=>{
+export const authUse = () =>{
     return useContext(AuthContext)
 }
+

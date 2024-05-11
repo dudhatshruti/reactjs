@@ -6,6 +6,7 @@ import flag from "../../assets/images/flag.png";
 import Cart_offcanvas from "./Offcanvas/Cart_offcanvas";
 import Togglebar_offcanvas from "./Offcanvas/Togglebar_offcanvas";
 import user from '../../assets/images/user.jpg'
+import Profile from "../../Pages/Authentication/Profile";
 
 const Search_navbar = () => {
   return (
@@ -86,12 +87,11 @@ const Search_navbar = () => {
                 </div>
                 {/* <span className="sm:top-2   rounded-full w-3.5 h-3.5 text-xs text-center text-white   bg-[#d51243] absolute ">0</span> */}
                 <div>
-                  <Link to="/sign_in" href="">
+                  
+                  <Link to="/profile" href="">
                     <i class="fa-regular fa-user"></i>
                   </Link>
-                  <span className="">
-                    <img src={user} alt="" className="bg-black"/>
-                </span>
+                  
                 </div>
                
                 

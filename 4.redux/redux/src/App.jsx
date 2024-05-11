@@ -3,7 +3,7 @@
 // // import { Provider } from 'react-redux'
 // import {reducer} from './Example_redux/Index'
 // import { configureStore } from '@reduxjs/toolkit';
-
+import FormikForm from './FormikForm'
 
 // const store = configureStore({
 //   reducer
@@ -20,7 +20,9 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <FormikForm/>
+    </div>
   )
 }
 

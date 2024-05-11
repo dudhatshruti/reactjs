@@ -4,10 +4,12 @@ const ProductReducer = (data  = [] , action) => {
     switch (action.type) {
         case PRODUCT_LIST:
             console.log('ProductList Called', action);
-            return [action.data]
+            localStorage.setItem('productList', JSON.stringify(action.data))
+            return [...action.data]
         case SET_PRODUCT_LIST:
             console.log('ProductList Called', action);
-            return [action.data]
+            localStorage.setItem('productList', JSON.stringify(action.data))
+            return [...action.data]
         default: return data
     }
 }

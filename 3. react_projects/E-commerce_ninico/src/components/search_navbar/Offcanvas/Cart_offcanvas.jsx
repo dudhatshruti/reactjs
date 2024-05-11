@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Offcanvas/offcanvas.css";
+import { useSelector } from "react-redux";
 
 const Cart_offcanvas = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,15 +13,17 @@ const Cart_offcanvas = () => {
     setIsOpen(false);
   };
 
+  const cartItems = useSelector(state=> state.cart.cart)
   return (
     <>
-      <button className="cart-button " onClick={openMenu}>
-        <a  className="">
+      <button className="cart-button "> 
+        <Link to="/cart">
+
           <i class="fa-solid fa-cart-shopping  "></i>
-        </a>
-        {/* <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[77px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243] ">1</div>  */}
+        </Link> 
+         <div className=" w-3.5 h-3.5 rounded-full text-xs text-white absolute md:top-2 lg:right-[99px] md:right-[100px] sm:right-[125px] sm:top-[79px] bg-[#d51243] ">{cartItems.length}</div> 
         
-      </button>
+       </button>
       <div
         className={`offcanvas-menu bg-white z-50  ${isOpen ? "open" : "close"}`}
       >

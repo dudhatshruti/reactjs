@@ -112,7 +112,7 @@ const Wooden_home = () => {
                   <img
                     src={pencil}
                     alt=""
-                    className=" lg:min-h-38 md:min-h-40 rounded-md"
+                    className="lg:min-h-38 md:min-h-40 rounded-md"
                   />
                   <div className="banner_img_info absolute top-0 left-0 p-5">
                     <span className="sub_class text-xs text-[#d51243] font-semibold">

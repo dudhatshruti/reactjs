@@ -1,23 +1,29 @@
 import { ADD_TO_CART,REMOVE_TO_CART,EMPTY_CART } from "../Constant";
-
-const Reducer = (data = [], action) => {
+const getCartDataFromLocalStorage = ()=>{
+    const cartData = localStorage.getItem('cart');
+    return cartData ? JSON.parse(cartData):[];
+}
+const Reducer = (state = getCartDataFromLocalStorage(), action) => {
     switch (action.type) {
 
         case ADD_TO_CART:
             console.warn('AddToCart Called', action);
-            return [action.data , ...data]
+            const updatedCartAdd = [action.data , ...state];
+            localStorage.setItem('cart', JSON.stringify(updatedCartAdd))
+            return updatedCartAdd
 
         case REMOVE_TO_CART:
             console.warn('RemoveToCart Called', action);
-            data.length =data.length ?  data.length-1 : []
-            return [...data]
+            const updateCartRemove = state.filter(item => item.id !== action.data)
+            localStorage.setItem('cart',JSON.stringify(updateCartRemove))
+            return updateCartRemove
 
         case EMPTY_CART:
             console.warn('EmptyCart Called', action);
-            data = []
-            return [...data]
+        localStorage.removeItem('item')
+            return []
 
-        default: return []
+        default: return state
     }
 }
 

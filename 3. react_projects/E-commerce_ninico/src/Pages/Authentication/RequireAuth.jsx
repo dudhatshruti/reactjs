@@ -8,7 +8,7 @@ const RequireAuth = ({children}) => {
     const auth = authUse()
 
     if (!auth.user) {
-        return <Navigate path="/"/>
+        return <Navigate path="/sign_in"/>
     }
   return (
     <div>

@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from 'react'
+import { useState } from "react";
 import { authUse } from "./Auth";
 import { useNavigate } from "react-router-dom";
 import { Welcome } from "../../components/welcome/Top_welcome";
@@ -9,17 +9,17 @@ import shop from "../../assets/images/shop.jpg";
 import login from "../../assets/images/login.jpg";
 import signup from "../../assets/images/signup.jpg";
 import Footer from "../../components/footer/Footer";
-
+import { Link } from "react-router-dom";
 const Sign_in = () => {
+  const [user, setuser] = useState("");
 
-  const [user, setuser] = useState('')
-  const auth = authUse()
-  const navigate = useNavigate()
+  const auth = authUse();
+  const navigate = useNavigate();
 
   const handleLogin = () => {
-    auth.login(user)
-    navigate('/')
-  }
+    auth.login(user);
+    navigate("/");
+  };
 
   return (
     <>
@@ -89,40 +89,57 @@ const Sign_in = () => {
                             <i class="fa-regular fa-user text-xs ms-4"></i>
                           </button>
                           <input
-                            type="text" onchange={(e) => setuser(e.target.value)}
+                            type="name"
+                            onChange={(e) => setuser(e.target.value)}
                             placeholder="Username / email address"
-                            className=" input-field w-11/12 border-white rounded-md outline-0 text-[14px]  "
+                            className=" input-field w-11/12 border-white rounded-md outline-0 text-[14px]"
                           />
                         </div>
                       </form>
                     </div>
-                    <div className="email mb-2 pl-10"> 
-                        <div className="search-info relative ">
-                          <button className="search-icon absolute top-2 ">
+                    <div className="email mb-2 pl-10">
+                      <div className="search-info relative ">
+                        <button className="search-icon absolute top-2 ">
                           <i class="fa-solid fa-key ms-4 "></i>
-                          </button>
-                          <input
-                            type="text"
-                            placeholder="Password"
-                            className=" input-field w-11/12  border-white rounded-md outline-0 text-[14px] "
-                          />
-                        </div>
+                        </button>
+                        <input
+                          type="text"
+                          placeholder="Password"
+                          className=" input-field w-11/12  border-white rounded-md outline-0 text-[14px] "
+                        />
+                      </div>
                     </div>
                     <div className="checkbox mb-3 mt-2 flex justify-between items-center px-10">
                       <div className="form-check">
-                    <input type="checkbox"   value="remember" className="border border-white "></input>
-                    <label  className="text-[14px] text-[#777]"> Remember me</label>
+                        <input
+                          type="checkbox"
+                          value="remember"
+                          className="border border-white "
+                        ></input>
+                        <label className="text-[14px] text-[#777]">
+                          {" "}
+                          Remember me
+                        </label>
+                      </div>
+
+                      <div className="forget_pass text-[14px] underline hover_text  ">
+                        <a href="/">Forget Password</a>
+                      </div>
                     </div>
 
-                    <div className="forget_pass text-[14px] underline hover_text  "> 
-                      <a href="/">Forget Password</a>
-                    </div>
-                    </div>
-                   
                     <div className="btn mt-4 flex justify-center mx-10 hover:bg-red-700">
-                      <button onClick={handleLogin} className=" text-[16px] py-1 font-semibold">
+                      <Link to="/profile">
+                        <button
+                          type=""
+                          onClick={handleLogin}
+                          className=" text-[16px] py-1 font-semibold"
+                        >
+                          Login Now
+                        </button>
+                      </Link>
+                      {/* <button type="" onClick={handleLogin} className=" text-[16px] py-1 font-semibold">
                         Login Now
-                      </button>
+                      </button> */}
                       <span>
                         <i class="fa-solid fa-arrow-right mt-2.5 pl-2"></i>
                       </span>
@@ -156,7 +173,7 @@ const Sign_in = () => {
                       <form>
                         <div className="search-info relative">
                           <button className="search-icon absolute top-2 ">
-                          <i class="fa-regular fa-envelope text-xs ms-4"></i>
+                            <i class="fa-regular fa-envelope text-xs ms-4"></i>
                           </button>
                           <input
                             type="text"
@@ -166,24 +183,24 @@ const Sign_in = () => {
                         </div>
                       </form>
                     </div>
-                    <div className="email mb-2 pl-10"> 
-                        <div className="search-info relative ">
-                          <button className="search-icon absolute top-2 ">
+                    <div className="email mb-2 pl-10">
+                      <div className="search-info relative ">
+                        <button className="search-icon absolute top-2 ">
                           <i class="fa-solid fa-key ms-4 "></i>
-                          </button>
-                          <input
-                            type="text"
-                            placeholder="Password"
-                            className=" input-field w-11/12  border-white rounded-md outline-0 text-[14px] "
-                          />
-                        </div>
+                        </button>
+                        <input
+                          type="text"
+                          placeholder="Password"
+                          className=" input-field w-11/12  border-white rounded-md outline-0 text-[14px] "
+                        />
+                      </div>
                     </div>
                     <div className="account mb-3 mt-2   px-10">
-                    <div className="forget_pass text-[14px] underline hover_text "> 
-                      <a href="/">Already Have Account?</a>
+                      <div className="forget_pass text-[14px] underline hover_text ">
+                        <a href="/">Already Have Account?</a>
+                      </div>
                     </div>
-                    </div>
-                   
+
                     <div className="text-[14px] font-semibold py-3 px-6 rounded-md bg-[#f3eee7] hover:bg-black ease-in-out duration-700 hover:text-white text-black mt-5 flex justify-center mx-10">
                       <button className=" text-[16px] py-1 font-semibold">
                         Register Now
@@ -201,7 +218,7 @@ const Sign_in = () => {
       </section>
 
       {/* ------------- footer ------------------- */}
-      <Footer/>
+      <Footer />
     </>
   );
 };

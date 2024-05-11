@@ -12,6 +12,7 @@ const Profile = () => {
     }
   return (
     <div className='mt-3'>
+      <h1>profile page</h1>
         <span>Welcome to ninicos mr/msr {auth.user}</span>
         <button className="button" onClick={handleclick}>logout</button>
     </div>
@@ -19,3 +20,8 @@ const Profile = () => {
 }
 
 export default Profile
+
+
+
+
+

@@ -38,7 +38,7 @@ const Shop_location = () => {
               <div className="shop_content">
                 <div className="link mb-2 text-[16px]">
                   <span className="item_active relative font-normal pr-10 text-[#040404] after:absolute after:content-[''] after:h-[2px] after:w-[33px] after:bg-[#e4ded5] after:top-[50%] after:translate-x-[-50%] after:right-[-9px]">
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </span>
                   <span className="text-[#777]">Shop Location</span>
                   <h2 className="text-[44px] font-semibold pt-1 ">
@@ -63,7 +63,7 @@ const Shop_location = () => {
                     className="w-full h-12 text-[15px] font-semibold border rounded-md xl:pr-72 md:pr-[220px] sm:pr-[550px] pr-52 pl-7 outline-0"
                   />
                   <button className=" font-semibold right-0 rounded-r-md bg-[#d51243] text-white absolute px-5 py-3.5 text-[16px]">
-                    <Link to="#z" href="">
+                    <Link to="#" href="">
                       Find Nearby Store
                       <span className="ms-2">
                         <i class="fa-solid fa-arrow-right"></i>

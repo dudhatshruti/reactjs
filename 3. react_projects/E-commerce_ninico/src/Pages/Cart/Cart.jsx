@@ -6,8 +6,10 @@ import { Navbarclickbtn } from "../../components/category_btn_navbar/Navbar";
 import shop from "../../assets/images/shop.jpg";
 import asset17 from "../../assets/images/asset 17.jpeg";
 import Footer from "../../components/footer/Footer";
+// import { useSelector } from "react-redux";
 
 const Cart = () => {
+  // const cartItems = useSelector(state.cart.cart)
   return (
     <>
       <Welcome />

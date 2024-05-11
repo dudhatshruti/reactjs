@@ -30,7 +30,7 @@ const ProductMain = () => {
           <Outlet/>
         </nav>
         <div className="flex flex-wrap p-4">
-          {/* {data.flat().map((item) => {
+           {data.flat().map((item) => {
             return (
               <>
                 <div key={item.id} className="border-2 border-black w-64 m-2">
@@ -62,7 +62,7 @@ const ProductMain = () => {
                 </div>
               </>
             );
-          })} */}
+          })} 
         </div>
       </div>
     </>
